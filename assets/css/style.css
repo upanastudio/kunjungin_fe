@@ -56,10 +56,21 @@ nav{
 .nav-scroll{
 
 }
+#navbarx{
+	margin-top: 25px;
+}
 #navbarx .dropdown-toggle::after{
 	display: none
 }
 #navbarx .dropdown-menu{
+	top: 120%;
+	left: -140px;
+	border: none;
+	min-width: 19rem;
+	border-radius: 10px;
+	padding: 10px;
+}
+#navbar_mobile .dropdown-menu{
 	top: 120%;
 	left: -140px;
 	border: none;
@@ -577,7 +588,7 @@ nav{
 	color: #9e9e9e;
 }
 .nama-lokasi{
-	font-weight: 500 !important;
+	font-weight: 600 !important;
 }
 .travel-plan{
 	padding-bottom: 10px;
@@ -832,7 +843,8 @@ select .selectpicker {
 .margin-top-row{
 	margin-top: 1.5rem;
 }
-.destinasi-margin-row{
+.destinasi-margin-row,
+.section-judul{
 	margin-top: 3rem;
 }
 .d-sm-none{
@@ -841,7 +853,11 @@ select .selectpicker {
 .margin-top-button{
 	margin-top: 1rem;
 }
-
+#btn_beranda{
+	background: none;
+	color:#fff;
+	font-weight: 400;
+}
 
 
 /*Responsive section*/
@@ -861,13 +877,16 @@ select .selectpicker {
 
 		/* bagian navbar */
 		#carouselExampleCaptions{
-			min-height: 100vh;
-			margin-top: calc(100% - 100%);
+			min-height: 103vh;
+			/*margin-top: calc(100% - 100%);*/
 		}
 		.navbar-m-mobile{
 			margin-top : -17px !important;
 		}
 		#btn-navbar{
+			display: none;
+		}
+		#navbarx{
 			display: none;
 		}
 
@@ -900,23 +919,24 @@ select .selectpicker {
 		.navbar-mobile{
 			display: block;
 			width: 100%;
-			position: absolute;
+			position: sticky;
 			top: 0;
 			left: 0;
 			padding: 20px 10px;
+			z-index: 999;
 		}
 		.navbar-mobile .btn-costume{
 			font-size: .75rem;
 		}
-		#navbarx .dropdown-menu-mobile{
-			top: 120%;
-			left: calc(100% - 302px);
+		#navbar_mobile .dropdown-menu-mobile{
+			top: 15% !important;
+			left: calc(100% - 302px)!important;
 			border: none;
 			min-width: 19rem;
 			border-radius: 10px;
 			padding: 10px;
 		}
-		#navbarx .dropdown-beranda{
+		#navbar_mobile .dropdown-beranda{
 			top: calc(100% - 61px);
 			left: calc(100% - 146px);
 			border: none;
@@ -926,8 +946,11 @@ select .selectpicker {
 			padding: 10px;
 			z-index: 999;
 		}
+		#navbar_mobile .dropdown-toggle::after {
+			display: none;
+		}
 		.nav-mobile-padding{
-			padding: 5px 10px;
+			padding: 8.5px 10px;
 		}
 		.nav-button-mobile-wrap{
 			padding-top: 4px;
@@ -938,6 +961,7 @@ select .selectpicker {
 		/* awal bagian content */
 		.section-judul{
 			padding: 0px 20px;
+			margin-top: 4rem;
 		}
 		.judul-section{
 			font-size: 1.5rem;
@@ -982,7 +1006,7 @@ select .selectpicker {
 		}
 		#event .card {
 
-			min-height: 310px;
+			min-height: 280px;
 			margin-bottom: 20px;
 
 		}
@@ -1005,6 +1029,10 @@ select .selectpicker {
 		}
 		.btn-warning-c{
 			border-radius: 10px
+		}
+		.card-img-mbl-c{
+			height: 100px;
+			object-fit: cover;
 		}
 		/*akhir bagian content*/
 	}
