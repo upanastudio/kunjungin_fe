@@ -879,6 +879,7 @@ select .selectpicker {
 		#carouselExampleCaptions{
 			min-height: 103vh;
 			/*margin-top: calc(100% - 100%);*/
+			z-index: -1;
 		}
 		.navbar-m-mobile{
 			margin-top : -17px !important;
@@ -919,11 +920,20 @@ select .selectpicker {
 		.navbar-mobile{
 			display: block;
 			width: 100%;
-			position: sticky;
+			/*position: sticky;*/
 			top: 0;
 			left: 0;
 			padding: 20px 10px;
 			z-index: 999;
+		}
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		.sticky + .content {
+			padding-top: 60px;
 		}
 		.navbar-mobile .btn-costume{
 			font-size: .75rem;

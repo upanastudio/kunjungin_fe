@@ -787,13 +787,29 @@
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.min.js"></script>
 	<script>
-		window.onscroll = () => {
-			const navx = document.querySelector('#navbarx');
-			if(this.scrollY <= 40) navx.className = 'navbar sticky-top navbar-expand-lg navbar-light bg-light transparant'; else navx.className = 'navbar sticky-top navbar-expand-lg navbar-light bg-light blue-transparant';
-			// 
-			const navy = document.querySelector('#navbar_mobile');
-			if(this.scrollY <= 40) navy.className = 'navbar-mobile'; else navy.className = 'navbar-mobile nav-mobile-padding blue-transparant';
-		};
+		window.onscroll = function() {myFunction()};
+
+		// const navx = document.querySelector('#navbarx');
+		// if(this.scrollY <= 40) navx.className = 'navbar sticky-top navbar-expand-lg navbar-light bg-light transparant'; else navx.className = 'navbar sticky-top navbar-expand-lg navbar-light bg-light blue-transparant';
+
+		var navbar = document.getElementById("navbar_mobile");
+		var navbarDesktop = document.getElementById("navbarx");
+		var sticky = navbar.offsetTop;
+		sticky = sticky + 20;
+
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				navbarDesktop.classList.add("blue-transparant");
+				navbarDesktop.classList.remove("transparant");
+
+				navbar.classList.add("sticky","nav-mobile-padding","blue-transparant");
+			} else {
+				navbarDesktop.classList.remove("blue-transparant");
+				navbarDesktop.classList.add("transparant");
+				navbar.classList.remove("sticky","nav-mobile-padding","blue-transparant");
+			}
+		}
 	</script>
 	<script>
 		$(document).ready(function(){
