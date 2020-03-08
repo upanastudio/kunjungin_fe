@@ -877,7 +877,7 @@ select .selectpicker {
 		.m-top-carousel{
 			margin-top: 0px;
 			position: absolute;
-			bottom: 0;
+			bottom: 50px;
 			left: calc(100% - 100%);
 		}
 		.carousel-item{
