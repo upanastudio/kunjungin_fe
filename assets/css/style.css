@@ -1129,7 +1129,7 @@ select .selectpicker {
 		}
 		#footer-mobile .dropdown-menu{
 			background-color: white;
-			min-width: 18rem;
+			min-width: 100%;
 		}
 		#footer-mobile .dropdown-item:focus,
 		#footer-mobile .dropdown-item:hover {
