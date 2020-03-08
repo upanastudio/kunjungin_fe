@@ -18,88 +18,9 @@
 	
 </head>
 <body>
-	<div class="d-none" style="background-color: tomato; padding: 15px;width: 100vw;position: fixed;top: 0px;left: 0px">
-		Hello!
-	</div>
-
-	<nav id="navbarx" class="navbar sticky-top navbar-expand-lg navbar-light bg-light transparant mt-4 navbar-m-mobile">
-		
-		<button id="btn-navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse padding-nav" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active  mr-4">
-					<a class="nav-link" href="index.html">BERANDA <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link " href="destinasi.html">DESTINASI</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="event.html">EVENT</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="cerita.html">CERITA</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="kontak.html">KONTAK</a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<button  class="btn btn-costume btn-icon btn-secondary mr-4 btn-gray">
-					<i class="fas fa-search"></i>
-				</button>
-				<div class="dropdown">
-					<button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-suitcase-rolling"></i>
-					</button>
-					<div class="dropdown-menu card-shadow" aria-labelledby="dropdownMenuButton">
-						<h6 class="text-center mb-2" style="font-weight: 500">Your Travel Plan</h6>
-						<hr>
-						<div class="list-travel-plan">
-							<div class="travel-plan">
-								<div class="row">
-									<div class="col-9">
-										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-											<span class="nama-lokasi" name="nama-lokasi">Pantai Losari</span><br>
-											<span class="lokasi" name="lokasi">Makassar</span>
-										</div>
-									</div>
-									<div class="col-3">
-										<button class="btn btn-outline-danger">
-											<i class="fas fa-trash-alt"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="travel-plan">
-								<div class="row">
-									<div class="col-9">
-										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-											<span class="nama-lokasi" name="nama-lokasi">Pulau Koidingare Keke</span><br>
-											<span class="lokasi" name="lokasi">Makassar</span>
-										</div>
-									</div>
-									<div class="col-3">
-										<button class="btn btn-outline-danger">
-											<i class="fas fa-trash-alt"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<button class="btn btn-warning btn-warning-c full-width">
-							<i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
-						</button>
-					</div>
-				</div>
-				<a href="login.html" class="btn btn-costume btn-secondary btn-gray ml-4">MASUK ATAU DAFTAR</a>
-			</form>
-		</div>
-	</nav>
-
-	<div id="navbar_mobile" class="navbar-mobile">
-		<div class="row">
+	
+	<nav id="navbar_mobile" class="navbar-mobile">
+		<div class="row" style="overflow: auto">
 			<div class="col-6">
 				<div class="dropdown">
 					<button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -164,8 +85,87 @@
 				</div>	
 			</div>
 		</div>
-	</div>
+	</nav>
 
+	<nav id="navbarx" class="navbar sticky-top navbar-expand-lg navbar-light bg-light transparant mt-4 navbar-m-mobile">
+		
+		<button id="btn-navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse padding-nav" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active  mr-4">
+					<a class="nav-link" href="index.html">BERANDA <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item mr-4">
+					<a class="nav-link " href="destinasi.html">DESTINASI</a>
+				</li>
+				<li class="nav-item mr-4">
+					<a class="nav-link"  href="event.html">EVENT</a>
+				</li>
+				<li class="nav-item mr-4">
+					<a class="nav-link"  href="cerita.html">CERITA</a>
+				</li>
+				<li class="nav-item mr-4">
+					<a class="nav-link"  href="kontak.html">KONTAK</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<button  class="btn btn-costume btn-icon btn-secondary mr-4 btn-gray">
+					<i class="fas fa-search"></i>
+				</button>
+				<!-- <button  class="btn btn-costume btn-icon btn-secondary btn-gray ml-4">
+					<i class="fas fa-suitcase-rolling"></i>
+				</button> -->
+				<div class="dropdown">
+					<button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-suitcase-rolling"></i>
+					</button>
+					<div class="dropdown-menu card-shadow" aria-labelledby="dropdownMenuButton">
+						<h6 class="text-center mb-2" style="font-weight: 500">Your Travel Plan</h6>
+						<hr>
+						<div class="list-travel-plan">
+							<div class="travel-plan">
+								<div class="row">
+									<div class="col-9">
+										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
+											<span class="nama-lokasi" name="nama-lokasi">Pantai Losari</span><br>
+											<span class="lokasi" name="lokasi">Makassar</span>
+										</div>
+									</div>
+									<div class="col-3">
+										<button class="btn btn-outline-danger">
+											<i class="fas fa-trash-alt"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="travel-plan">
+								<div class="row">
+									<div class="col-9">
+										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
+											<span class="nama-lokasi" name="nama-lokasi">Pulau Koidingare Keke</span><br>
+											<span class="lokasi" name="lokasi">Makassar</span>
+										</div>
+									</div>
+									<div class="col-3">
+										<button class="btn btn-outline-danger">
+											<i class="fas fa-trash-alt"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-warning btn-warning-c full-width">
+							<i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
+						</button>
+					</div>
+				</div>
+				<a href="login.html" class="btn btn-costume btn-secondary btn-gray ml-4">MASUK ATAU DAFTAR</a>
+			</form>
+		</div>
+	</nav>
+	
 	<!-- Awal Carousel -->
 	<section id="carousel-web" class="carousel-web">
 		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -216,7 +216,7 @@
 		</div>
 	</section>	
 	<!-- Akhir Carousel -->
-
+	
 	<!-- Awal Destinasi -->
 	<section id="destinasi" class="section-judul">
 		<div class="row">
@@ -232,8 +232,7 @@
 		<div class="row mt-4">
 			<div class=" col-6 col-sm-3 destinasi-mb">
 				<a class="destinasi_link " href="#">
-					<div class="card  custome-card text-center">
-						<img class="card-image-destinasi" src="assets/media/card-bg/adventure.jpg" alt="" style="">
+					<div class="card  custome-card text-center card-adventure ">
 						<div style="" class="card-body custome-card-body">
 							<h5 class="card-title">ADVENTURE</h5>
 						</div>
@@ -242,8 +241,7 @@
 			</div>
 			<div class=" col-6 col-sm-3 destinasi-mb">
 				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center ">
-						<img class="card-image-destinasi" src="assets/media/card-bg/beach.jpg" alt="" style="">
+					<div class="card  custome-card text-center card-pantai">
 						<div style="" class="card-body custome-card-body">
 							<h5 class="card-title">PANTAI</h5>
 						</div>
@@ -252,8 +250,7 @@
 			</div>
 			<div class=" col-6 col-sm-3 destinasi-mb">
 				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center ">
-						<img class="card-image-destinasi" src="assets/media/card-bg/hiking.jpg" alt="" style="">
+					<div class="card  custome-card text-center card-hiking">
 						<div style="" class="card-body custome-card-body">
 							<h5 class="card-title">HIKING</h5>
 						</div>
@@ -262,8 +259,7 @@
 			</div>
 			<div class=" col-6 col-sm-3 destinasi-mb">
 				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center ">
-						<img class="card-image-destinasi" src="assets/media/card-bg/water-activities.jpg" alt="" style="">
+					<div class="card  custome-card text-center card-water-activities">
 						<div style="" class="card-body custome-card-body">
 							<h5 class="card-title">WATER ACTIVITIES</h5>
 						</div>
@@ -274,8 +270,7 @@
 		<div class="row destinasi-margin-row">
 			<div class=" col-6 col-sm-3 destinasi-mb">
 				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center">
-						<img class="card-image-destinasi" src="assets/media/card-bg/sejarah.jpg" alt="" style="">
+					<div class="card  custome-card text-center card-sejarah">
 						<div style="" class="card-body custome-card-body">
 							<h5 class="card-title">SEJARAH</h5>
 						</div>
@@ -284,8 +279,7 @@
 			</div>
 			<div class=" col-6 col-sm-3 destinasi-padding">
 				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center">
-						<img class="card-image-destinasi" src="assets/media/card-bg/kota.jpg" alt="" style="">
+					<div class="card  custome-card text-center card-kota">
 						<div style="" class="card-body custome-card-body">
 							<h5 class="card-title">KOTA</h5>
 						</div>
@@ -294,8 +288,7 @@
 			</div>
 			<div class=" col-6 col-sm-3 destinasi-padding">
 				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center ">
-						<img class="card-image-destinasi" src="assets/media/card-bg/tour.jpg" alt="" style="">
+					<div class="card  custome-card text-center card-tour">
 						<div style="" class="card-body custome-card-body">
 							<h5 class="card-title">TOURS / GUIDE</h5>
 						</div>
@@ -304,8 +297,7 @@
 			</div>
 			<div class=" col-6 col-sm-3 destinasi-padding">
 				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center">
-						<img class="card-image-destinasi" src="assets/media/card-bg/leisure.jpg" alt="" style="">
+					<div class="card  custome-card text-center card-leisure">
 						<div style="" class="card-body custome-card-body">
 							<h5 class="card-title">LEISURE</h5>
 						</div>
@@ -334,7 +326,7 @@
 					<img src="assets/media/card-bg/sejarah.jpg" class="card-img-top card-img-c card-img-mbl-c " alt="...">
 					<div class="card-body">
 						<h5 class="card-title event-card-title">Festifal Budaya di Pusat Wisata Barru</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
 						<div class="row">
 							<div class="col">
 								<p class="tgl-event">Tanggal Event</p>
@@ -352,7 +344,7 @@
 					<img src="assets/media/card-bg/fun-run.jpg" class="card-img-top card-img-c card-img-mbl-c" alt="...">
 					<div class="card-body">
 						<h5 class="card-title event-card-title">Fun Run 2020 Bersama Komunitas Pecinta Alam</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
 						<div class="row">
 							<div class="col">
 								<p class="tgl-event">Tanggal Event</p>
@@ -370,7 +362,7 @@
 					<img src="assets/media/card-bg/sejarah.jpg" class="card-img-top card-img-c card-img-mbl-c" alt="...">
 					<div class="card-body">
 						<h5 class="card-title event-card-title">Festifal Budaya di Pusat Wisata Barru</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
 						<div class="row">
 							<div class="col">
 								<p class="tgl-event">Tanggal Event</p>
@@ -391,7 +383,7 @@
 		</div>
 	</section>
 	<!-- Akhir Event -->
-
+	
 	<!-- Awal cerita kunjungin -->
 	<section id="cerita" class="section-judul">
 		<div class="row">
@@ -399,17 +391,16 @@
 				<h1 class="judul-section">Cerita Kunjungin</h1>
 			</div>
 		</div>
-		<div class="row margin-top-row">
-			<div class="col-sm-6 info-section">
+		<div class="row mt-4">
+			<div class="col-6 info-section">
 				<p>Temukan rekomendasi daerah wisata dengan penggambaran yang lengkap melalui cerita dari tim kunjungin di sini.</p>
 			</div>
 		</div>
 		<div class="row mt-4">
-			<div class="col-md-6 col-lg-3 destinasi-padding">
+			<div class="col-md-12 col-lg-3 destinasi-padding">
 				<a href="#">
 					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card">
-							<img class="card-image-cerita" src="assets/media/card-bg/beach.jpg" alt="" style=""> 
+						<div class="card card-shadow ceritak-card cerita-bg-1"> 
 							<div class="card-body cerita-body">
 								<div class="row">
 									<div class="col-3">
@@ -431,11 +422,10 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-6 col-lg-3 destinasi-padding">
+			<div class="col-md-12 col-lg-3 destinasi-padding">
 				<a href="#">
 					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card">
-							<img class="card-image-cerita" src="assets/media/card-bg/sejarah.jpg" alt="" style="">  
+						<div class="card card-shadow ceritak-card cerita-bg-2"> 
 							<div class="card-body cerita-body">
 								<div class="row">
 									<div class="col-3">
@@ -457,11 +447,10 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-6 col-lg-3 destinasi-padding">
+			<div class="col-md-12 col-lg-3 destinasi-padding">
 				<a href="#">
 					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card"> 
-							<img class="card-image-cerita" src="assets/media/card-bg/adventure.jpg" alt="" style=""> 
+						<div class="card card-shadow ceritak-card cerita-bg-3"> 
 							<div class="card-body cerita-body">
 								<div class="row">
 									<div class="col-3">
@@ -483,11 +472,10 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-6 col-lg-3 destinasi-padding">
+			<div class="col-md-12 col-lg-3 destinasi-padding">
 				<a href="#">
 					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card">
-							<img class="card-image-cerita" src="assets/media/card-bg/kota.jpg" alt="" style=""> 
+						<div class="card card-shadow ceritak-card cerita-bg-4"> 
 							<div class="card-body cerita-body">
 								<div class="row">
 									<div class="col-3">
@@ -523,8 +511,8 @@
 		</div>
 	</section>
 	<!-- Akhir cerita kunjungin -->
-
-	<!-- awal peta -->
+	
+	<!-- Awal Peta Wisata Sulawesi Selatan -->
 	<section id="peta" class="section-judul">
 		<div class="row">
 			<div class="col text-center">
@@ -535,13 +523,13 @@
 			<div class="col">
 				<div class="card card-shadow peta-card">
 					<div class="card-body peta-card" style="padding: 0px">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8126106199684!2d119.4031027143706!3d-5.133857753368861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02b011ce37ef%3A0x28ed3928c1b6cf23!2sBenteng%20Rotterdam%20Makassar!5e0!3m2!1sid!2sid!4v1583051220918!5m2!1sid!2sid"  frameborder="0" style="border:0;border-radius: 10px" allowfullscreen=""></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8126106199684!2d119.4031027143706!3d-5.133857753368861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02b011ce37ef%3A0x28ed3928c1b6cf23!2sBenteng%20Rotterdam%20Makassar!5e0!3m2!1sid!2sid!4v1583051220918!5m2!1sid!2sid" width="1100" height="450" frameborder="0" style="border:0;border-radius: 10px" allowfullscreen=""></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- akhir peta -->
+	<!-- Akhir Peta Wisata Sulawesi Selatan -->
 
 	<!-- Awal Area Wisata Lain -->
 	<section id="area-wisata-lain" class="section-judul judul-area-wisata-lain mt-5">
@@ -598,7 +586,7 @@
 		</div>
 	</section>
 	<!-- Akhir Area Lain -->
-
+	
 	<!-- Awal Kontak -->
 	<section id="kontak" class="section-judul">
 		<div class="row">
@@ -722,8 +710,10 @@
 	<!-- Akhir Modal -->
 
 	<!-- Footer -->
-	<footer id="footer-desktop" class="page-footer font-small pt-2">
-		<div class="footer-padding" style="padding: 60px 90px">
+	<footer class="page-footer font-small pt-2">
+		<!-- Footer Links -->
+		<div class="" style="padding: 60px 90px">
+			<!-- Grid row -->
 			<div class="row">
 				<div class="col-3 clr-white">
 					<img class="mb-4" src="assets/media/logo/logo.svg" width="70%" alt="">
@@ -751,6 +741,7 @@
 					<h4 class="footer-judul clr-yellow">Support</h4>
 					<ul style="list-style-type:none;">
 						<li>
+							<!-- <p> <i class="fas fa-phone-volume fas-c"></i> +628522123123123</p> -->
 							<div class="row">
 								<div class="col-1">
 									<i class="fa fa-phone "></i>
@@ -785,18 +776,12 @@
 					</ul>
 				</div>
 			</div>
+			<!-- Grid row -->
 		</div>
+		<!-- Footer Links -->
 	</footer>
 	<!-- Footer -->
-
-	<!-- Footer -->
-	<footer id="footer-mobile" class="page-footer font-small pt-2 ">
-		Mantul
-	</footer>
-	<!-- Footer -->
-
-
-
+	
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
@@ -806,10 +791,13 @@
 	<script>
 		window.onscroll = function() {myFunction()};
 
+		const navx = document.querySelector('#navbarx');
+		if(this.scrollY <= 40) navx.className = 'navbar sticky-top navbar-expand-lg navbar-light bg-light transparant'; else navx.className = 'navbar sticky-top navbar-expand-lg navbar-light bg-light blue-transparant';
+
 		var navbar = document.getElementById("navbar_mobile");
 		var navbarDesktop = document.getElementById("navbarx");
 		var sticky = navbar.offsetTop;
-		// sticky = stick + 40;
+		sticky = stick + 40;
 
 
 		function myFunction() {
@@ -836,18 +824,8 @@
 				autoplayTimeout:1750,
 				autoplayHoverPause:true,
 				responsive:{
-					0:{
-						items:1,
-						nav:false
-					},
 					600:{
-						items:4,
-						nav:false
-					},
-					1000:{
-						items:5,
-						nav:false,
-						loop:true
+						items:4
 					}
 				}
 			});
