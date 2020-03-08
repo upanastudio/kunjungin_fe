@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap');
+body{
+	font-family: 'Roboto', sans-serif !important;
+	background-color: #F9FCFF;
+}
+.bg-light {
+	background-color: white !important;
+	box-shadow: 0px 4px 30px -10px rgba(0,0,0,0.22);
+}
+.list-group-item,.card{
+	border: 1px solid rgba(166, 166, 166, 0.13);
+}
+#main-profile .btn-menu{
+	font-size: .9rem;
+	color: rgba(133, 141, 148, 1);
+}
+#main-profile .btn-menu:hover{
+	color: #89b7e5;
+}
+#main-profile .active-btn{
+	color: #63a4dd;
+}
+#main-profile .card{
+	border-radius: 10px;
+}
+
+#main-profile .card > .list-group:first-child .list-group-item:first-child {
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+}
+
+.card > .list-group:last-child .list-group-item:last-child {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.card > .list-group:last-child .list-group-item:last-child {
+	padding-top: 100px;
+}
+#main-profile .form-group label{
+	font-size: .9rem
+}
+
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+}
+/*Also*/
+ .fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter:'alpha(opacity=0)';
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
+}
+#photoUsers{
+	width: 149px;
+	height: 149px;
+	object-fit: cover;
+	object-position: 50% 10%;
+}
+#photoIcon{
+	object-fit: cover;
+	object-position: 50% 10%;
+}

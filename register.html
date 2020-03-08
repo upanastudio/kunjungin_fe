@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<base href="">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Register | Kunjungin</title>
+	<link rel="shortcut icon" href="assets/media/icon/favicon2.ico" />
+	<style>
+		html{
+			overflow-x: hidden;
+			overflow-y: hidden;
+		}
+	</style>
+</head>
+<body>
+	
+	<main id="login">
+		<div class="row">
+			<div class="col-4 input-login">
+				<div class="wrap-logo">
+					<a class="nav-link logo-nav" href="index.html">
+						<img src="assets/media/logo/logo_biru_1.svg" width="40%" alt="">
+					</a>
+				</div>
+				<h4 class="mt-4">Daftar Akun</h4>
+				<p>
+					Daftar akun kamu dan mulailah perjalanan bersama kami.
+				</p>
+				<form class="mt-4">
+					<div class="form-group">
+						<label for="input-nama">Nama Lengkap</label>
+						<input type="text" class="form-control bg-input " id="input-nama" aria-describedby="emailHelp" placeholder="Masukkan nama kamu">
+						
+					</div>
+					<div class="form-group">
+						<label for="input-email">Email</label>
+						<input type="email" class="form-control bg-input " id="input-email" aria-describedby="emailHelp" placeholder="Masukkan email kamu">
+						
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<div class="input-group" id="show_hide_password">
+							<input class="form-control bg-input " type="password">
+							<div class="input-group-addon">
+								<a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-warning btn-warning-c full-width">
+						DAFTAR SEKARANG
+					</button>
+					<a href="login.html" class="btn btn-secondary-c btn-transparant full-width">
+						Sudah punya akun?
+					</a>
+					<button class="btn btn-secondary btn-secondary-c full-width">
+						MASUK AKUN DISINI
+					</button>
+				</form>
+			</div>
+			<div class="col-8">
+				<div class="img-login-wrapper">
+					<img class="img-bg" src="assets/media/bg/samalona.jpg" alt="" style="">
+					<div class="card">
+						<div class="card-body">
+							<h5 name="nama-tempat">PULAU SAMALONA</h5>
+							<p>
+								<span name="lokasi">Makassar, Sulawesi Selatan</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#show_hide_password a").on('click', function(event) {
+				event.preventDefault();
+				if($('#show_hide_password input').attr("type") == "text"){
+					$('#show_hide_password input').attr('type', 'password');
+					$('#show_hide_password i').addClass( "fa-eye-slash" );
+					$('#show_hide_password i').removeClass( "fa-eye" );
+				}else if($('#show_hide_password input').attr("type") == "password"){
+					$('#show_hide_password input').attr('type', 'text');
+					$('#show_hide_password i').removeClass( "fa-eye-slash" );
+					$('#show_hide_password i').addClass( "fa-eye" );
+				}
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,1012 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Nunito Sans', sans-serif !important;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+nav{
+	z-index: 9999;
+}
+
+.logo-nav{
+	margin-top: 4px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	color: white;
+	border-bottom: 2px solid white;
+	font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+	font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: rgba(255,255,255,.7);
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+	color: #CDD8E6;
+}
+
+.transparant {
+	background: rgba(0,0,0,.0) !important;
+	background-color:  rgba(0,0,0,.0) !important;
+}
+
+.blue-transparant{
+	background: rgba(0, 68, 90, .8) !important;
+}
+.blue-solid{
+	background-color: #032A4C;
+}
+.navbar-solid{
+	padding: .9rem 1rem;
+}
+.nav-scroll{
+
+}
+#navbarx .dropdown-toggle::after{
+	display: none
+}
+#navbarx .dropdown-menu{
+	top: 120%;
+	left: -140px;
+	border: none;
+	min-width: 19rem;
+	border-radius: 10px;
+	padding: 10px;
+}
+.navbar-mobile{
+	display: none;
+}
+.padding-nav{
+	padding: 0px 100px;
+}
+
+.btn-costume{
+	border-radius: 7px;
+	padding: 0.375rem 1.4rem;
+	border: none;
+	font-size: .85rem;
+	font-weight: 500;
+}
+
+.btn-icon{
+	padding: 0.55rem .6rem;
+}
+
+.btn-gray{
+	background-color: #EEEEEE;
+	color: #212121;
+
+}
+
+#jumbotron,#carouselExampleCaptions{
+	margin-top: -90px;
+
+}
+.jumbotron,#carouselExampleCaptions{
+	background: url("../media/bg/beach2.jpg") no-repeat top center;
+	min-height: 101vh;
+	background-size: cover;
+}
+
+#carouselDestinasi{
+	/*background: url("../media/bg/beach.jpg") no-repeat top center;*/
+	min-height: 90vh;
+	background-size: cover;
+	margin-top: -90px;
+}
+
+.carousel-inner p{
+	font-size: 1.3rem;
+}
+
+.m-top-carousel{
+	margin-top: 12rem;
+	position: relative;
+}
+
+.layer {
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-caption{
+	padding-bottom:40px;
+	text-align: left;
+}
+
+.carousel-inner h3{
+	font-family: 'Montserrat', sans-serif !important;	
+}
+
+.jdl-jumbotron{
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 4rem;	
+}
+
+.pd-jumbotron{
+	padding-top: 210px;
+}
+
+.section-judul{
+	padding: 60px 120px;
+}
+.section-judul-event{
+	padding: 60px 300px;
+}
+
+.section-judul h1{
+	/*font-family: 'Montserrat', sans-serif !important;*/
+	font-family: 'Nunito Sans', sans-serif !important;
+	font-weight: 900;	
+}
+
+.btn-secondary>object{
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(297deg) brightness(105%) contrast(105%);
+}
+
+.btn-secondary:hover> object {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(297deg) brightness(105%) contrast(105%);
+}
+.icon-calendar{
+	/*filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(297deg) brightness(105%) contrast(105%);*/
+}
+
+.judul-section{
+	color: #004157; 
+}
+
+.info-section{
+	color: rgba(106, 136, 163, 1);
+}
+.info-section p {
+	line-height: 28px;
+	font-size: 1.2rem;
+}
+
+.custome-card{
+	border: none;
+	border-radius: 90px;
+	min-height: 300px;
+
+}
+.custome-card-body{
+	background-color: rgba(255,255,255,.8);
+	position: absolute
+	;width: 100%;
+	bottom: 0px;
+	border-radius: 0px 0px 90px 90px;
+}
+
+.card-body-pd{
+	padding: .5rem; 
+}
+.destinasi_link{
+	color: #212121;
+}
+.destinasi_link:hover{
+	color: #004157; 
+}
+.card-adventure{
+	background: url("../media/card-bg/adventure.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 60% 50%; 
+}
+.card-pantai{
+	background: url("../media/card-bg/beach.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 50% 50%; 
+}
+.card-hiking{
+	background: url("../media/card-bg/hiking.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 45% 50%; 
+}
+.card-water-activities{
+	background: url("../media/card-bg/water-activities.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 50% 50%; 
+}
+.card-sejarah{
+	background: url("../media/card-bg/sejarah.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 50% 50%; 
+}
+.card-kota{
+	background: url("../media/card-bg/kota.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 50% 50%; 
+}
+.card-tour{
+	background: url("../media/card-bg/tour.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 100% 50%; 
+}
+.card-leisure{
+	background: url("../media/card-bg/leisure.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 50% 50%; 
+}
+
+
+
+#event .card{
+	min-height: 410px;
+	margin-bottom: 40px
+}
+.event-card-title{
+	font-weight: 700;
+	min-height: 50px;
+	color: #032A4C;
+}
+.destinasi-card-title{
+	font-weight: 700;
+	min-height: 30px;
+	color: #032A4C;
+}
+
+#destinasi .card-title{
+	font-weight: 700;
+}
+
+.tgl-event{
+	font-size:.9rem;
+	color: #607D8B;
+	margin-bottom: 8px;
+}
+.lh-c{
+	line-height:0px;
+}
+.btn-lihat-detail{
+	margin-top: 10px
+}
+.card-shadow{
+	box-shadow: -1px 10px 29px -10px rgba(0,0,0,0.25);
+}
+
+.card-img-c{
+	min-height: 250px
+}
+
+.ceritak-card{
+	height: 400px;
+	border-radius: 1rem;
+	border: transparent;
+}
+
+.cerita-bg-1{
+	background: url("../media/card-bg/beach.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 50% 50%;
+}
+.cerita-bg-2{
+	background: url("../media/card-bg/sejarah.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 50% 50%;
+}
+.cerita-bg-3{
+	background: url("../media/card-bg/adventure.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 55% 50%;
+}
+.cerita-bg-4{
+	background: url("../media/card-bg/kota.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: 55% 50%;
+}
+
+.cerita-body{
+	background-color: rgba(255,255,255,.9);
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	bottom: 3%;
+	border-radius: 5px 5px 5px 5px;
+	padding: 7.5px;
+}
+
+.pemberi-cerita{
+	font-size: .9rem;
+}
+.ceritanya{
+	margin-top: 20px;
+}
+.ceritanya h6{
+	font-weight: 600;
+	color: #002d3c;
+	line-height: 1.7rem;
+}
+#cerita a{
+	/*text-decoration: none !important;*/
+	color:  #004157; 
+}
+#cerita a:hover{
+	color: black;
+}
+#cerita .btn{
+	font-size: .9rem
+}
+
+.user-cerita{
+	margin-top: 4px;
+}
+.peta-card{
+	border-radius: 10px;
+	max-width: 1100px;
+}
+
+.judul-area-wisata-lain{
+	padding-top: 180px;
+}
+
+#area-wisata-lain{
+	background: url("../media/bg/area-lain.png") no-repeat top center;
+	min-height: 90vh;
+	background-size: cover;
+}
+
+
+
+.owl-carousel img{
+	border-radius: 10px
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+	margin-top: 30px !important;
+}
+.owl-theme .owl-dots .owl-dot span{
+	background: #1E4B6C !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	background: #fff !important;
+}
+
+
+#kontak{
+	border-radius: 35px;
+	margin-top: -30px !important;
+	background-color:white;
+}
+
+.bg-input{
+	background-color: #5fffe80d !important;
+	border: 1px solid #ced4da7a;
+}
+
+.body-follow-ig{
+	padding: 5.7rem 9rem;
+	background-color: #5fffe80d;
+}
+
+#kontak a{
+	text-decoration: none;
+	color: #bb3185;
+}
+
+#kontak a:hover{
+	color: #fda810;
+}
+.fas-c{
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+
+.carousel-destinasi{
+	min-height: 55vh !important;
+}
+.img-bg-wrapper{
+	min-height: 55vh !important;
+}
+.img-bg{
+	width:100%;
+	height: inherit;
+	object-fit: cover;
+	object-position: 50% 71%;
+
+}
+
+.card-img-destinasi{
+	object-fit: cover;
+}
+
+#destinasi-pagination li{
+	margin-right: 8px
+}
+#destinasi-pagination  a{
+	color: #032a4d;
+	font-size: .9rem;
+	border: none;
+	font-weight: 500;
+}
+#destinasi-pagination a:hover{
+	border-radius: .3rem;
+	background-color: #ffe8b7;
+}
+#destinasi-pagination .active a{
+	background-color: #fcbe37;
+}
+.page-item:first-child .page-link{
+	border-radius: .3rem;
+}
+.page-item.active .page-link{
+	border-radius: .3rem
+}
+
+
+.lokasi-destinasi-header{
+	margin-top: 20px;
+	color: white;
+	font-size: 1.3rem;
+
+}
+.destinasi-informasi{
+	font-size: 1.1rem;
+}
+.button-body-destinasi{
+	padding:50px;
+	background-color: #358DDB;
+	border-radius: 15px;
+}
+#info-destinasi h3{
+	font-family: 'Montserrat', sans-serif !important;
+	color: 	#33697B;
+}
+#info-destinasi p {
+	color: #133e63;
+}
+
+.fasilitas-card{
+	margin-bottom: 25px;
+	border: 1px solid #63a4dd;
+	border-radius: 7px;
+	color: #133e63;
+	background-color: #F9FCFF;
+}
+
+.fasilitas-card i {
+	font-size: 2.5rem;
+	margin-top: 15px;
+}
+
+.step-card{
+	margin-bottom: 15px;
+	border: 1px solid #63a4dd;
+	border-radius: 7px;
+	color: #133e63;
+	background-color: #F9FCFF;
+	cursor: default;
+}
+.step-card i {
+	font-size: 2rem;
+	margin-top: 5px;
+}
+.penjelasan-step{
+	font-size: .85rem;
+}
+
+#fasilitas .col-9{
+	font-size: .9rem;
+}
+
+.penerbit{
+	font-size: .9rem
+}
+
+
+
+.review{
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #b2d1f0;
+	margin-bottom: 20px;
+}
+.reviewer-name{
+	font-weight: 500;
+}
+.reviewer-job{
+	font-size: .8rem;
+	color: #ea8d12;
+}
+.jum-ulasan,
+.jum-hari{
+	font-size: .8rem;
+	color: #afafaf;
+	margin-left: 7px
+}
+.stars-point{
+	margin-top: -10px
+}
+.stars-point i{
+	font-size: .9rem;
+	color: #9e9e9e;
+}
+.stars-point .active{
+	color: #f7a902;
+}
+.isi-review{
+	font-size: .8rem;
+}
+
+
+
+#deskripsi-event .img-wrapper{
+	background-color: salmon;
+	height: 550px
+
+}
+#deskripsi-event .event-card-title{
+	margin-bottom: -5px;
+}
+#deskripsi-event .tgl-event{
+	margin-bottom: 7px
+}
+.img-dlm-deskripsi{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.lokasi{
+	font-size: .8rem;
+	color: #9e9e9e;
+}
+.nama-lokasi{
+	font-weight: 500 !important;
+}
+.travel-plan{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 10px;
+}
+.travel-plan .btn-outline-danger{
+	border: none;
+}
+.btn{
+	font-weight: 700;
+}
+
+.navbar-profile{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.name-user{
+	font-size: .8rem;
+}
+.navbar-profile .img-thumbnail{
+	padding: 0.1rem;
+}
+.navbar-profile .dropdown-menu{
+	top: 120%;
+	left: -15px;
+}
+
+footer h4{
+	margin-bottom: 30px;
+}
+footer li{
+	margin-left: -40px;
+	margin-bottom: 30px
+}
+
+footer{
+	background-color: #032a4d;
+	border-radius: 35px 35px 0 0;
+	margin-top: -33px;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+	color: #FFAB00;
+}
+
+
+select .selectpicker {
+	display: block;
+	margin: 0 auto;
+	padding-left: 20px;
+	height: calc(2.25rem + 2px);
+}
+.btn-new {
+	background-color: white;
+}
+
+
+.modal-body{
+	color:rgba(3, 42, 77, 1);
+	padding: 40px
+}
+.modal-body h1{
+	font-weight: 700;
+}
+.lokasi_destinasi{
+	color: rgba(106, 136, 163, 1) !important;
+}
+
+#modal-plan-detail .card-body{
+	font-size: 1rem;
+	padding: .8rem; 
+}
+
+
+
+#login .input-login{
+	padding: 2.5rem;
+}
+#login .img-login-wrapper{
+	width: 100%;
+	height: 100vh;
+	background-color: salmon;
+	position: relative;
+}
+#login .nav-link{
+	padding: 0px;
+}
+#login p{
+	font-size: 1.1rem;
+	color: rgba(106, 136, 163, 1);
+}
+#show_hide_password{
+	position: relative;
+}
+#show_hide_password .input-group-addon{
+	position:absolute;
+	top: 0px;
+	right: 0px;
+	height: 37px;
+	width: 37px;
+	border-radius: 0px 10px 10px 0px;
+	z-index: 999;
+}
+#show_hide_password .fa{
+	position: absolute;
+	top: 10px;
+	left: 6px;
+}
+.lupa-password a{
+	text-decoration: none;
+	font-size: .9rem;
+	color: rgba(106, 136, 163, 1);
+}
+.lupa-password a:hover{
+	color: #007bff;
+}
+#login .btn{
+	margin-bottom: 15px
+}
+#login .card{
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	min-width: 37%;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 10px
+}
+#login .card-body{
+	padding: .7rem;
+}
+#login .card-body p{
+	font-size: .95rem;
+	margin-bottom: 0px
+}
+
+#modal-plan-detail-choose .card-body{
+	padding-top: .8rem;
+	padding-bottom: .8rem;
+}
+
+.btn-secondary{
+	background-color: #DDE9F4;
+	color: #032A4C;
+	border: none
+}
+
+.btn-warning-c{
+	background-color: #FFD740;
+	font-size: .9rem;
+	color: #004157; 
+	border: none;
+	padding: 10px 30px !important;
+}
+.btn-warning-c2{
+	font-size: .9rem;
+	color: #004157; 
+	border: none;
+	padding: 10px 30px !important;
+}
+.btn-warning-c:hover{
+	background-color:#FFAB00;
+}
+.btn-secondary-c{
+	background-color: transparent;
+	font-size: .9rem;
+	color: #004157;
+	border: 1px solid #c6c6c6;
+	padding: 10px 30px !important;
+}
+
+.btn-primary-c{
+	background-color:rgba(3, 42, 77, 1);
+	border: rgba(3, 42, 77, 1);
+}
+
+.btn-transparant{
+	background-color: white;
+	border: none;
+}
+.no-border{
+	border: none !important;
+}
+.rounded-lg{
+	border-radius: 20px;
+}
+.rounded-md {
+	border-radius: 15px;
+}
+.rounded-sm {
+	border-radius: 7px;
+}
+
+.clr-white{
+	color: white;
+}
+.clr-yellow{
+	color: #FFD740;
+}
+.batas-bawah{
+	margin-bottom: 30px;
+}
+.text-shadow{
+	text-shadow: 1px 2px 2px rgba(0,0,0,.5);
+}
+.full-width{
+	width: 100%;
+}
+.btn-outline-c{
+	color: #274966;
+	background-color: #F9FCFF;
+	background-image: none;
+	border-color: #DDE9F4;
+}
+.btn-outline-c:hover{
+	color: #274966;
+	background-color: #F9FCFF;
+	background-image: none;
+	border-color: #DDE9F4;
+}
+.btn-get-direction{
+	width: 100%;
+	margin-top: -16px;
+	border-radius: 0px 0px 10px 10px !important;
+}
+.btn-planning{
+	width: 100%;
+	cursor: pointer;
+}
+
+.btn-saveplan{
+	width: 40%;
+	height: 60px;
+	font-size: 1.05rem;
+
+}
+.carousel-indicators{
+	justify-content: left;
+	margin-left: 17%;
+	margin-right: 0;
+}
+.carousel-indicators li {
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+.margin-top-row{
+	margin-top: 1.5rem;
+}
+.destinasi-margin-row{
+	margin-top: 3rem;
+}
+.d-sm-none{
+	display: block;
+}
+.margin-top-button{
+	margin-top: 1rem;
+}
+
+
+
+/*Responsive section*/
+
+/*@media(min-width: 1366px){
+	.destinasi-padding{
+		padding: 0px 15px;
+	}
+}
+@media(min-width: 1600px){
+	.destinasi-padding{
+		padding: 0px 40px;
+	}
+	}*/
+
+	@media(max-width: 575.98px){
+
+		/* bagian navbar */
+		#carouselExampleCaptions{
+			min-height: 100vh;
+			margin-top: calc(100% - 100%);
+		}
+		.navbar-m-mobile{
+			margin-top : -17px !important;
+		}
+		#btn-navbar{
+			display: none;
+		}
+
+		.m-top-carousel{
+			margin-top: 0px;
+			position: absolute;
+			bottom: 0;
+			left: calc(100% - 100%);
+		}
+		.carousel-item{
+			height: 100vh;
+		}
+		.carousel-caption{
+			right: 0%;
+			left: 0%;
+			bottom: 100px;
+		}
+		.carousel-indicators{
+			bottom: 100px;
+			justify-content: left;
+			margin-left: 3%;
+			margin-right: 0;
+		}
+		.carousel-inner p {
+			font-size: .85rem;
+		}
+		.carousel-item img{
+			width: 60%;
+		}
+		.navbar-mobile{
+			display: block;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 20px 10px;
+		}
+		.navbar-mobile .btn-costume{
+			font-size: .75rem;
+		}
+		#navbarx .dropdown-menu-mobile{
+			top: 120%;
+			left: calc(100% - 302px);
+			border: none;
+			min-width: 19rem;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		#navbarx .dropdown-beranda{
+			top: calc(100% - 61px);
+			left: calc(100% - 146px);
+			border: none;
+			min-width: 10rem;
+			min-height: 100vh;
+			border-radius: 5px;
+			padding: 10px;
+			z-index: 999;
+		}
+		.nav-mobile-padding{
+			padding: 5px 10px;
+		}
+		.nav-button-mobile-wrap{
+			padding-top: 4px;
+		}
+		/*akhir bagian navbar*/
+
+
+		/* awal bagian content */
+		.section-judul{
+			padding: 0px 20px;
+		}
+		.judul-section{
+			font-size: 1.5rem;
+		}
+		.info-section p{
+			font-size: .85rem;
+		}
+		.margin-top-row{
+			margin-top: .5rem;
+		}
+		.custome-card{
+			min-height: 170px;
+			border-radius: 55px;
+		}
+		.custome-card-body{
+			border-radius: 0px 0px 55px 55px;
+		}
+		#destinasi .card-title{
+			font-size: .8rem;
+
+		}
+		#destinasi .card-body{
+			padding-top: .5rem;
+			padding-bottom: .5rem;
+		}
+		.destinasi-margin-row{
+			margin-top: 0px;
+		}
+		.destinasi-mb
+		{
+			margin-bottom: 20px;
+		}
+		.d-sm-none{
+			display: none;
+		}
+		#event .card-shadow{
+			box-shadow: -1px 10px 29px -10px rgba(0,0,0,0.15);
+			border: none;
+		}
+		.card-img-c {
+			min-height: 150px;
+		}
+		#event .card {
+
+			min-height: 310px;
+			margin-bottom: 20px;
+
+		}
+		.event-card-title{
+			font-size: 16px;
+			min-height: 30px;
+			margin-bottom: .5rem
+		}
+		.tgl-event{
+			font-size: .7rem;
+		}
+		.lh-c{
+			font-size: 1rem;
+		}
+		#event .fa-calendar-alt{
+			margin-right: 10px;
+		}
+		.margin-top-button{
+			margin-top: 0px;
+		}
+		.btn-warning-c{
+			border-radius: 10px
+		}
+		/*akhir bagian content*/
+	}
+
+
