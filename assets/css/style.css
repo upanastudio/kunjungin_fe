@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap');
 
+
+
 html{
 	scroll-behavior: smooth;
 }
@@ -45,7 +47,7 @@ nav{
 }
 
 .blue-transparant{
-	background: rgba(0, 68, 90, .8) !important;
+	background: rgba(0, 68, 90, .9) !important;
 }
 .blue-solid{
 	background-color: #032A4C;
@@ -78,8 +80,47 @@ nav{
 	border-radius: 10px;
 	padding: 10px;
 }
-.navbar-mobile{
+#navbar_mobile{
+	display: block;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px 80px;
+	z-index: 99;
+}
+.navbar-mobile .btn-costume{
+	font-size: .75rem;
+}
+#navbar_mobile .dropdown-menu-mobile{
+	top: 15% !important;
+	left: calc(100% - 165px) !important;
+	border: none;
+	min-width: 19rem;
+	border-radius: 10px;
+	padding: 10px;
+}
+#navbar_mobile .dropdown-beranda{
+	top: calc(100% - 61px);
+	left: calc(100% - 146px);
+	border: none;
+	min-width: 10rem;
+	min-height: 100vh;
+	border-radius: 5px;
+	padding: 10px;
+	z-index: 999;
+}
+#navbar_mobile .dropdown-toggle::after {
 	display: none;
+}
+.nav-mobile-padding{
+	padding: 11px 80px !important;
+}
+.nav-button-mobile-wrap{
+	padding-top: 4px;
+}
+.navbar-mobile{
+	display: block;
 }
 .padding-nav{
 	padding: 0px 100px;
@@ -104,7 +145,8 @@ nav{
 }
 
 #jumbotron,#carouselExampleCaptions{
-	margin-top: -90px;
+	/*margin-top: -90px;*/
+	z-index: -1;
 
 }
 .jumbotron,#carouselExampleCaptions{
@@ -262,7 +304,8 @@ nav{
 }
 
 .card-img-c{
-	min-height: 250px
+	min-height: 250px;
+	object-fit:cover;
 }
 
 .ceritak-card{
@@ -839,6 +882,59 @@ select .selectpicker {
 	padding-right: 15rem;
 }
 
+
+.d-none-sm{
+	display: block;
+}
+.d-none-md{
+	display: block;
+}
+.d-none-lg{
+	display: none;
+}
+#menu-full{
+	display: flex;
+}
+#btn_beranda{
+	display: none;
+}
+.btn-masuk-full{
+	display: block;	
+}
+.btn-masuk-half{
+	display: none;
+}
+
+
+.list-group{
+	flex-direction: row;
+	margin-top: 4px;
+}
+.list-group-item{
+	border: none;
+	background-color: transparent;
+	padding: .25rem 0rem;
+	margin-right: 2.5rem;
+}
+.list-group a{
+	text-decoration: none;
+}
+.list-group .link-item{
+	color: white;
+	font-weight: 600;
+	font-size: 1rem;
+}
+.list-group .link-item:hover{
+	color: #b5d3f2;
+}
+.list-group .link-active{
+	border-bottom: 2px solid white;
+}
+.btn-menu-nav{
+	margin-left: 1.5rem;
+}
+
+
 /*Responsive section*/
 
 /*@media(min-width: 1366px){
@@ -852,9 +948,208 @@ select .selectpicker {
 	}
 	}*/
 
+	
+	@media (max-width: 991.98px) {
+		.d-none-sm{
+			display: block;
+		}
+		.d-none-md{
+			display: none;
+		}
+		.d-none-lg{
+			display: block;
+		}
+		#btn_beranda{
+			display: none;
+		}
+		#menu-full{
+			display: flex;
+		}
+		.btn-masuk-full{
+			display: none;	
+		}
+		.btn-masuk-half{
+			display: block;
+		}
+		
+		
+
+		#navbar_mobile
+		{
+			padding: 20px 3rem;
+		}
+		.nav-mobile-padding{
+			padding: 10px 3rem !important;
+		}
+		.list-group .link-item{
+			color: white;
+			font-weight: 600;
+			font-size: .85rem;
+		}
+		.list-group-item{
+			margin-right: 1rem;
+		}
+		.btn-menu-nav{
+			margin-left: .9rem;
+		}
+		#navbar_mobile .dropdown-menu-mobile{
+			top: 15% !important;
+			left: calc(100% - 170px) !important;
+			border: none;
+			min-width: 19rem;
+			border-radius: 10px;
+			padding: 10px;
+		}
+
+		
+	}
+
+	@media (max-width:  769px){
+		#navbar_mobile{
+			padding: 20px 2.5rem
+		}
+		.nav-mobile-padding {
+			padding: 10px 2.5rem !important;
+		}
+		#peta iframe{
+			width: 100%;
+			height:260px;
+		}
+		.list-group .link-item{
+			color: white;
+			font-weight: 600;
+			font-size: .8rem;
+		}
+		#navbar_mobile .dropdown-menu-mobile{
+			top: 15% !important;
+			left: calc(100% - 105px) !important;
+			border: none;
+			min-width: 19rem;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		.m-top-carousel {
+
+			margin-top: 0px;
+			position: absolute;
+			bottom: 40%;
+			left: calc(100% - 111%);
+
+		}
+		.carousel-inner p {
+			font-size: .85rem;
+		}
+		.carousel-item img{
+			width: 60%;
+		}
+
+		.judul-section{
+			font-size: 2.2rem;
+		}
+		.section-judul {
+			padding: 0px 2.5rem;
+			margin-top: 5rem;
+		}
+
+		.custome-card {
+			min-height: 170px;
+
+		}
+		.card-image-destinasi {
+			height: 170px;
+			border-radius: 65px;
+
+		}
+		.custome-card-body{
+			border-radius: 0px 0px 65px 65px;
+		}
+		.card-title{
+			font-size: .9rem;
+		}
+		.info-section p {
+			line-height: 40px;
+			font-size: 1.4rem;
+
+		}
+		.wrap-card-cerita{
+			margin-bottom: 40px;
+		}
+		.cerita-body img{
+			width: 70%
+		}
+		.pemberi-cerita{
+			font-weight: 600;
+			font-size: 1rem;
+		}
+		.card-image-cerita{
+			height: 320px;
+		}
+		.ceritak-card{
+			height: 320px;
+		}
+		.destinasi-margin-row{
+			margin-top: .0rem;
+		}
+
+	}
+
+
+
+	@media(max-width: 653px){
+		.list-group .link-item{
+			color: white;
+			font-weight: 600;
+			font-size: .7rem;
+		}
+		.list-group-item{
+			margin-right: .7rem;
+		}
+		.navbar-mobile .btn-costume {
+			font-size: .55rem;
+		}
+		.list-group {
+			margin-top: 0px;
+
+		}
+		#navbar_mobile .dropdown-menu-mobile{
+			top: 15% !important;
+			left: calc(100% - 75px) !important;
+			border: none;
+			min-width: 19rem;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		.padding-row-button {
+
+			padding-left: 1rem;
+			padding-right: 1rem;
+
+		}
+
+	}
+
+
 
 
 	@media(max-width: 575.98px){
+		.d-none-sm{
+			display: none;
+		}
+		.d-none-md{
+			display: block;
+		}
+		.d-none-lg{
+			display: block;
+		}
+		#btn_beranda{
+			display: block;
+		}
+		#menu-full{
+			display: none;
+		}
+		.btn-masuk-half{
+			display: none;
+		}
 		body{
 			-webkit-overflow-scrolling: touch;
 		}
@@ -906,7 +1201,7 @@ select .selectpicker {
 			position: fixed;
 			top: 0;
 			left: 0;
-			padding: 20px 10px;
+			padding: 20px 1.1rem;
 			z-index: 99;
 		}
 		.navbar-mobile .btn-costume{
@@ -914,9 +1209,7 @@ select .selectpicker {
 		}
 		#navbar_mobile .dropdown-menu-mobile{
 			top: 15% !important;
-			/*left: calc(100% - 302px)!important;*/
 			left: calc(100% - 31px) !important;
-			/*left: calc(100% - 93px) !important;*/
 			border: none;
 			min-width: 19rem;
 			border-radius: 10px;
@@ -936,7 +1229,7 @@ select .selectpicker {
 			display: none;
 		}
 		.nav-mobile-padding{
-			padding: 8.5px 10px !important;
+			padding: 8.5px 1.1rem !important;
 		}
 		.nav-button-mobile-wrap{
 			padding-top: 4px;
@@ -1080,11 +1373,15 @@ select .selectpicker {
 		.margin-area-lain{
 			margin-top: 2rem;
 		}
+		.owl-theme .owl-nav.disabled + .owl-dots {
+			margin-top: 15px !important;
+		}
 		
 
 
 		#kontak{
 			margin-bottom: 3rem;
+			margin-top: 0px !important;
 		}
 		#kontak .judul-section{
 			margin-top: 2rem;
