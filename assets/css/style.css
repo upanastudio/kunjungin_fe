@@ -1090,12 +1090,15 @@ select .selectpicker {
 		.destinasi-margin-row{
 			margin-top: .0rem;
 		}
+		.destinasi-mb{
+			margin-bottom: 20px;
+		}
 
 	}
 
 
 
-	@media(max-width: 653px){
+	@media(max-width: 691px){
 		.list-group .link-item{
 			color: white;
 			font-weight: 600;
@@ -1125,11 +1128,14 @@ select .selectpicker {
 			padding-right: 1rem;
 
 		}
+		.card-title {
+			font-size: .65rem;
+		}
 
 	}
 
-
-
+	
+	
 
 	@media(max-width: 575.98px){
 		.d-none-sm{
