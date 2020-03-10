@@ -18,81 +18,6 @@
 	
 </head>
 <body>
-	<nav id="navbarx" class="navbar sticky-top navbar-expand-lg navbar-light bg-light transparant mt-4 navbar-m-mobile">
-		
-		<button id="btn-navbar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse padding-nav" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active  mr-4">
-					<a class="nav-link" href="index.html">BERANDA <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link " href="destinasi.html">DESTINASI</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="event.html">EVENT</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="cerita.html">CERITA</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="kontak.html">KONTAK</a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<button  class="btn btn-costume btn-icon btn-secondary mr-4 btn-gray">
-					<i class="fas fa-search"></i>
-				</button>
-				<div class="dropdown">
-					<button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-suitcase-rolling"></i>
-					</button>
-					<div class="dropdown-menu card-shadow" aria-labelledby="dropdownMenuButton">
-						<h6 class="text-center mb-2" style="font-weight: 500">Your Travel Plan</h6>
-						<hr>
-						<div class="list-travel-plan">
-							<div class="travel-plan">
-								<div class="row">
-									<div class="col-9">
-										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-											<span class="nama-lokasi" name="nama-lokasi">Pantai Losari</span><br>
-											<span class="lokasi" name="lokasi">Makassar</span>
-										</div>
-									</div>
-									<div class="col-3">
-										<button class="btn btn-outline-danger">
-											<i class="fas fa-trash-alt"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="travel-plan">
-								<div class="row">
-									<div class="col-9">
-										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-											<span class="nama-lokasi" name="nama-lokasi">Pulau Koidingare Keke</span><br>
-											<span class="lokasi" name="lokasi">Makassar</span>
-										</div>
-									</div>
-									<div class="col-3">
-										<button class="btn btn-outline-danger">
-											<i class="fas fa-trash-alt"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<button class="btn btn-warning btn-warning-c full-width">
-							<i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
-						</button>
-					</div>
-				</div>
-				<a href="login.html" class="btn btn-costume btn-secondary btn-gray ml-4">MASUK ATAU DAFTAR</a>
-			</form>
-		</div>
-	</nav>
 	<div id="navbar_mobile" class="navbar-mobile">
 		<div class="row">
 			<div class="col-6">
@@ -106,13 +31,30 @@
 						<a class="dropdown-item" href="#">Something else here</a>
 					</div>
 				</div>
+				<ul id="menu-full" class="list-group list-group-horizontal">
+					<li class="list-group-item link-active">
+						<a class="link-item"  href="beranda.html">BERANDA</a>
+					</li>
+					<li class="list-group-item">
+						<a class="link-item"  href="destinasi.html">DESTINASI</a>
+					</li>
+					<li class="list-group-item">
+						<a class="link-item"  href="event.html">EVENT</a>
+					</li>
+					<li class="list-group-item">
+						<a class="link-item"  href="cerita.html">CERITA</a>
+					</li>
+					<li class="list-group-item">
+						<a class="link-item"  href="kontak.html">KONTAK</a>
+					</li>
+				</ul>
 			</div>
 			<div class="col-6 nav-button-mobile-wrap">
 				<div class="form-inline ">
 					<button  class="btn btn-sm btn-costume btn-icon btn-secondary btn-gray ml-auto">
 						<i class="fas fa-search"></i>
 					</button>
-					<div class="dropdown ml-4">
+					<div class="dropdown btn-menu-nav ">
 						<button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-suitcase-rolling"></i>
 						</button>
@@ -156,691 +98,31 @@
 							</button>
 						</div>
 					</div>
+					<a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-full">MASUK ATAU DAFTAR</a>
+					<a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-half">MASUK / DAFTAR</a>
 				</div>	
 			</div>
 		</div>
 	</div>
 	<!-- Awal Carousel -->
 	<section id="carousel-web" class="carousel-web">
-		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-			<div class="layer">
-				<div class="row">
-					<div class="col-sm-6 m-top-carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#myCarousel" data-slide-to="1"></li>
-							<li data-target="#myCarousel" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img style="opacity: 0" src="assets/media/bg/solid_bg.png" class="d-block w-100" alt="...">
-								<div class="carousel-caption d-md-block">
-									<img src="assets/media/logo/logo.svg" width="400px" alt="">
-									<p class="mt-3">
-										
-										Travelling harusnya gak sekedar berkunjung tapi lebih dari itu. rasakan sensasi traveling yang beda bersama kunjungin.
-									</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img style="opacity: 0" src="assets/media/bg/solid_bg.png" class="d-block w-100" alt="...">
-								<div class="carousel-caption d-md-block">
-									<img src="assets/media/logo/logo.svg" width="400px" alt="">
-									<p class="mt-3">
-										
-										Travelling harusnya gak sekedar berkunjung tapi lebih dari itu. rasakan sensasi traveling yang beda bersama kunjungin.
-									</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img style="opacity: 0" src="assets/media/bg/solid_bg.png" class="d-block w-100" alt="...">
-								<div class="carousel-caption d-md-block">
-									<img src="assets/media/logo/logo.svg" width="400px" alt="">
-									<p class="mt-3">
-										Explore Sulawesi Selatan dengan Kunjungin dan Rasakan Pengalaman yang Memorable dan Enjoyful.
-									</p>
-								</div>
-							</div>
-						</div>
+		<div id="carouselDestinasi" class="carousel slide carousel-destinasi" data-ride="carousel">
+			<div class="img-bg-wrapper">
+				<img class="img-bg" src="assets/media/bg/beach.jpg" alt="" style="width: 100vw">
+				<div class="layer">
+					<div class="text-center">
+						<h1 class="clr-white jdl-jumbotron pd-jumbotron">PANTAI</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>	
 	<!-- Akhir Carousel -->
-	<!-- Awal Destinasi -->
-	<section id="destinasi" class="section-judul">
-		<div class="row">
-			<div class="col">
-				<h1 class="judul-section">Destinasi</h1>
-			</div>
-		</div>
-		<div class="row margin-top-row">
-			<div class="col-sm-6 info-section">
-				<p>Rencanakan perjalananmu explore sulawesi selatan dengan Kunjugin, pilih kategori destinasi yang ingin kamu explore sesuai dengan mood travelling kamu.</p>
-			</div>
-		</div>
-		<div class="row mt-4">
-			<div class=" col-6 col-sm-3 destinasi-mb">
-				<a class="destinasi_link " href="#">
-					<div class="card  custome-card text-center">
-						<img class="card-image-destinasi" src="assets/media/card-bg/adventure.jpg" alt="" style="">
-						<div style="" class="card-body custome-card-body">
-							<h5 class="card-title">ADVENTURE</h5>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class=" col-6 col-sm-3 destinasi-mb">
-				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center ">
-						<img class="card-image-destinasi" src="assets/media/card-bg/beach.jpg" alt="" style="">
-						<div style="" class="card-body custome-card-body">
-							<h5 class="card-title">PANTAI</h5>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class=" col-6 col-sm-3 destinasi-mb">
-				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center ">
-						<img class="card-image-destinasi" src="assets/media/card-bg/hiking.jpg" alt="" style="">
-						<div style="" class="card-body custome-card-body">
-							<h5 class="card-title">HIKING</h5>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class=" col-6 col-sm-3 destinasi-mb">
-				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center ">
-						<img class="card-image-destinasi" src="assets/media/card-bg/water-activities.jpg" alt="" style="">
-						<div style="" class="card-body custome-card-body">
-							<h5 class="card-title">WATER ACTIVITIES</h5>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="row destinasi-margin-row">
-			<div class=" col-6 col-sm-3 destinasi-mb">
-				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center">
-						<img class="card-image-destinasi" src="assets/media/card-bg/sejarah.jpg" alt="" style="">
-						<div style="" class="card-body custome-card-body">
-							<h5 class="card-title">SEJARAH</h5>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class=" col-6 col-sm-3 destinasi-padding">
-				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center">
-						<img class="card-image-destinasi" src="assets/media/card-bg/kota.jpg" alt="" style="">
-						<div style="" class="card-body custome-card-body">
-							<h5 class="card-title">KOTA</h5>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class=" col-6 col-sm-3 destinasi-padding">
-				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center ">
-						<img class="card-image-destinasi" src="assets/media/card-bg/tour.jpg" alt="" style="">
-						<div style="" class="card-body custome-card-body">
-							<h5 class="card-title">TOURS / GUIDE</h5>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class=" col-6 col-sm-3 destinasi-padding">
-				<a class="destinasi_link" href="#">
-					<div class="card  custome-card text-center">
-						<img class="card-image-destinasi" src="assets/media/card-bg/leisure.jpg" alt="" style="">
-						<div style="" class="card-body custome-card-body">
-							<h5 class="card-title">LEISURE</h5>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</section>
-	<!-- Akhir Destinasi -->
-	<!-- Awal Event -->
-	<section id="event" class="section-judul">
-		<div class="row">
-			<div class="col">
-				<h1 class="judul-section">Event</h1>
-			</div>
-		</div>
-		<div class="row margin-top-row">
-			<div class="col-sm-6 info-section">
-				<p>Traveling rame-rame di events yang diadakan oleh komunitas lokal daerah yang pingin kamu kunjugin.</p>
-			</div>
-		</div>
-		<div class="row mt-4">
-			<div class="col-md-12 col-lg-4 destinasi-padding">
-				<div class="card card-shadow">
-					<img src="assets/media/card-bg/sejarah.jpg" class="card-img-top card-img-c card-img-mbl-c " alt="...">
-					<div class="card-body">
-						<h5 class="card-title event-card-title">Festifal Budaya di Pusat Wisata Barru</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="row">
-							<div class="col">
-								<p class="tgl-event">Tanggal Event</p>
-								<p class="tgl-event lh-c"> <i class="far fa-calendar-alt"></i> 10 April 2020 - 10 Mei 2020</p>
-							</div>
-							<div class="col text-right d-sm-none">
-								<a href="event_detail.html" class="btn btn-secondary btn-lihat-detail">Lihat Detail</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-12 col-lg-4 destinasi-padding">
-				<div class="card card-shadow">
-					<img src="assets/media/card-bg/fun-run.jpg" class="card-img-top card-img-c card-img-mbl-c" alt="...">
-					<div class="card-body">
-						<h5 class="card-title event-card-title">Fun Run 2020 Bersama Komunitas Pecinta Alam</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="row">
-							<div class="col">
-								<p class="tgl-event">Tanggal Event</p>
-								<p class="tgl-event lh-c"> <i class="far fa-calendar-alt"></i> 10 April 2020 - 10 Mei 2020</p>
-							</div>
-							<div class="col text-right d-sm-none">
-								<a href="event_detail.html" class="btn btn-secondary btn-lihat-detail">Lihat Detail</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-12 col-lg-4 destinasi-padding">
-				<div class="card no-border card-shadow">
-					<img src="assets/media/card-bg/sejarah.jpg" class="card-img-top card-img-c card-img-mbl-c" alt="...">
-					<div class="card-body">
-						<h5 class="card-title event-card-title">Festifal Budaya di Pusat Wisata Barru</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						<div class="row">
-							<div class="col">
-								<p class="tgl-event">Tanggal Event</p>
-								<p class="tgl-event lh-c"> <i class="far fa-calendar-alt"></i>10 April 2020 - 10 Mei 2020</p>
-							</div>
-							<div class="col text-right d-sm-none">
-								<a href="event_detail.html" class="btn btn-secondary btn-lihat-detail">Lihat Detail</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 destinasi-padding margin-top-button text-center">
-				<a href="event.html" class="btn btn-warning btn-warning-c">
-					LIHAT EVENT LAINNYA
-				</a>
-			</div>
-		</div>
-	</section>
-	<!-- Akhir Event -->
-	<!-- Awal cerita kunjungin -->
-	<section id="cerita" class="section-judul">
-		<div class="row">
-			<div class="col">
-				<h1 class="judul-section">Cerita Kunjungin</h1>
-			</div>
-		</div>
-		<div class="row margin-top-row">
-			<div class="col-sm-6 info-section">
-				<p>Temukan rekomendasi daerah wisata dengan penggambaran yang lengkap melalui cerita dari tim kunjungin di sini.</p>
-			</div>
-		</div>
-		<div class="row mt-4">
-			<div class="col-md-6 col-lg-3 destinasi-padding">
-				<a href="#">
-					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card">
-							<img class="card-image-cerita" src="assets/media/card-bg/beach.jpg" alt="" style=""> 
-							<div class="card-body cerita-body">
-								<div class="row">
-									<div class="col-3">
-										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-									</div>
-									<div class="col-9 pt-1">
-										<span class="pemberi-cerita">Beth Steward</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="ceritanya">
-							<h6>
-								<span id="isi-cerita" name="isi-cerita">
-									Keindahan  Wisata Bahari Sulawesi Selatan
-								</span>
-							</h6>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-6 col-lg-3 destinasi-padding">
-				<a href="#">
-					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card">
-							<img class="card-image-cerita" src="assets/media/card-bg/sejarah.jpg" alt="" style="">  
-							<div class="card-body cerita-body">
-								<div class="row">
-									<div class="col-3">
-										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-									</div>
-									<div class="col-9 pt-1">
-										<span class="pemberi-cerita">Beth Steward</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="ceritanya">
-							<h6>
-								<span id="isi-cerita" name="isi-cerita">
-									Wisata Budaya yang Akan Membawamu ke Masa Lampau
-								</span>
-							</h6>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-6 col-lg-3 destinasi-padding">
-				<a href="#">
-					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card"> 
-							<img class="card-image-cerita" src="assets/media/card-bg/adventure.jpg" alt="" style=""> 
-							<div class="card-body cerita-body">
-								<div class="row">
-									<div class="col-3">
-										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-									</div>
-									<div class="col-9 pt-1">
-										<span class="pemberi-cerita">Beth Steward</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="ceritanya">
-							<h6>
-								<span id="isi-cerita" name="isi-cerita">
-									5 Pulau wajib Kamu Kunjungi di Indonesia
-								</span>
-							</h6>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-6 col-lg-3 destinasi-padding">
-				<a href="#">
-					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card">
-							<img class="card-image-cerita" src="assets/media/card-bg/kota.jpg" alt="" style=""> 
-							<div class="card-body cerita-body">
-								<div class="row">
-									<div class="col-3">
-										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-									</div>
-									<div class="col-9 pt-1">
-										<span class="pemberi-cerita">Beth Steward</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="ceritanya">
-							<h6>
-								<span id="isi-cerita" name="isi-cerita">
-									3 Wisata Budaya Warisan Masa Penjajahan
-								</span>
-							</h6>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-12 destinasi-padding destinasi-margin-row, text-center">
-				<div class="row padding-row-button">
-					<div class="col-md">
-						<button class="btn btn-warning  btn-warning-c">
-							<i class="fas fa-plus-circle fas-c"></i> UPLOAD CERITAMU
-						</button>
-					</div>
-					<div class="col-md">
-						<button style="cursor: default;" class="btn btn-transparant">
-							ATAU
-						</button>
-					</div>
-					<div class="col-md">
-						<button class="btn btn-secondary btn-secondary-c">
-							LIHAT CERITA LAINNYA
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Akhir cerita kunjungin -->
-	<!-- awal peta -->
-	<section id="peta" class="section-judul">
-		<div class="row">
-			<div class="col text-center">
-				<h1 class="judul-section">Peta Wisata Sulawesi Selatan</h1>
-			</div>
-		</div>
-		<div class="row mt-4">
-			<div class="col">
-				<div class="card card-shadow peta-card">
-					<div class="card-body peta-card" style="padding: 0px">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8126106199684!2d119.4031027143706!3d-5.133857753368861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02b011ce37ef%3A0x28ed3928c1b6cf23!2sBenteng%20Rotterdam%20Makassar!5e0!3m2!1sid!2sid!4v1583051220918!5m2!1sid!2sid"  frameborder="0" style="border:0;border-radius: 10px" allowfullscreen=""></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- akhir peta -->
-	<!-- Awal Area Wisata Lain -->
-	<section id="area-wisata-lain" class="section-judul judul-area-wisata-lain mt-5">
-		<div class="row">
-			<div class="col text-center">
-				<h1 class="judul-section clr-white">Kenali Area Wisata Lainnya di Sulawesi Selatan</h1>
-			</div>
-		</div>
-		<div class="row margin-area-lain">
-			<div class="col">
-				<div class="owl-carousel owl-theme">
-					<div class="item">
-						<a href="kota_detail.html">
-							<img class="card-shadow" src="assets/media/area/area-makassar.jpg" alt="">
-						</a>
-					</div>
-					<div class="item">
-						<a href="kota_detail.html">
-							<img class="card-shadow" src="assets/media/area/area-toraja.jpg" alt="">
-						</a>
-					</div>
-					<div class="item">
-						<a href="kota_detail.html">
-							<img class="card-shadow" src="assets/media/area/area-maros.jpg" alt="">
-						</a>
-					</div>
-					<div class="item">
-						<a href="kota_detail.html">
-							<img class="card-shadow" src="assets/media/area/area-pangkep.jpg" alt="">
-						</a>
-					</div>
-					<div class="item">
-						<a href="kota_detail.html">
-							<img class="card-shadow" src="assets/media/area/area-makassar.jpg" alt="">
-						</a>
-					</div>
-					<div class="item">
-						<a href="kota_detail.html">
-							<img class="card-shadow" src="assets/media/area/area-toraja.jpg" alt="">
-						</a>
-					</div>
-					<div class="item">
-						<a href="kota_detail.html">
-							<img class="card-shadow" src="assets/media/area/area-maros.jpg" alt="">
-						</a>
-					</div>
-					<div class="item">
-						<a href="kota_detail.html">
-							<img class="card-shadow" src="assets/media/area/area-pangkep.jpg" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Akhir Area Lain -->
-	<!-- Awal Kontak -->
-	<section id="kontak" class="section-judul">
-		<div class="row">
-			<div class="col-sm-6">
-				<h1 class="judul-section">Kontak</h1>
-				
-			</div>
-		</div>
-		<div class="row mt-4">
-			<div class="col-sm-6 info-section">
-				<h5>Yuk Kenalan</h5>
-				<p>Pingin kenalan atau sekedar menyapa kami? isi form berikut atau kunjungi media sosial kami</p>
-			</div>
-		</div>
-		<div class="row mt-4">
-			<div class="col-md">
-				<div class="card no-border">
-					<div class="card-body">
-						<form>
-							<div class="form-group">
-								<label for="nama">Nama Kamu</label>
-								<input type="text" class="form-control bg-input" id="nama" name="nama" placeholder="Masukkan Nama Kamu">
-							</div>
-							<div class="form-group">
-								<label for="email_telpon">Email/No Telpon</label>
-								<input type="text" class="form-control bg-input" id="email_telpon" name="email_telpon" placeholder="Masukkan email atau no. telepon">
-							</div>
-							<div class="form-group">
-								<label for="pertanyaan_kritik_saran">Pertanyaan,Kritik, dan Saran</label>
-								<textarea style="resize: none" class="form-control bg-input" id="pertanyaan_kritik_saran" rows="4"></textarea>
-							</div>
-							<button style="width: 100%" class="btn btn-warning btn-warning-c">
-								Kirim Pesanmu
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="col-md">
-				<div class="card no-border">
-					<div class="card-body body-follow-ig text-center rounded-lg" style="">
-						<p>Gambar Traveling yang kece ada juga loh disini, yuk follow</p>
-						<object type="image/svg+xml" data="assets/media/icon/instagram.svg" class="mb-2" width="55px"></object>
-						<a target="_blank" href="https://www.instagram.com/">
-							<p>@Kunjungin</p>
-						</a> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Akhir Kontak -->
-	<!-- Modal -->
-	<div class="modal fade" id="modal-plan-detail" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="position: relative;">
-			<div class="modal-content">
-				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;right: 10px;top: 10px">
-						<i class="fas fa-times-circle"></i>
-					</button>
-					<h5>Your plan on</h5>
-					<h1><span name="nama-lokasi">Pantai Losari</span></h1>
-					<h6 class="lokasi_destinasi" >
-						<i class="fas fa-map-marker-alt fas-c"></i>  <span name="lokasi-destinasi">Kota Makassar, Sulawesi Selatan</span>
-					</h6>
-					
-					<div class="row" style="margin-top:20px">
-						<div class="col-12">
-							<p>Daftar Kunjungan</p>
-						</div>
-						<div class="col-6">
-							<div class="card step-card">
-								<div class="card-body">
-									Transportasi Bus Pariwisata
-								</div>
-							</div>
-							<div class="card step-card">
-								<div class="card-body">
-									Makasn Siang di Coto Karebosi
-								</div>
-							</div>
-							<div class="card step-card">
-								<div class="card-body">
-									Menginap di Hotel
-								</div>
-							</div>
-							<div class="card step-card">
-								<div class="card-body">
-									Menikmati Center Point of Indonesia
-								</div>
-							</div>
-						</div>
-						<div class="col-6">
-							<div class="card step-card">
-								<div class="card-body">
-									Jalan - jalan di benteng Rotterdam
-								</div>
-							</div>
-							<div class="card step-card">
-								<div class="card-body">
-									Makan malam di Kampoeng Popsa
-								</div>
-							</div>
-							<div class="card step-card">
-								<div class="card-body">
-									Berkunjung ke mesjid 1000 Kubah
-								</div>
-							</div>
-							<div class="card step-card">
-								<div class="card-body">
-									Makan pisang peppe'
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Akhir Modal -->
-	<!-- Footer -->
-	<footer id="footer-desktop" class="page-footer font-small pt-2">
-		<div class="footer-padding" style="padding: 60px 90px">
-			<div class="row">
-				<div class="col-3 clr-white">
-					<img class="mb-4" src="assets/media/logo/logo.svg" width="70%" alt="">
-					<p class="clr-yellow">&copy; Kunjungin 2020</p>
-					<img class="mt-5" width="40%" src="assets/media/icon/logo_sulsel.svg" alt="">
-				</div>
-				<div class="col-4 clr-white">
-					<h4 class="footer-judul clr-yellow">Links</h4>
-					<ul style="list-style-type:none;">
-						<li>
-							<a href="">Cerita Kunjungin</a>
-						</li>
-						<li>
-							<a href="">Event</a>
-						</li>
-						<li>
-							<a href="">Visit Sulsel</a>
-						</li>
-						<li>
-							<a href="">Dinas Kebudayaan dan Kepariwisataan Provinsi Sulawesi Selatan</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-4 clr-white">
-					<h4 class="footer-judul clr-yellow">Support</h4>
-					<ul style="list-style-type:none;">
-						<li>
-							<div class="row">
-								<div class="col-1">
-									<i class="fa fa-phone "></i>
-								</div>
-								<div class="col-9">
-									<p>  +628522123123123</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="row">
-								<div class="col-1">
-									<i class="fa fa-envelope"></i>
-								</div>
-								<div class="col-9">
-									<p> </i> hello @kunjung.in</p>
-								</div>
-							</div>
-							
-						</li>
-						<li>
-							<div class="row">
-								<div class="col-1">
-									<i class="fa fa-map-marked-alt"></i>
-								</div>
-								<div class="col-9">
-									<p> Jl. Makassar, Makassar, 90112, Sulawesi Selatan</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer -->
-	<!-- Footer -->
-	<footer id="footer-mobile" class="page-footer font-small pt-4 section-judul">
-		<div class="row">
-			<div class="col-6">
-				<img class="mb-1" src="assets/media/logo/logo.svg" width="80%" alt="">
-				<p class="copyright clr-yellow">&copy; Kunjungin 2020</p>
-				<img class="" width="70%" src="assets/media/icon/logo_sulsel.svg" alt="">
-			</div>
-			<div class="col-12 mt-4"> 
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle btn-footer full-width" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Link
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Cerita Kunjungin</a>
-						<a class="dropdown-item" href="#">Event</a>
-						<a class="dropdown-item" href="#">Visit Sulsel</a>
-						<a class="dropdown-item" href="#">Dinas Kebudayaan dan Kepariwisataan <br> ProvinsiSulawesi Selatan</a>
-						
-					</div>
-				</div>
-				<div class="dropdown mt-3">
-					<button class="btn btn-secondary dropdown-toggle btn-footer full-width" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Support
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<span class="dropdown-item">
-							<div class="row">
-								<div class="col-1">
-									<i class="fa fa-phone "></i>
-								</div>
-								<div class="col-9">
-									<p>  +628522123123123</p>
-								</div>
-							</div>
-						</span>
-						<span class="dropdown-item">
-							<div class="row">
-								<div class="col-1">
-									<i class="fa fa-envelope"></i>
-								</div>
-								<div class="col-9">
-									<p> </i> hello @kunjung.in</p>
-								</div>
-							</div>
-						</span>
-						<span class="dropdown-item">
-							<div class="col-1">
-								<i class="fa fa-map-marked-alt"></i>
-							</div>
-							<div class="col-9">
-								<p> Jl. Makassar, Makassar, <br>90112, Sulawesi Selatan</p>
-							</div>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer -->
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat sem at mauris suscipit porta. Cras metus velit, elementum sed pellentesque a, pharetra eu eros. Etiam facilisis placerat euismod. Nam faucibus neque arcu, quis accumsan leo tincidunt varius. In vel diam enim. Sed id ultrices ligula. Maecenas at urna arcu. Sed quis nulla sapien. Nam felis mauris, tincidunt at convallis id, tempor molestie libero. Quisque viverra sollicitudin nisl sit amet hendrerit. Etiam sit amet arcu sem. Morbi eu nibh condimentum, interdum est quis, tempor nisi. Vivamus convallis erat in pharetra elementum. Phasellus metus neque, commodo vitae venenatis sed, pellentesque non purus. Pellentesque egestas convallis suscipit. Ut luctus, leo quis porta vulputate, purus purus pellentesque ex, id consequat mi nisl quis eros. Integer ornare libero quis risus fermentum consequat. Mauris pharetra odio sagittis, vulputate magna at, lobortis nulla. Proin efficitur, nisi vel finibus elementum, orci sem volutpat eros, eget ultrices velit mi sagittis massa. Vestibulum sagittis ullamcorper cursus. Ut turpis dolor, tempor ut tellus et, sodales ultricies elit. Ut pharetra tristique est ac dictum. Integer ac consectetur purus, vehicula efficitur urna. Donec ultrices accumsan ipsum vitae faucibus. Quisque malesuada ex nisi, a bibendum erat commodo in. Pellentesque suscipit varius gravida. Nam scelerisque est sit amet laoreet pharetra. Vivamus quis ligula sed lacus mattis mollis. Vivamus facilisis orci rutrum nulla porta dignissim. Fusce fermentum id nibh laoreet volutpat. Suspendisse venenatis, risus sed euismod finibus, risus arcu fringilla augue, nec vulputate felis nisl et enim. In ornare, massa a cursus cursus, nisl mi ornare mauris, nec porttitor risus erat ut odio. Integer malesuada hendrerit purus ullamcorper molestie. Fusce imperdiet orci vitae purus suscipit rutrum. Nunc ac metus ac mi commodo sagittis at in leo. Vestibulum est lorem, consequat vel dictum non, imperdiet eu felis. Vivamus molestie sapien id quam rutrum, eget hendrerit eros finibus. Morbi in justo at felis blandit fringilla at faucibus purus. Donec ac aliquet purus, vitae tincidunt nulla. Curabitur ultricies auctor quam tincidunt molestie. Quisque tristique metus nunc, in pretium lectus dictum at. Nullam scelerisque placerat dui, maximus commodo augue mollis quis. Nulla gravida ex sed lectus consectetur laoreet et vel ex. Proin pretium libero non leo mattis, ullamcorper scelerisque diam hendrerit. Quisque gravida, dui a porttitor interdum, velit quam pulvinar arcu, eu blandit sapien velit ut lacus. Vestibulum congue eleifend odio, in aliquam leo sodales sed. Nam eu lacinia ipsum. Aenean sagittis nisl eu sodales lacinia. Duis nulla ante, suscipit a nibh sit amet, blandit luctus elit. Etiam a pellentesque lectus. Morbi pulvinar dolor a mi volutpat, sit amet finibus est mattis. Nunc egestas feugiat odio sed mollis. Vestibulum accumsan, velit id facilisis fermentum, nisi risus faucibus nulla, non condimentum mauris tortor eu dui. In urna ante, consectetur ac nunc in, hendrerit elementum lacus. Pellentesque pharetra felis sit amet erat pellentesque malesuada. Sed vel placerat lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque sit amet bibendum diam, sit amet convallis mi. Sed tristique leo sit amet urna lacinia ullamcorper sit amet non sem. Aliquam erat volutpat. Etiam accumsan sit amet odio sit amet posuere. Sed lobortis auctor est a mollis. Duis leo leo, condimentum finibus magna et, tempus tincidunt nisi. Praesent quis molestie elit. Mauris ante orci, luctus et lectus nec, vestibulum suscipit sem. Duis consequat felis id est pellentesque, sit amet vulputate dui commodo. Vestibulum efficitur, elit eu mattis faucibus, turpis nisl lacinia sapien, nec mattis ante massa non felis. Nulla at gravida orci, nec blandit nisl. Duis sed erat a tortor accumsan scelerisque. Donec congue quam vel urna consequat, id sagittis ante pretium. Vivamus posuere, arcu nec tincidunt eleifend, ligula metus convallis odio, nec pulvinar dui leo at tortor. Suspendisse potenti. Sed a euismod mi. Maecenas suscipit luctus enim, ut facilisis elit venenatis ut. Aenean ullamcorper at erat a dictum. Donec vel nulla elit. Aliquam pharetra massa elit, sed maximus lectus mollis ut. Phasellus a ligula et neque fringilla efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam euismod lobortis enim et condimentum. Suspendisse pharetra faucibus odio at faucibus. Cras lacinia bibendum orci ut varius. Maecenas consectetur sem felis, et ornare dolor gravida et. Vestibulum fermentum eleifend risus. Pellentesque consectetur sapien eu sagittis semper. Suspendisse nec semper diam, sit amet dignissim felis. Mauris placerat laoreet dui, a accumsan nunc dapibus at. Sed ac tellus consequat, mattis libero et, ultrices dui. Suspendisse semper maximus fringilla. Aliquam finibus fermentum tristique. Proin dui purus, finibus quis fermentum in, congue non arcu. Cras ornare, sapien in bibendum eleifend, nulla massa interdum ipsum, et congue neque ex vel odio. Vivamus et tincidunt lacus. Nam egestas vestibulum fringilla. Mauris gravida vestibulum cursus. Nam auctor lacinia nunc, sed consequat lorem dapibus quis. Phasellus sagittis viverra bibendum. Fusce tristique nec dui quis tempus. Phasellus eu viverra ligula. Etiam ullamcorper elit id mi sagittis, id consectetur neque congue. Proin eget nunc nec mi venenatis ullamcorper. Aliquam sit amet metus dapibus, tristique leo sed, porttitor turpis. Nam condimentum sagittis dignissim. Aenean ac tortor id massa interdum dapibus sit amet quis nunc. Quisque pretium ac dolor a venenatis. Maecenas turpis arcu, sodales vitae sapien et, lacinia placerat felis. Integer nec condimentum orci. Vivamus ac dignissim ipsum. In gravida laoreet venenatis. Fusce eget tincidunt leo, at interdum arcu. Mauris luctus nunc eu lectus posuere, non malesuada nisi molestie. Donec at dui viverra, ultricies justo eget, dapibus metus. Proin ut sem ultrices, eleifend mi vitae, lacinia ex. Proin venenatis sapien nec lacus luctus accumsan. Donec aliquet nisi id elit fringilla pulvinar. Mauris eu est at neque bibendum rhoncus ut maximus purus. Duis lacinia justo luctus ultricies faucibus. Phasellus quis lorem bibendum, eleifend massa eu, vulputate urna. Sed et sodales dui. Suspendisse ac neque ut leo placerat vehicula. Morbi volutpat nunc ac finibus mollis. Curabitur facilisis, purus sed placerat blandit, risus massa sollicitudin dolor, ac consectetur massa odio sed.</p>
+
+
+
 	<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -848,17 +130,13 @@
 	<script>
 		window.onscroll = function() {myFunction()};
 		var navbar = document.getElementById("navbar_mobile");
-		var navbarDesktop = document.getElementById("navbarx");
 		var sticky = navbar.offsetTop;
-		// sticky = stick + 40;
 		function myFunction() {
 			if (window.pageYOffset > sticky) {
-				navbarDesktop.classList.add("blue-transparant");
-				navbarDesktop.classList.remove("transparant");
+
 				navbar.classList.add("sticky","nav-mobile-padding","blue-transparant");
 			} else {
-				navbarDesktop.classList.remove("blue-transparant");
-				navbarDesktop.classList.add("transparant");
+
 				navbar.classList.remove("sticky","nav-mobile-padding","blue-transparant");
 			}
 		}
@@ -879,7 +157,7 @@
 						nav:false
 					},
 					600:{
-						items:4,
+						items:3,
 						nav:false
 					},
 					1000:{
@@ -889,6 +167,25 @@
 					}
 				}
 			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			var maxLength = 175;
+			$(".card-text").each(function(){
+				var myStr = $(this).text();
+				if($.trim(myStr).length > maxLength){
+					var newStr = myStr.substring(0, maxLength);
+					var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+					$(this).empty().html(newStr);
+					$(this).append(' <a href="destinasi_detail.html" class="read-more">Selengkapnya..</a>');
+
+				}
+			});
+		''	// $(".read-more").click(function(){
+			// 	$(this).siblings(".more-text").contents().unwrap();
+			// 	$(this).remove();
+			// });
 		});
 	</script>
 </body>
