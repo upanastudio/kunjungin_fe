@@ -1081,7 +1081,7 @@ select .selectpicker {
 		border-radius: 0px 0px 65px 65px;
 	}
 	.card-title{
-		font-size: 1rem;
+		font-size: .8rem;
 	}
 	.info-section p {
 		line-height: 40px;
