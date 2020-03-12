@@ -1014,7 +1014,7 @@ select .selectpicker {
 
 }
 
-@media (max-width:  769px){
+@media (max-width:  820px){
 	#navbar_mobile{
 		padding: 20px 1.5rem
 	}
