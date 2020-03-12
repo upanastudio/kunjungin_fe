@@ -76,7 +76,6 @@ nav{
 	top: 120%;
 	left: -140px;
 	border: none;
-	min-width: 19rem;
 	border-radius: 10px;
 	padding: 10px;
 }
@@ -99,16 +98,6 @@ nav{
 	min-width: 19rem;
 	border-radius: 10px;
 	padding: 10px;
-}
-#navbar_mobile .dropdown-beranda{
-	top: calc(100% - 61px);
-	left: calc(100% - 146px);
-	border: none;
-	min-width: 10rem;
-	min-height: 100vh;
-	border-radius: 5px;
-	padding: 10px;
-	z-index: 999;
 }
 #navbar_mobile .dropdown-toggle::after {
 	display: none;
@@ -158,7 +147,7 @@ nav{
 #carouselDestinasi{
 	/*background: url("../media/bg/beach.jpg") no-repeat top center;*/
 	background-size: cover;
-	margin-top: -90px;
+	/*margin-top: -90px;*/
 }
 
 .carousel-inner p{
@@ -366,7 +355,7 @@ nav{
 
 #area-wisata-lain{
 	background: url("../media/bg/area-lain.png") no-repeat top center;
-	min-height: 90vh;
+	height: 90vh;
 	background-size: cover;
 }
 
@@ -932,687 +921,862 @@ select .selectpicker {
 .btn-menu-nav{
 	margin-left: 1.5rem;
 }
+.logo-nav{
+	padding-bottom: 0px;
+	margin-top: 2px;
+	margin-right: 1.25rem;
+}
+.logo-nav img{
+	width: 100px;
+}
+#main-content{
+	margin-top: 1rem;
+	padding: 
+}
+#btn-filter{
+	margin-top: 31.5px;
+}
+.card-img-destinasi {
+	border-radius: 8px 8px 0px 0px;
+}
+
+
 
 
 /*Responsive section*/
 
-/*@media(min-width: 1366px){
-	.destinasi-padding{
-		padding: 0px 15px;
+@media (max-width: 1281px){
+	.padding-row-button{
+		padding-left: 12rem;
+		padding-right: 12rem;
+	}
+	.btn-how-to{
+		margin-bottom: .8rem;
 	}
 }
-@media(min-width: 1600px){
-	.destinasi-padding{
-		padding: 0px 40px;
+
+
+@media (max-width: 991.98px) {
+	.d-none-sm{
+		display: block;
 	}
-	}*/
-	@media (max-width: 1281px){
-		.padding-row-button{
-			padding-left: 12rem;
-			padding-right: 12rem;
-		}
+	.d-none-md{
+		display: none;
 	}
-
-	
-	@media (max-width: 991.98px) {
-		.d-none-sm{
-			display: block;
-		}
-		.d-none-md{
-			display: none;
-		}
-		.d-none-lg{
-			display: block;
-		}
-		#btn_beranda{
-			display: none;
-		}
-		#menu-full{
-			display: flex;
-		}
-		.btn-masuk-full{
-			display: none;	
-		}
-		.btn-masuk-half{
-			display: block;
-		}
-		
-		
-
-		#navbar_mobile
-		{
-			padding: 20px 3rem;
-		}
-		.nav-mobile-padding{
-			padding: 10px 3rem !important;
-		}
-		.list-group .link-item{
-			color: white;
-			font-weight: 600;
-			font-size: .85rem;
-		}
-		.list-group-item{
-			margin-right: 1rem;
-		}
-		.btn-menu-nav{
-			margin-left: .9rem;
-		}
-		#navbar_mobile .dropdown-menu-mobile{
-			top: 15% !important;
-			left: calc(100% - 170px) !important;
-			border: none;
-			min-width: 19rem;
-			border-radius: 10px;
-			padding: 10px;
-		}
-
-		
+	.d-none-lg{
+		display: block;
 	}
-
-	@media (max-width:  769px){
-		#navbar_mobile{
-			padding: 20px 1.5rem
-		}
-		.nav-mobile-padding {
-			padding: 10px 1.5rem !important;
-		}
-		#peta iframe{
-			width: 100%;
-			height:260px;
-		}
-		.list-group .link-item{
-			color: white;
-			font-weight: 600;
-			font-size: .8rem;
-		}
-		#navbar_mobile .dropdown-menu-mobile{
-			top: 15% !important;
-			left: calc(100% - 105px) !important;
-			border: none;
-			min-width: 19rem;
-			border-radius: 10px;
-			padding: 10px;
-		}
-		.m-top-carousel {
-
-			margin-top: 0px;
-			position: absolute;
-			bottom: 40%;
-			left: calc(100% - 111%);
-
-		}
-		.carousel-inner p {
-			font-size: .85rem;
-		}
-		.carousel-item img{
-			width: 60%;
-		}
-
-		.judul-section{
-			font-size: 2.2rem;
-		}
-		.section-judul {
-			padding: 0px 2.5rem;
-			margin-top: 5rem;
-		}
-		#main-content{
-			margin-top: 1.5rem;
-		}
-		.filter-row{
-			padding-left: 4rem;
-			padding-right: 4rem;
-		}
-
-		.custome-card {
-			min-height: 170px;
-
-		}
-		.card-image-destinasi {
-			height: 170px;
-			border-radius: 65px;
-
-		}
-		.custome-card-body{
-			border-radius: 0px 0px 65px 65px;
-		}
-		.card-title{
-			font-size: 1rem;
-		}
-		.info-section p {
-			line-height: 40px;
-			font-size: 1.4rem;
-
-		}
-		.wrap-card-cerita{
-			margin-bottom: 40px;
-		}
-		.cerita-body img{
-			width: 70%
-		}
-		.pemberi-cerita{
-			font-weight: 600;
-			font-size: 1rem;
-		}
-		.card-image-cerita{
-			height: 320px;
-		}
-		.ceritak-card{
-			height: 320px;
-		}
-		.destinasi-margin-row{
-			margin-top: .0rem;
-		}
-		.destinasi-mb{
-			margin-bottom: 20px;
-		}
-		#area-wisata-lain .judul-section{
-			margin-top: 10rem;
-		}
-		#kontak{
-			margin-top: -20rem;
-			padding: 2rem 2.5rem;
-		}
-		.body-follow-ig {
-			padding: 5.5rem 1.5rem;
-			background-color: #5fffe80d;
-		}
-		#area-wisata-lain .section-judul{
-			padding: 0px 4rem;
-		}
-		.footer-padding{
-			padding: 2rem 2.5rem;
-		}
-		#footer-desktop{
-			margin-top: 2rem;
-		}
-
-		#carouselDestinasi{
-			margin-top: 0px;
-		}
-		.pd-jumbotron {
-			padding-top: 9rem;
-		}
-		.jdl-jumbotron{
-			font-size: 3rem;
-		}
-		.carousel-destinasi,
-		.img-bg-wrapper {
-			height: 230px;
-		}
-		.logo-nav {
-			margin-top: 4px;
-		}
-		.logo-nav img{
-			width: 90px;
-		}
-		.nav-link{
-			padding: 0rem 1rem;
-			padding-top: 0.4rem;
-			margin-right: 10px;
-		}
-		#btn-filter{
-			margin-top: 30.6px;
-		}
-		.margin-cs{
-			margin-top: .5rem !important;
-		}
-		.card-img-c{
-			min-height: 120px;
-		}
-		.card-img-destinasi {
-
-			height: 170px;
-			border-radius: 10px 10px 0px 0px;
-
-		}
-		.destinasi-card-title{
-			font-size: 1.1rem;
-		}
-		.btn-how-to {
-			margin-bottom: .8rem;
-		}
-		#body-destinasi footer{
-			margin-top: -23rem;
-		}
+	#btn_beranda{
+		display: none;
 	}
-
-
-	@media(max-width: 691px){
-		.list-group .link-item{
-			color: white;
-			font-weight: 600;
-			font-size: .7rem;
-		}
-		.list-group-item{
-			margin-right: .7rem;
-		}
-		.navbar-mobile .btn-costume {
-			font-size: .55rem;
-		}
-		.list-group {
-			margin-top: 0px;
-
-		}
-		#navbar_mobile .dropdown-menu-mobile{
-			top: 15% !important;
-			left: calc(100% - 75px) !important;
-			border: none;
-			min-width: 19rem;
-			border-radius: 10px;
-			padding: 10px;
-		}
-		.padding-row-button {
-
-			padding-left: 1rem;
-			padding-right: 1rem;
-
-		}
-		.card-title {
-			font-size: .75rem;
-		}
-		#event .card-title{
-			font-size: .95rem;
-		}
-		.cerita-body img {
-			width: 85%;
-		}
-		#area-wisata-lain .judul-section {
-			margin-top: 12rem;
-		}
-
-		#kontak{
-			margin-top: -18rem;
-		}
-		#event .tgl-event{
-			font-size: .75rem;
-		}
-		.logo-nav img{
-			width: 70px;
-		}
-
-
+	#menu-full{
+		display: flex;
+	}
+	.btn-masuk-full{
+		display: none;	
+	}
+	.btn-masuk-half{
+		display: block;
 	}
 
 
 
-
-	@media(max-width: 579px){
-		.d-none-sm{
-			display: none;
-		}
-		.d-none-md{
-			display: block;
-		}
-		.d-none-lg{
-			display: block;
-		}
-		#btn_beranda{
-			display: block;
-		}
-		#menu-full{
-			display: none;
-		}
-		.btn-masuk-half{
-			display: none;
-		}
-		body{
-			-webkit-overflow-scrolling: touch;
-		}
-		/* bagian navbar */
-		#carouselExampleCaptions{
-			min-height: 103vh;
-			margin-top: calc(100% - 100%);
-
-		}
-		.navbar-m-mobile{
-			margin-top : -17px !important;
-		}
-		#btn-navbar{
-			display: none;
-		}
-		#navbarx{
-			display: none;
-		}
-
-		.m-top-carousel{
-			margin-top: 0px;
-			position: absolute;
-			bottom: 50px;
-			left: calc(100% - 100%);
-		}
-		.carousel-item{
-			height: 100vh;
-		}
-		.carousel-caption{
-			right: 0%;
-			left: 0%;
-			bottom: 100px;
-		}
-		.carousel-indicators{
-			bottom: 100px;
-			justify-content: left;
-			margin-left: 3%;
-			margin-right: 0;
-		}
-		.carousel-inner p {
-			font-size: .85rem;
-		}
-		.carousel-item img{
-			width: 60%;
-		}
-		#navbar_mobile{
-			display: block;
-			width: 100vw;
-			position: fixed;
-			top: 0;
-			left: 0;
-			padding: 20px 1.1rem;
-			z-index: 99;
-		}
-		.navbar-mobile .btn-costume{
-			font-size: .75rem;
-		}
-		#navbar_mobile .dropdown-menu-mobile{
-			top: 15% !important;
-			left: calc(100% - 31px) !important;
-			border: none;
-			min-width: 19rem;
-			border-radius: 10px;
-			padding: 10px;
-		}
-		#navbar_mobile .dropdown-beranda{
-			top: calc(100% - 61px);
-			left: calc(100% - 146px);
-			border: none;
-			min-width: 10rem;
-			min-height: 100vh;
-			border-radius: 5px;
-			padding: 10px;
-			z-index: 999;
-		}
-		#navbar_mobile .dropdown-toggle::after {
-			display: none;
-		}
-		.nav-mobile-padding{
-			padding: 8.5px 1.1rem !important;
-		}
-		.nav-button-mobile-wrap{
-			padding-top: 4px;
-		}
-		/*akhir bagian navbar*/
-
-
-		/* awal bagian content */
-		.section-judul{
-			padding: 0px 20px;
-			margin-top: 4rem;
-		}
-		.judul-section{
-			font-size: 1.5rem;
-		}
-		.info-section p{
-			font-size: .85rem;
-		}
-		.margin-top-row{
-			margin-top: .5rem;
-		}
-		.custome-card{
-			min-height: 170px;
-			border-radius: 55px;
-		}
-		.custome-card-body{
-			border-radius: 0px 0px 55px 55px;
-		}
-		#destinasi .card-title{
-			font-size: .8rem;
-
-		}
-		#destinasi .card-body{
-			padding-top: .5rem;
-			padding-bottom: .5rem;
-		}
-		.destinasi-margin-row{
-			margin-top: 0px;
-		}
-		.card-image-destinasi {
-			height: 190px;
-			border-radius: 55px;
-		}
-		.destinasi-mb
-		{
-			margin-bottom: 20px;
-		}
-		.d-sm-none{
-			display: none;
-		}
-		#event .card-shadow{
-			box-shadow: -1px 10px 29px -10px rgba(0,0,0,0.15);
-			border: none;
-		}
-		.card-img-c {
-			min-height: 150px;
-		}
-		#event .card {
-
-			min-height: 280px;
-			margin-bottom: 20px;
-
-		}
-		.event-card-title{
-			font-size: 16px;
-			min-height: 30px;
-			margin-bottom: .5rem
-		}
-		#event .tgl-event{
-			font-size: .85rem;
-		}
-		.lh-c{
-			font-size: 1rem;
-		}
-		#event .fa-calendar-alt{
-			margin-right: 10px;
-		}
-		.margin-top-button{
-			margin-top: 0px;
-		}
-		.btn-warning-c{
-			border-radius: 10px;
-		}
-		.card-img-mbl-c{
-			height: 100px;
-			object-fit: cover;
-		}
-		#peta iframe{
-			width: 100%;
-			height:230px;
-		}
-		.footer-padding{
-			padding: 10px;		
-		}
-		#footer-desktop{
-			display: none;
-		}
-		#footer-mobile{
-			display: block;
-		}
-		.card-image-cerita{
-			object-fit:cover;
-			height: 200px;
-			border-radius: 1rem;
-		}
-		.ceritak-card {
-			height: 200px;
-		}
-		.pemberi-cerita{
-			font-size: 1rem
-		}
-		.cerita-body {
-			width: 50%;
-			left: 24%;
-			bottom: 6%;
-		}
-		.cerita-body .pt-1{
-			padding-top: 3.5rem;
-		}
-		#cerita .wrap-card-cerita{
-			margin-bottom: 40px;
-		}
-		.card-body img{
-			width: 100% !important;
-		}
-		.ceritanya{
-			margin-top: 10px;
-		}
-		.padding-row-button{
-			padding-left: 1rem;
-			padding-right: 1rem;
-		}
-
-
-		#area-wisata-lain{
-			min-height: 80vh;
-		}
-		#area-wisata-lain .judul-section{
-			margin-top: 10rem;
-		}
-		.margin-area-lain{
-			margin-top: 2rem;
-		}
-		.owl-theme .owl-nav.disabled + .owl-dots {
-			margin-top: 15px !important;
-		}
-
-
-
-		#kontak{
-			margin-bottom: 3rem;
-			margin-top: 0px;
-		}
-		#kontak .judul-section{
-			margin-top: 2rem;
-		}
-		#kontak .info-section h5{
-			font-weight: 600;
-			color: rgba(3, 42, 77, 1);
-			font-size: 1.5rem;
-		}
-		#kontak .card-body{
-			padding: .1rem;
-		}
-		#kontak .body-follow-ig{
-			margin-top: 1rem;
-			background-color: transparent;
-		}
-
-		footer{
-			min-height: 350px;
-		}
-		footer .copyright{
-			font-size: .8rem;
-		}
-		#footer-mobile a{
-			color: #032A4D;
-		}
-		.btn-footer{
-			background-color: transparent;
-			color: white;
-			border-bottom: 1px solid rgba(255, 211, 78, 1);
-			text-align: left;
-		}
-		.btn-footer:hover,
-		.btn-footer:active{
-			background-color: transparent;
-			border-color: white;
-		}
-		.btn-footer:not(:disabled):not(.disabled):active, .show > .btn-footer.dropdown-toggle {
-			color: #fff;
-			background-color:transparent;
-			border-color: white;
-		}
-		#footer-mobile .dropdown-menu{
-			background-color: white;
-			min-width: 100%;
-		}
-		#footer-mobile .dropdown-item:focus,
-		#footer-mobile .dropdown-item:hover {
-			color: #16181b;
-			text-decoration: none;
-			background-color: #e5eff9;
-		}
-
-		#main-content{
-			margin-top: 1rem;
-		}
-		.jdl-jumbotron{
-			font-size: 2.2rem;
-		}
-		.pd-jumbotron{
-			padding-top: 7rem;
-		}
-		#carouselDestinasi{
-			margin-top: 0px;
-		}
-		.carousel-destinasi
-		,.img-bg-wrapper{
-			height: 175px;
-		}
-		#main-content .margin-cs{
-			margin-top: 1rem !important;
-		}
-		.label-category{
-			font-size: .8rem;
-			color: #648293;
-		}
-		.card-img-destinasi{
-			height: 170px;
-			border-radius: 10px 10px 0px 0px;
-		}
-		.destinasi-card-title{
-			font-size: 1.3rem;
-		}
-		.card-text{
-			font-size: .9rem;
-			color: rgba(106, 136, 163, 1);
-		}
-		.btn-how-to{
-			margin-bottom: .8rem;
-		}
-		.card-body{
-			background-color: #F9FCFF;
-			border-radius: 10px;	
-		}
-		.card{
-			border-radius: 0px 0px 10px 10px;
-		}
-		#body-destinasi footer{
-			margin-top: -2rem;
-		}
-		.filter-row{
-			padding-left: 15px;
-			padding-right: 15px;
-		}
-		#btn-filter{
-			margin-top: 0px;
-		}
-		/*akhir bagian content*/
+	#navbar_mobile
+	{
+		padding: 20px 3rem;
+	}
+	.nav-mobile-padding{
+		padding: 10px 3rem !important;
+	}
+	.list-group .link-item{
+		color: white;
+		font-weight: 600;
+		font-size: .85rem;
+	}
+	.list-group-item{
+		margin-right: 1rem;
+	}
+	.btn-menu-nav{
+		margin-left: .9rem;
+	}
+	#navbar_mobile .dropdown-menu-mobile{
+		top: 15% !important;
+		left: calc(100% - 170px) !important;
+		border: none;
+		min-width: 19rem;
+		border-radius: 10px;
+		padding: 10px;
+	}
+	.btn-saveplan{
+		width: 80%;
 	}
 
-	@media(max-width: 420px){
-		.cerita-body{
-			width: 75%;
-			left: 13%;
-			bottom: 3%;
-		}
-		.card-body img{
-			width: 100% !important;
-		}
-		#area-wisata-lain .judul-section{
-			margin-top: 6rem;
-		}
-		#kontak {
-			/*margin-top: -7rem;*/
-		}
+
+}
+
+@media (max-width:  769px){
+	#navbar_mobile{
+		padding: 20px 1.5rem
+	}
+	.nav-mobile-padding {
+		padding: 10px 1.5rem !important;
+	}
+	#peta iframe{
+		width: 100%;
+		height:260px;
+	}
+	.list-group .link-item{
+		color: white;
+		font-weight: 600;
+		font-size: .8rem;
+	}
+	#navbar_mobile .dropdown-menu-mobile{
+		top: 15% !important;
+		left: calc(100% - 105px) !important;
+		border: none;
+		min-width: 19rem;
+		border-radius: 10px;
+		padding: 10px;
+	}
+	.m-top-carousel {
+
+		margin-top: 0px;
+		position: absolute;
+		bottom: 40%;
+		left: calc(100% - 111%);
 
 	}
+	.carousel-inner p {
+		font-size: .85rem;
+	}
+	.carousel-item img{
+		width: 60%;
+	}
+
+	.judul-section{
+		font-size: 2.2rem;
+	}
+	.section-judul {
+		padding: 0px 2.5rem;
+		margin-top: 5rem;
+	}
+	#main-content{
+		margin-top: 1.5rem;
+	}
+	.filter-row{
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.custome-card {
+		min-height: 170px;
+
+	}
+	.card-image-destinasi {
+		height: 170px;
+		border-radius: 65px;
+
+	}
+	.custome-card-body{
+		border-radius: 0px 0px 65px 65px;
+	}
+	.card-title{
+		font-size: 1rem;
+	}
+	.info-section p {
+		line-height: 40px;
+		font-size: 1.4rem;
+
+	}
+	.wrap-card-cerita{
+		margin-bottom: 40px;
+	}
+	.cerita-body img{
+		width: 70%
+	}
+	.pemberi-cerita{
+		font-weight: 600;
+		font-size: 1rem;
+	}
+	.card-image-cerita{
+		height: 320px;
+	}
+	.ceritak-card{
+		height: 320px;
+	}
+	.destinasi-margin-row{
+		margin-top: .0rem;
+	}
+	.destinasi-mb{
+		margin-bottom: 20px;
+	}
+	#area-wisata-lain .judul-section{
+		margin-top: 10rem;
+	}
+	#kontak{
+		margin-top: -20rem;
+		padding: 2rem 2.5rem;
+	}
+	.body-follow-ig {
+		padding: 5.5rem 1.5rem;
+		background-color: #5fffe80d;
+	}
+	#area-wisata-lain .section-judul{
+		padding: 0px 4rem;
+	}
+	.footer-padding{
+		padding: 2rem 2.5rem;
+	}
+	#footer-desktop{
+		margin-top: 2rem;
+	}
+
+	#carouselDestinasi{
+		margin-top: 0px;
+	}
+	.pd-jumbotron {
+		padding-top: 9rem;
+	}
+	.jdl-jumbotron{
+		font-size: 3rem;
+	}
+	.carousel-destinasi,
+	.img-bg-wrapper {
+		height: 230px;
+	}
+	.logo-nav {
+		margin-top: 4px;
+	}
+	.logo-nav img{
+		width: 90px;
+	}
+	.nav-link{
+		padding: 0rem 1rem;
+		padding-top: 0.4rem;
+		margin-right: 10px;
+	}
+	#btn-filter{
+		margin-top: 30.6px;
+	}
+	.margin-cs{
+		margin-top: .5rem !important;
+	}
+	.card-img-c{
+		min-height: 120px;
+	}
+	.card-img-destinasi {
+
+		height: 170px;
+		border-radius: 10px 10px 0px 0px;
+
+	}
+	.destinasi-card-title{
+		font-size: 1.1rem;
+	}
+	.btn-how-to {
+		margin-bottom: .8rem;
+	}
+	#body-destinasi footer{
+		margin-top: -23rem;
+	}
+	#destinasi-detail .img-bg-wrapper,
+	#destinasi-detail .layer,
+	#destinasi-detail .carousel-destinasi{
+		height: 280px;
+	}
+	#destinasi-detail .pd-jumbotron{
+		padding-top: 9rem;
+	}
+	#destinasi-detail .jdl-jumbotron{
+		font-size: 2.5rem;
+	}
+	#destinasi-detail .lokasi-destinasi-header{
+		margin-top: 2px;
+		font-size: 1rem;
+	}
+	#destinasi-detail .destinasi-informasi{
+		font-size: .9rem;
+	}
+	#destinasi-detail .button-body-destinasi{
+		padding: 15px;
+	}
+	#destinasi-detail #btnSavePlane,
+	#destinasi-detail #btnHowTo{
+		font-size: .8rem;
+	}
+	#destinasi-detail .fasilitas-card .col-2{
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+	#destinasi-detail h3{
+		font-size: 1.3rem;
+	}
+	#destinasi-detail .padding-row-button{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	#destinasi-detail .hidden-cerita{
+		display: none;
+	}
+	#destinasi-detail .cerita-body .col-3{
+		padding-left: 15px;
+		padding-right: 0px;
+	}
+	#destinasi-detail .cerita-body .col-9{
+		padding-left: 3px;
+		padding-right: 0px;
+		padding-top: 0px !important;
+	} 
+	#destinasi-detail .pemberi-cerita{
+		font-size: .8rem;
+	}
+	#destinasi-detail #isi-cerita{
+		font-size: .85rem;
+		line-height: 1.4rem;
+	}
+	#area-wisata-lain{
+		height: 600px;
+	}
+	#footer-desktop{
+		margin-top: -2rem;
+	} 
+
+}
+
+
+@media(max-width: 691px){
+	.list-group .link-item{
+		color: white;
+		font-weight: 600;
+		font-size: .7rem;
+	}
+	.list-group-item{
+		margin-right: .7rem;
+	}
+	.navbar-mobile .btn-costume {
+		font-size: .55rem;
+	}
+	.list-group {
+		margin-top: 0px;
+
+	}
+	#navbar_mobile .dropdown-menu-mobile{
+		top: 15% !important;
+		left: calc(100% - 75px) !important;
+		border: none;
+		min-width: 19rem;
+		border-radius: 10px;
+		padding: 10px;
+	}
+	.padding-row-button {
+
+		padding-left: 1rem;
+		padding-right: 1rem;
+
+	}
+	.card-title {
+		font-size: .75rem;
+	}
+	#event .card-title{
+		font-size: .95rem;
+	}
+	.cerita-body img {
+		width: 85%;
+	}
+	#area-wisata-lain .judul-section {
+		margin-top: 12rem;
+	}
+
+	#kontak{
+		margin-top: -18rem;
+	}
+	#event .tgl-event{
+		font-size: .75rem;
+	}
+	.logo-nav img{
+		width: 70px;
+	}
+
+}
+
+@media(max-width: 598px){
+	#body-destinasi footer {
+		margin-top: -10rem;
+	}
+}
+
+
+@media(max-width: 579px){
+	.d-none-sm{
+		display: none;
+	}
+	.d-none-md{
+		display: block;
+	}
+	.d-none-lg{
+		display: block;
+	}
+	#btn_beranda{
+		display: block;
+	}
+	#menu-full{
+		display: none;
+	}
+	.btn-masuk-half{
+		display: none;
+	}
+	body{
+		-webkit-overflow-scrolling: touch;
+	}
+	/* bagian navbar */
+	#carouselExampleCaptions{
+		min-height: 103vh;
+		margin-top: calc(100% - 100%);
+
+	}
+	.navbar-m-mobile{
+		margin-top : -17px !important;
+	}
+	#btn-navbar{
+		display: none;
+	}
+	#navbarx{
+		display: none;
+	}
+
+	.m-top-carousel{
+		margin-top: 0px;
+		position: absolute;
+		bottom: 50px;
+		left: calc(100% - 100%);
+	}
+	.carousel-item{
+		height: 100vh;
+	}
+	.carousel-caption{
+		right: 0%;
+		left: 0%;
+		bottom: 100px;
+	}
+	.carousel-indicators{
+		bottom: 100px;
+		justify-content: left;
+		margin-left: 3%;
+		margin-right: 0;
+	}
+	.carousel-inner p {
+		font-size: .85rem;
+	}
+	.carousel-item img{
+		width: 60%;
+	}
+	#navbar_mobile{
+		display: block;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 20px 1.1rem;
+		z-index: 99;
+	}
+	.navbar-mobile .btn-costume{
+		font-size: .75rem;
+	}
+	#navbar_mobile .dropdown-menu-mobile{
+		top: 15% !important;
+		left: calc(100% - 31px) !important;
+		border: none;
+		min-width: 19rem;
+		border-radius: 10px;
+		padding: 10px;
+	}
+	#navbar_mobile .dropdown-beranda{
+		/*left: calc(100% - 130px) !important;*/
+		border: none;
+		border-radius: 5px;
+		padding: 20px 10px;
+		width: 91vw;
+		z-index: 999;
+	}
+	#navbar_mobile .dropdown-toggle::after {
+		display: none;
+	}
+	.nav-mobile-padding{
+		padding: 8.5px 1.1rem !important;
+	}
+	.nav-button-mobile-wrap{
+		padding-top: 4px;
+	}
+	/*akhir bagian navbar*/
+
+
+	/* awal bagian content */
+	.section-judul{
+		padding: 0px 20px;
+		margin-top: 4rem;
+	}
+	.judul-section{
+		font-size: 1.5rem;
+	}
+	.info-section p{
+		font-size: .85rem;
+	}
+	.margin-top-row{
+		margin-top: .5rem;
+	}
+	.custome-card{
+		min-height: 170px;
+		border-radius: 55px;
+	}
+	.custome-card-body{
+		border-radius: 0px 0px 55px 55px;
+	}
+	#destinasi .card-title{
+		font-size: .8rem;
+
+	}
+	#destinasi .card-body{
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+	}
+	.destinasi-margin-row{
+		margin-top: 0px;
+	}
+	.card-image-destinasi {
+		height: 190px;
+		border-radius: 55px;
+	}
+	.destinasi-mb
+	{
+		margin-bottom: 20px;
+	}
+	.d-sm-none{
+		display: none;
+	}
+	#event .card-shadow{
+		box-shadow: -1px 10px 29px -10px rgba(0,0,0,0.15);
+		border: none;
+	}
+	.card-img-c {
+		min-height: 150px;
+	}
+	#event .card {
+
+		min-height: 280px;
+		margin-bottom: 20px;
+
+	}
+	.event-card-title{
+		font-size: 16px;
+		min-height: 30px;
+		margin-bottom: .5rem
+	}
+	#event .tgl-event{
+		font-size: .85rem;
+	}
+	.lh-c{
+		font-size: 1rem;
+	}
+	#event .fa-calendar-alt{
+		margin-right: 10px;
+	}
+	.margin-top-button{
+		margin-top: 0px;
+	}
+	.btn-warning-c{
+		border-radius: 10px;
+	}
+	.card-img-mbl-c{
+		height: 100px;
+		object-fit: cover;
+	}
+	#peta iframe{
+		width: 100%;
+		height:230px;
+	}
+	.footer-padding{
+		padding: 10px;		
+	}
+	#footer-desktop{
+		display: none;
+	}
+	#footer-mobile{
+		display: block;
+	}
+	.card-image-cerita{
+		object-fit:cover;
+		height: 200px;
+		border-radius: 1rem;
+	}
+	.ceritak-card {
+		height: 200px;
+	}
+	.pemberi-cerita{
+		font-size: 1rem
+	}
+	.cerita-body {
+		width: 50%;
+		left: 24%;
+		bottom: 6%;
+	}
+	.cerita-body .pt-1{
+		padding-top: 3.5rem;
+	}
+	#cerita .wrap-card-cerita{
+		margin-bottom: 25px;
+	}
+	.card-body img{
+		width: 100% !important;
+	}
+	.ceritanya{
+		margin-top: 10px;
+	}
+	.padding-row-button{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+
+	#area-wisata-lain{
+		height: 750px;
+	}
+	#area-wisata-lain .judul-section{
+		margin-top: 10rem;
+	}
+	.margin-area-lain{
+		margin-top: 2rem;
+	}
+	.owl-theme .owl-nav.disabled + .owl-dots {
+		margin-top: 15px !important;
+	}
+
+
+
+	#kontak{
+		margin-bottom: 3rem;
+		margin-top: 0px;
+	}
+	#kontak .judul-section{
+		margin-top: 2rem;
+	}
+	#kontak .info-section h5{
+		font-weight: 600;
+		color: rgba(3, 42, 77, 1);
+		font-size: 1.5rem;
+	}
+	#kontak .card-body{
+		padding: .1rem;
+	}
+	#kontak .body-follow-ig{
+		margin-top: 1rem;
+		background-color: transparent;
+	}
+
+	footer{
+		min-height: 350px;
+	}
+	footer .copyright{
+		font-size: .8rem;
+	}
+	#footer-mobile a{
+		color: #032A4D;
+	}
+	.btn-footer{
+		background-color: transparent;
+		color: white;
+		border-bottom: 1px solid rgba(255, 211, 78, 1);
+		text-align: left;
+	}
+	.btn-footer:hover,
+	.btn-footer:active{
+		background-color: transparent;
+		border-color: white;
+	}
+	.btn-footer:not(:disabled):not(.disabled):active, .show > .btn-footer.dropdown-toggle {
+		color: #fff;
+		background-color:transparent;
+		border-color: white;
+	}
+	#footer-mobile .dropdown-menu{
+		background-color: white;
+		min-width: 100%;
+	}
+	#footer-mobile .dropdown-item:focus,
+	#footer-mobile .dropdown-item:hover {
+		color: #16181b;
+		text-decoration: none;
+		background-color: #e5eff9;
+	}
+
+	#main-content{
+		margin-top: 1rem;
+	}
+	.jdl-jumbotron{
+		font-size: 2.2rem;
+	}
+	.pd-jumbotron{
+		padding-top: 7rem;
+	}
+	#carouselDestinasi{
+		margin-top: 0px;
+	}
+	.carousel-destinasi
+	,.img-bg-wrapper{
+		height: 175px;
+	}
+	#main-content .margin-cs{
+		margin-top: 1rem !important;
+	}
+	.label-category{
+		font-size: .8rem;
+		color: #648293;
+	}
+	.card-img-destinasi{
+		height: 170px;
+		border-radius: 10px 10px 0px 0px;
+	}
+	.destinasi-card-title{
+		font-size: 1.3rem;
+	}
+	.card-text{
+		font-size: .9rem;
+		color: rgba(106, 136, 163, 1);
+	}
+	.btn-how-to{
+		margin-bottom: .8rem;
+		border-radius: 10px;
+	}
+
+	#body-destinasi footer{
+		margin-top: -2rem;
+	}
+	.filter-row{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#btn-filter{
+		margin-top: 0px;
+	}
+	.btn-saveplan{
+		width: 100%;
+	}
+	.dropdown-menu a{
+		font-size: .9rem;
+		color: rgba(106, 136, 163, 1);
+		font-weight: 600;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		border-bottom: 1px solid rgba(221, 233, 244, 1);
+	}
+	.dropdown-beranda .active-menu{
+		color: rgba(8, 113, 205, 1);
+		font-weight: 700;
+	}
+	.btn-login-dropdown{
+		background-color:white;
+		color: rgba(3, 42, 77, 1) !important;
+		font-weight: 700 !important;
+		border: 1px solid rgba(221, 233, 244, 1);
+	}
+	.btn-login-dropdown:hover,
+	.btn-login-dropdown:active{
+		background-color: white;
+		border-color: rgba(221, 233, 244, 1);
+	}
+
+
+	#destinasi-detail .img-bg-wrapper,
+	#destinasi-detail .layer,
+	#destinasi-detail .carousel-destinasi{
+		height: 200px;
+	}
+	#destinasi-detail .pd-jumbotron{
+		padding-top: 7rem;
+	}
+	#destinasi-detail .jdl-jumbotron{
+		font-size: 1.3rem;
+	}
+	#destinasi-detail .lokasi-destinasi-header{
+		margin-top: 2px;
+		font-size: .9rem;
+	}
+	#destinasi-detail .destinasi-informasi{
+		font-size: .9rem;
+	}
+	#destinasi-detail #info-destinasi h3 {
+		font-size: 1.2rem;
+		color: #004157;
+
+	}
+	#destinasi-detail .card-body{
+		padding: .55rem;
+	}
+	#destinasi-detail .fasilitas-card i{
+		font-size: 2rem;
+	}
+	#destinasi-detail .fasilitas-card .fa-clock{
+		margin-top: 5px;
+	}
+	#destinasi-detail .wrap-card-cerita{
+		margin-bottom: 10px;
+	}
+	#destinasi-detail .destinasi-margin-row{
+		margin-top: 25px !important;
+	}
+	#destinasi-detail .fa-star{
+		font-size: .9rem !important;
+	}
+	#destinasi-detail .col-10{
+		padding-left: 0px;
+	}
+	#destinasi-detail .reviewer-name{
+		font-weight: 700;
+	}
+	#destinasi-detail footer{
+		margin-top: -4rem;
+	}
+	#destinasi-detail .hidden-cerita{
+		display: block;
+	}
+	#destinasi-detail .cerita-body .col-3{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#destinasi-detail .cerita-body .col-9{
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: .3rem !important;
+	}
+	#destinasi-detail .pemberi-cerita{
+		font-size: 1rem;
+	}
+	#destinasi-detail #isi-cerita{
+		font-size: .9rem;
+		line-height: 1.4rem;
+	}
+	  
+	/*akhir bagian content*/
+}
+
+@media(max-width: 420px){
+	.cerita-body{
+		width: 75%;
+		left: 13%;
+		bottom: 3%;
+	}
+	.card-body img{
+		width: 100% !important;
+	}
+	#area-wisata-lain .judul-section{
+		margin-top: 6rem;
+	}
+	#kontak {
+		/*margin-top: -7rem;*/
+	}
+	#area-wisata-lain{
+		height: 550px;
+	}
+
+}
 
 

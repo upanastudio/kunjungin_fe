@@ -96,12 +96,19 @@
 			<div class="col-6">
 				<div class="dropdown">
 					<button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fa fa-bars fas-c"></i> Beranda
+						<i class="fa fa-bars fas-c"></i> BERANDA
 					</button>
-					<div class="dropdown-menu dropdown-beranda d-none" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
+					<div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item active-menu" href="index.html">BERANDA</a>
+						<a class="dropdown-item" href="destinasi.html">DESTINASI</a>
+						<a class="dropdown-item" href="event.html">EVENTS</a>
+						<a class="dropdown-item" href="cerita.html">CERITA</a>
+						<a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
+						<div class="btn-logout-wrapper text-center mt-4">
+							<a href="login.html" class="btn btn-secondary btn-login-dropdown">
+								MASUK ATAU DAFTAR
+							</a>
+						</div>
 					</div>
 				</div>
 				<ul id="menu-full" class="list-group list-group-horizontal">
@@ -528,7 +535,7 @@
 						</button>
 					</div>
 					<div class="col-xl">
-						<button class="btn btn-secondary btn-secondary-c">
+						<button class="btn btn-secondary btn-secondary-c btn-how-to">
 							LIHAT CERITA LAINNYA
 						</button>
 					</div>
@@ -680,7 +687,7 @@
 						<div class="col-12">
 							<p>Daftar Kunjungan</p>
 						</div>
-						<div class="col-6">
+						<div class="col-md-6">
 							<div class="card step-card">
 								<div class="card-body">
 									Transportasi Bus Pariwisata
@@ -702,7 +709,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-md-6">
 							<div class="card step-card">
 								<div class="card-body">
 									Jalan - jalan di benteng Rotterdam
@@ -912,17 +919,12 @@
 	<script>
 		window.onscroll = function() {myFunction()};
 		var navbar = document.getElementById("navbar_mobile");
-		var navbarDesktop = document.getElementById("navbarx");
 		var sticky = navbar.offsetTop;
 		// sticky = stick + 40;
 		function myFunction() {
 			if (window.pageYOffset > sticky) {
-				navbarDesktop.classList.add("blue-transparant");
-				navbarDesktop.classList.remove("transparant");
 				navbar.classList.add("sticky","nav-mobile-padding","blue-transparant");
 			} else {
-				navbarDesktop.classList.remove("blue-transparant");
-				navbarDesktop.classList.add("transparant");
 				navbar.classList.remove("sticky","nav-mobile-padding","blue-transparant");
 			}
 		}
