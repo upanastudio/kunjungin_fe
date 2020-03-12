@@ -477,6 +477,14 @@ nav{
 	background-color: #F9FCFF;
 }
 
+.review-card{
+	margin-bottom: 25px;
+	border: 1px solid #63a4dd;
+	border-radius: 7px;
+	color: #133e63;
+	background-color: #F9FCFF;
+}
+
 .fasilitas-card i {
 	font-size: 2.5rem;
 	margin-top: 15px;
@@ -1177,7 +1185,7 @@ select .selectpicker {
 		margin-bottom: .8rem;
 	}
 	#body-destinasi footer{
-		margin-top: -23rem;
+		margin-top: -2rem;
 	}
 	#destinasi-detail .img-bg-wrapper,
 	#destinasi-detail .layer,
@@ -1297,7 +1305,28 @@ select .selectpicker {
 		width: 70px;
 	}
 	#destinasi .custome-card-body{
-	 	padding: .8rem;
+		padding: .8rem;
+	}
+	#destinasi-detail .fasilitas-card .col-2{
+		padding-right: 2px;
+		padding-left: 5px;
+		padding-top: 3px;
+	}
+	#destinasi-detail .fasilitas-card i {
+		font-size: 2rem;
+		margin-top: 15px;
+	}
+	#destinasi-detail .stars-point i {
+		font-size: .85rem;
+	}
+	#destinasi-detail #btn_load_more{
+		font-size: .8rem;
+	}
+	#destinasi-detail .fasilitas-card .card-body{
+		padding: .85rem;
+	}
+	#destinasi-detail .review-card .card-body{
+		padding: 1.2rem;
 	}
 
 
@@ -1688,7 +1717,7 @@ select .selectpicker {
 		border-color: rgba(221, 233, 244, 1);
 	}
 	#destinasi .custome-card-body{
-	 	padding: 1rem;
+		padding: 1rem;
 	}
 
 
@@ -1761,7 +1790,7 @@ select .selectpicker {
 		font-size: .9rem;
 		line-height: 1.4rem;
 	}
-	  
+
 	/*akhir bagian content*/
 }
 
