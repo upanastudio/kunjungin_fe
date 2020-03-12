@@ -1296,6 +1296,10 @@ select .selectpicker {
 	.logo-nav img{
 		width: 70px;
 	}
+	#destinasi .custome-card-body{
+	 	padding: .8rem;
+	}
+
 
 }
 
@@ -1682,6 +1686,9 @@ select .selectpicker {
 	.btn-login-dropdown:active{
 		background-color: white;
 		border-color: rgba(221, 233, 244, 1);
+	}
+	#destinasi .custome-card-body{
+	 	padding: 1rem;
 	}
 
 
