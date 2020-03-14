@@ -15,7 +15,7 @@
 	<link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
 	<title>Destinasi | Kunjungin</title>
 	<link rel="shortcut icon" href="assets/media/icon/favicon2.ico" />
-</head onresize="myResize()">
+</head>
 <body id="destinasi-detail">
 	<div id="navbar_mobile" class="navbar-mobile">
 		<div class="row">
@@ -200,7 +200,7 @@
 					<div class="col-12 mt-4">
 						<h3>Cerita <span name="lokasi">Pantai Losari</span></h3>
 						<div id="cerita" class="row">
-							<div class="col-sm-6 col-md-6 mt-4">
+							<div class="col-sm-6 col-md-6 col-lg-4 mt-4">
 								<a href="#">
 									<div class="wrap-card-cerita">
 										<div class="card card-shadow ceritak-card">
@@ -226,7 +226,7 @@
 									</div>
 								</a>
 							</div>
-							<div class="col-sm-6 col-md-6 mt-4">
+							<div class="col-sm-6 col-md-6 col-lg-4 mt-4">
 								<a href="#">
 									<div class="wrap-card-cerita">
 										<div class="card card-shadow ceritak-card">
@@ -252,7 +252,7 @@
 									</div>
 								</a>
 							</div>
-							<div class="col-sm-6 col-md-6 mt-4 hidden-cerita">
+							<div class="col-sm-6 col-md-6 col-lg-4 mt-4 hidden-cerita">
 								<a href="#">
 									<div class="wrap-card-cerita">
 										<div class="card card-shadow ceritak-card"> 
@@ -310,7 +310,7 @@
 									<i class="fas fa-suitcase-rolling fas-c"></i> Save to Plan
 								</button>
 								<button id="btnHowTo" class="btn btn-warning btn-warning-c mt-4 full-width" data-toggle="modal" data-target="#modal-petunjuk">
-									<i class="fas fa-map fas-c"></i> How to get there
+									<i class="fas fa-route fas-c"></i> How to get there
 								</button>
 							</div>
 						</div>
@@ -486,6 +486,26 @@
 		</div>
 	</section>
 	<!-- Akhir Area Lain -->
+
+
+	<!-- floating mobile btn how to get there-->
+	<div id="menu-floating">
+		<div class="menu-floating-container">
+			<div class="row">
+				<div class="col-6">
+					<button id="btnHowTo" class="btn btn-secondary btn-secondary-c full-width  btn-how-to" data-toggle="modal" data-target="#modal-petunjuk">
+						<i class="fas fa-route fas-c"></i> How to get there
+					</button>
+				</div>
+				<div class="col-6">
+					<button id="btnSavePlane" class="btn btn-warning btn-warning-c2 full-width btn-how-to">
+						<i class="fas fa-suitcase-rolling fas-c"></i> Save to Plan
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- akhir floating mobile btn how to get there -->
 	
 	<!-- Modal -->
 	<div class="modal fade" id="modal-petunjuk" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -835,9 +855,7 @@
 		else{
 			colDestinasi.classList.add("offset-sm-1","col-sm-4");
 			colDestinasi.classList.remove("col-sm-5");
-		}
-
-		
+		}	
 	</script>
 	<script>
 		$(document).ready(function(){

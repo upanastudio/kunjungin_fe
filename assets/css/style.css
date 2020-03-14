@@ -258,7 +258,7 @@ nav{
 
 
 #event .card{
-	min-height: 410px;
+	min-height: 455px;
 	margin-bottom: 40px
 }
 .event-card-title{
@@ -285,7 +285,7 @@ nav{
 	line-height:0px;
 }
 .btn-lihat-detail{
-	margin-top: 10px
+	margin-left: ;
 }
 .card-shadow{
 	box-shadow: -1px 10px 29px -10px rgba(0,0,0,0.25);
@@ -355,7 +355,7 @@ nav{
 
 #area-wisata-lain{
 	background: url("../media/bg/area-lain.png") no-repeat top center;
-	height: 90vh;
+	height: 625px;
 	background-size: cover;
 }
 
@@ -947,7 +947,40 @@ select .selectpicker {
 .card-img-destinasi {
 	border-radius: 8px 8px 0px 0px;
 }
-
+#destinasi-detail .cerita-body .col-3 {
+	padding-left: 15px;
+	padding-right: 7px;
+}
+#destinasi-detail .cerita-body .col-9 {
+	padding-left: 3px;
+	padding-right: 0px;
+	padding-top: 0px !important;
+}
+#destinasi-detail .ceritanya h6{
+	line-height: 1.4rem;
+}
+#menu-floating{
+	display: none;
+}
+#event-page .btn-lihat-detail{
+	display: inline;
+	margin-top: -20px;
+	margin-left: 2vw;
+}
+#event-page .card{
+	min-height: 420px;
+}
+div .inline {float:left;}
+#event .tgl-event{
+	font-size: .9rem;
+}
+#event-page .btn-lihat-detail {
+	font-weight: 600;
+	font-size: .8rem;
+	background-color: white;
+	border: 1px solid rgba(221, 233, 244, 1);
+	margin-left: 20%;
+}
 
 
 
@@ -960,6 +993,12 @@ select .selectpicker {
 	}
 	.btn-how-to{
 		margin-bottom: .8rem;
+	}
+	#event .tgl-event{
+		font-size: .7rem;
+	}
+	#event .lh-c{
+		line-height: 20px;
 	}
 }
 
@@ -1018,6 +1057,9 @@ select .selectpicker {
 	.btn-saveplan{
 		width: 80%;
 	}
+	#event-page .btn-lihat-detail{
+		display: none;
+	}
 
 
 }
@@ -1040,7 +1082,7 @@ select .selectpicker {
 	}
 	#navbar_mobile .dropdown-menu-mobile{
 		top: 15% !important;
-		left: calc(100% - 105px) !important;
+		left: calc(100% - 75px) !important;
 		border: none;
 		min-width: 19rem;
 		border-radius: 10px;
@@ -1236,18 +1278,53 @@ select .selectpicker {
 		padding-top: 0px !important;
 	} 
 	#destinasi-detail .pemberi-cerita{
-		font-size: .8rem;
+		font-size: .7rem;
 	}
 	#destinasi-detail #isi-cerita{
 		font-size: .85rem;
 		line-height: 1.4rem;
 	}
+	#destinasi-detail .stars-point i {
+		font-size: .55rem;
+	}
+	#destinasi-detail .jum-hari{
+		font-size: .7rem;
+	}
+	.reviewer-name{
+		font-size: .8rem;
+		font-weight: 600;
+	}
+	
+
+
 	#area-wisata-lain{
 		height: 600px;
 	}
 	#footer-desktop{
 		margin-top: -2rem;
 	} 
+	
+
+	#event-page{
+		margin-top: 100px;
+	}
+	#event-page .nav-mobile-padding{
+		padding: 20px 1.5rem !important;
+	}
+	#event-page .info-section p {
+		font-size: 1rem;
+		line-height: 1.9rem;
+	}
+	#event-page #event .card{
+		min-height: 0px;
+		height: 310px
+	}
+	#event-page .card-title{
+		font-size: .9rem;
+	}
+	
+
+
 
 }
 
@@ -1283,7 +1360,10 @@ select .selectpicker {
 
 	}
 	.card-title {
-		font-size: .75rem;
+		font-size: 1.25rem;
+	}
+	#destinasi .card-title{
+		font-size: .7rem;
 	}
 	#event .card-title{
 		font-size: .95rem;
@@ -1312,12 +1392,19 @@ select .selectpicker {
 		padding-left: 5px;
 		padding-top: 3px;
 	}
+	#destinasi-detail .fasilitas-card .col-10{
+		padding-right: 5px;
+		padding-left: 10px;
+	}
 	#destinasi-detail .fasilitas-card i {
 		font-size: 2rem;
 		margin-top: 15px;
 	}
 	#destinasi-detail .stars-point i {
-		font-size: .85rem;
+		font-size: .55rem;
+	}
+	#destinasi-detail .jum-hari{
+		font-size: .5rem;
 	}
 	#destinasi-detail #btn_load_more{
 		font-size: .8rem;
@@ -1328,6 +1415,11 @@ select .selectpicker {
 	#destinasi-detail .review-card .card-body{
 		padding: 1.2rem;
 	}
+	#destinasi-detail .card-title{
+		font-size: 1.6rem;
+	}
+
+	
 
 
 }
@@ -1499,14 +1591,22 @@ select .selectpicker {
 		margin-bottom: 20px;
 
 	}
+	#event .card-body{
+		padding-right: .85rem;
+		.padding-left: .85rem;
+	}
 	.event-card-title{
 		font-size: 16px;
 		min-height: 30px;
 		margin-bottom: .5rem
 	}
-	#event .tgl-event{
-		font-size: .85rem;
+	#landing-page .tgl-event{
+		font-size: .9rem !important;
 	}
+	#event .tgl-event{
+		font-size: .7rem;
+	}
+	
 	.lh-c{
 		font-size: 1rem;
 	}
@@ -1789,6 +1889,128 @@ select .selectpicker {
 	#destinasi-detail #isi-cerita{
 		font-size: .9rem;
 		line-height: 1.4rem;
+	}
+	#destinasi-detail .fasilitas-card .col-2 {
+		padding-right: 15px;
+		padding-left: 7px;
+		padding-top: 3px;
+	}
+	#destinasi-detail .jum-hari {
+		font-size: .8rem;
+	}
+	
+	#menu-floating{
+		display: block;
+	}
+	.menu-floating-container{
+		box-shadow: 0px -1px 17px -5px rgba(0,0,0,0.78);
+		width: 100vw;
+		padding: 15px .5rem;
+		background-color: white;
+		z-index: 999;
+		position: fixed;
+		bottom: 0;
+		left: 0
+	}
+	#menu-floating .btn-how-to{
+		margin-bottom: 0px;
+	}
+	#menu-floating .btn-secondary-c{
+		padding: 10px 15px !important;
+		font-size: .7rem !important;
+	}
+	#menu-floating .btn-warning-c2{
+		padding: 10px 15px !important;
+		font-size: .7rem !important;
+	}
+	#destinasi-detail{
+		margin-bottom: 65px;
+	}
+
+
+	#event-page{
+		margin-top: 80px;
+	}
+	#event-page .nav-mobile-padding{
+		padding: 10px 1.5rem !important;
+	}
+	#event-page .btn-lihat-detail{
+		font-weight: 600;
+		font-size: .8rem;
+		background-color: white;
+		border: 1px solid rgba(221, 233, 244, 1);
+		margin-left: calc(100% - 23%);
+		margin-top: -10px;
+	}
+	#event-page #event .card {
+		min-height: 0px;
+		height: 275px;
+	}
+	#event-page .btn-lihat-detail:hover{
+		color: #63a4dd;
+	}
+	#event-page .card-body{
+		padding: .9rem;
+	}
+	#event-page #footer-mobile{
+		margin-top: -2rem;
+	}
+	#event-page .info-section p{
+		font-size: 1rem;
+		line-height: 1.75rem;
+	}
+	#event-page #area-wisata-lain{
+		margin-top: 0rem !important;
+	}
+	#event-page .card-img-c{
+		min-height: 0px;
+		height: 150px;
+		border-radius: 7px 7px 0px 0px;
+	}
+	#event-page .btn-lihat-detail{
+		display: block;
+	}
+
+	
+	#event-detail .nav-mobile-padding {
+		padding: 10px 1.5rem !important;
+	}
+	#event-detail .section-judul-event{
+		margin-top: 4rem !important;
+	}
+	#event-detail .content-wrap {
+		margin-top: 1.25rem !important;
+	}
+	#event-detail .event-card-title{
+		min-height: 20px;
+	}
+	#event-detail .tgl-event{
+		margin-bottom: 10px;
+	}
+	#event-detail .hidden-sm-wrap{
+		display: none;
+	}
+	#event-detail #event{
+		margin-top: 3rem !important;
+	}
+	#event-detail .judul-section{
+		font-weight: 700;
+	}
+	#event-detail .padding-detail-m{
+		padding-top: 5px;
+	}
+
+	#event-detail #event .tgl-event{
+		margin-bottom: 5px
+	}
+	#event-detail #footer-mobile{
+		margin-top: -4rem;
+	}
+	#event-detail #area-wisata-lain{
+		margin-top: -1.5rem !important;
+	}
+	#event-detail #event .tgl-event {
+		font-size: .7rem;
 	}
 
 	/*akhir bagian content*/
