@@ -16,87 +16,100 @@
 	<title>Cerita | Kunjungin</title>
 	<link rel="shortcut icon" href="assets/media/icon/favicon2.ico" />
 </head>
-<body>
-	<nav id="navbarx" class="navbar navbar-solid sticky-top navbar-expand-lg navbar-light blue-solid">
-		
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse padding-nav" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item  mr-4">
-					<a class="nav-link logo-nav" href="index.html">
-						<img src="assets/media/logo/logo.svg" width="100px" alt="">
-					</a>
-				</li>
-				<li class="nav-item  mr-4">
-					<a class="nav-link " href="destinasi.html">DESTINASI</a>
-				</li>
-				<li class="nav-item  mr-4">
-					<a class="nav-link"  href="event.html">EVENT</a>
-				</li>
-				<li class="nav-item active mr-4">
-					<a class="nav-link"  href="cerita.html">CERITA</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="kontak.html">KONTAK</a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<button  class="btn btn-costume btn-icon btn-secondary mr-4 btn-gray">
-					<i class="fas fa-search"></i>
-				</button>
-				<!-- <button  class="btn btn-costume btn-icon btn-secondary btn-gray ml-4">
-					<i class="fas fa-suitcase-rolling"></i>
-				</button> -->
+<body id="cerita-page">
+	<div id="navbar_mobile" class="navbar-mobile blue-solid nav-mobile-padding">
+		<div class="row">
+			<div class="col-6">
 				<div class="dropdown">
-					<button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-suitcase-rolling"></i>
+					<button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-bars fas-c"></i> CERITA
 					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<h6 class="text-center mb-2" style="font-weight: 500">Your Travel Plan</h6>
-						<hr>
-						<div class="list-travel-plan">
-							<div class="travel-plan">
-								<div class="row">
-									<div class="col-9">
-										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-											<span class="nama-lokasi" name="nama-lokasi">Pantai Losari</span><br>
-											<span class="lokasi" name="lokasi">Makassar</span>
-										</div>
-									</div>
-									<div class="col-3">
-										<button class="btn btn-outline-danger">
-											<i class="fas fa-trash-alt"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="travel-plan">
-								<div class="row">
-									<div class="col-9">
-										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-											<span class="nama-lokasi" name="nama-lokasi">Pulau Koidingare Keke</span><br>
-											<span class="lokasi" name="lokasi">Makassar</span>
-										</div>
-									</div>
-									<div class="col-3">
-										<button class="btn btn-outline-danger">
-											<i class="fas fa-trash-alt"></i>
-										</button>
-									</div>
-								</div>
-							</div>
+					<div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item " href="index.html">BERANDA</a>
+						<a class="dropdown-item " href="destinasi.html">DESTINASI</a>
+						<a class="dropdown-item " href="event.html">EVENTS</a>
+						<a class="dropdown-item active-menu" href="cerita.html">CERITA</a>
+						<a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
+						<div class="btn-logout-wrapper text-center mt-3">
+							<a href="" class="btn btn-secondary btn-login-dropdown">
+								MASUK ATAU DAFTAR
+							</a>
 						</div>
-						<button class="btn btn-warning btn-warning-c full-width">
-							<i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
-						</button>
 					</div>
 				</div>
-				<a href="login.html" class="btn btn-costume btn-secondary btn-gray ml-4">MASUK ATAU DAFTAR</a>
-			</form>
+				<ul id="menu-full" class="list-group list-group-horizontal">
+					<a class="nav-link logo-nav" href="index.html">
+						<img src="assets/media/logo/logo.svg" alt="">
+					</a>
+					<li class="list-group-item ">
+						<a class="link-item"  href="destinasi.html">DESTINASI</a>
+					</li>
+					<li class="list-group-item ">
+						<a class="link-item"  href="event.html">EVENT</a>
+					</li>
+					<li class="list-group-item link-active">
+						<a class="link-item"  href="cerita.html">CERITA</a>
+					</li>
+					<li class="list-group-item">
+						<a class="link-item"  href="kontak.html">KONTAK</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-6 nav-button-mobile-wrap">
+				<div class="form-inline ">
+					<button  class="btn btn-sm btn-costume btn-icon btn-secondary btn-gray ml-auto">
+						<i class="fas fa-search"></i>
+					</button>
+					<div class="dropdown btn-menu-nav ">
+						<button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-suitcase-rolling"></i>
+						</button>
+						<div class="dropdown-menu dropdown-menu-mobile card-shadow" aria-labelledby="dropdownMenuButton">
+							<h6 class="text-center mb-2" style="font-weight: 700">Your Travel Plan</h6>
+							<hr>
+							<div class="list-travel-plan">
+								<div class="travel-plan">
+									<div class="row">
+										<div class="col-9">
+											<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
+												<span class="nama-lokasi" name="nama-lokasi">Pantai Losari</span><br>
+												<span class="lokasi" name="lokasi">Makassar</span>
+											</div>
+										</div>
+										<div class="col-3">
+											<button class="btn btn-outline-danger">
+												<i class="fas fa-trash-alt"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="travel-plan">
+									<div class="row">
+										<div class="col-9">
+											<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
+												<span class="nama-lokasi" name="nama-lokasi">Pulau Koidingare Keke</span><br>
+												<span class="lokasi" name="lokasi">Makassar</span>
+											</div>
+										</div>
+										<div class="col-3">
+											<button class="btn btn-outline-danger">
+												<i class="fas fa-trash-alt"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="btn btn-warning btn-warning-c full-width">
+								<i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
+							</button>
+						</div>
+					</div>
+					<a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-full">MASUK ATAU DAFTAR</a>
+					<a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-half">MASUK / DAFTAR</a>
+				</div>	
+			</div>
 		</div>
-	</nav>
+	</div>
 	
 
 	<!-- Awal cerita kunjungin -->
@@ -107,20 +120,21 @@
 			</div>
 		</div>
 		<div class="row mt-4">
-			<div class="col-6 info-section">
+			<div class="col-md-6 info-section">
 				<p>Temukan rekomendasi daerah wisata dengan penggambaran yang lengkap melalui cerita dari tim kunjungin di sini.</p>
 			</div>
-			<div class="col-6 text-right">
+			<div class="col-md-6 text-right">
 				<button class="btn btn-warning btn-warning-c">
 					<i class="fas fa-plus-circle fas-c"></i> UPLOAD CERITAMU
 				</button>
 			</div>
 		</div>
 		<div class="row mt-4">
-			<div class="col-md-12 col-lg-3 mb-5 destinasi-padding">
-				<a href="cerita_detail.html">
+			<div class="col-sm-6 col-md-6 col-lg-3 destinasi-padding">
+				<a href="#">
 					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card cerita-bg-1"> 
+						<div class="card card-shadow ceritak-card">
+							<img class="card-image-cerita" src="assets/media/card-bg/beach.jpg" alt="" style=""> 
 							<div class="card-body cerita-body">
 								<div class="row">
 									<div class="col-3">
@@ -142,10 +156,11 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-12 col-lg-3 mb-5 destinasi-padding">
-				<a href="cerita_detail.html">
+			<div class="col-sm-6 col-md-6 col-lg-3 destinasi-padding">
+				<a href="#">
 					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card cerita-bg-2"> 
+						<div class="card card-shadow ceritak-card">
+							<img class="card-image-cerita" src="assets/media/card-bg/sejarah.jpg" alt="" style="">  
 							<div class="card-body cerita-body">
 								<div class="row">
 									<div class="col-3">
@@ -167,10 +182,11 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-12 col-lg-3 mb-5 destinasi-padding">
-				<a href="cerita_detail.html">
+			<div class="col-sm-6 col-md-6 col-lg-3 destinasi-padding">
+				<a href="#">
 					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card cerita-bg-3"> 
+						<div class="card card-shadow ceritak-card"> 
+							<img class="card-image-cerita" src="assets/media/card-bg/adventure.jpg" alt="" style=""> 
 							<div class="card-body cerita-body">
 								<div class="row">
 									<div class="col-3">
@@ -192,10 +208,11 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-12 col-lg-3 mb-5 destinasi-padding">
-				<a href="cerita_detail.html">
+			<div class="col-sm-6 col-md-6 col-lg-3 destinasi-padding">
+				<a href="#">
 					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card cerita-bg-4"> 
+						<div class="card card-shadow ceritak-card">
+							<img class="card-image-cerita" src="assets/media/card-bg/kota.jpg" alt="" style=""> 
 							<div class="card-body cerita-body">
 								<div class="row">
 									<div class="col-3">
@@ -217,10 +234,89 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-12 col-lg-3 mb-5 destinasi-padding">
-				<a href="cerita_detail.html">
+			<div class="col-sm-6 col-md-6 col-lg-3 destinasi-padding">
+				<a href="#">
 					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card cerita-bg-4"> 
+						<div class="card card-shadow ceritak-card">
+							<img class="card-image-cerita" src="assets/media/card-bg/beach.jpg" alt="" style=""> 
+							<div class="card-body cerita-body">
+								<div class="row">
+									<div class="col-3">
+										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
+									</div>
+									<div class="col-9 pt-1">
+										<span class="pemberi-cerita">Beth Steward</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ceritanya">
+							<h6>
+								<span id="isi-cerita" name="isi-cerita">
+									Keindahan  Wisata Bahari Sulawesi Selatan
+								</span>
+							</h6>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 destinasi-padding">
+				<a href="#">
+					<div class="wrap-card-cerita">
+						<div class="card card-shadow ceritak-card">
+							<img class="card-image-cerita" src="assets/media/card-bg/sejarah.jpg" alt="" style="">  
+							<div class="card-body cerita-body">
+								<div class="row">
+									<div class="col-3">
+										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
+									</div>
+									<div class="col-9 pt-1">
+										<span class="pemberi-cerita">Beth Steward</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ceritanya">
+							<h6>
+								<span id="isi-cerita" name="isi-cerita">
+									Wisata Budaya yang Akan Membawamu ke Masa Lampau
+								</span>
+							</h6>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 destinasi-padding">
+				<a href="#">
+					<div class="wrap-card-cerita">
+						<div class="card card-shadow ceritak-card"> 
+							<img class="card-image-cerita" src="assets/media/card-bg/adventure.jpg" alt="" style=""> 
+							<div class="card-body cerita-body">
+								<div class="row">
+									<div class="col-3">
+										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
+									</div>
+									<div class="col-9 pt-1">
+										<span class="pemberi-cerita">Beth Steward</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ceritanya">
+							<h6>
+								<span id="isi-cerita" name="isi-cerita">
+									5 Pulau wajib Kamu Kunjungi di Indonesia
+								</span>
+							</h6>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-3 destinasi-padding">
+				<a href="#">
+					<div class="wrap-card-cerita">
+						<div class="card card-shadow ceritak-card">
+							<img class="card-image-cerita" src="assets/media/card-bg/kota.jpg" alt="" style=""> 
 							<div class="card-body cerita-body">
 								<div class="row">
 									<div class="col-3">
@@ -242,81 +338,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="col-md-12 col-lg-3 mb-5 destinasi-padding">
-				<a href="cerita_detail.html">
-					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card cerita-bg-4"> 
-							<div class="card-body cerita-body">
-								<div class="row">
-									<div class="col-3">
-										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-									</div>
-									<div class="col-9 pt-1">
-										<span class="pemberi-cerita">Beth Steward</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="ceritanya">
-							<h6>
-								<span id="isi-cerita" name="isi-cerita">
-									3 Wisata Budaya Warisan Masa Penjajahan
-								</span>
-							</h6>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-12 col-lg-3 mb-5 destinasi-padding">
-				<a href="cerita_detail.html">
-					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card cerita-bg-4"> 
-							<div class="card-body cerita-body">
-								<div class="row">
-									<div class="col-3">
-										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-									</div>
-									<div class="col-9 pt-1">
-										<span class="pemberi-cerita">Beth Steward</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="ceritanya">
-							<h6>
-								<span id="isi-cerita" name="isi-cerita">
-									3 Wisata Budaya Warisan Masa Penjajahan
-								</span>
-							</h6>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-md-12 col-lg-3 mb-5 destinasi-padding">
-				<a href="cerita_detail.html">
-					<div class="wrap-card-cerita">
-						<div class="card card-shadow ceritak-card cerita-bg-4"> 
-							<div class="card-body cerita-body">
-								<div class="row">
-									<div class="col-3">
-										<img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-									</div>
-									<div class="col-9 pt-1">
-										<span class="pemberi-cerita">Beth Steward</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="ceritanya">
-							<h6>
-								<span id="isi-cerita" name="isi-cerita">
-									3 Wisata Budaya Warisan Masa Penjajahan
-								</span>
-							</h6>
-						</div>
-					</div>
-				</a>
-			</div>
+
 			<div class="col-12 destinasi-padding mt-2 text-center">
 				<nav id="destinasi-pagination" aria-label="Page navigation example">
 					<ul class="pagination justify-content-center">
@@ -459,10 +481,8 @@
 	<!-- Akhir Modal -->
 
 	<!-- Footer -->
-	<footer class="page-footer font-small pt-2">
-		<!-- Footer Links -->
-		<div class="" style="padding: 60px 90px">
-			<!-- Grid row -->
+	<footer id="footer-desktop" class="page-footer font-small pt-2">
+		<div class="footer-padding" style="">
 			<div class="row">
 				<div class="col-3 clr-white">
 					<img class="mb-4" src="assets/media/logo/logo.svg" width="70%" alt="">
@@ -490,7 +510,6 @@
 					<h4 class="footer-judul clr-yellow">Support</h4>
 					<ul style="list-style-type:none;">
 						<li>
-							<!-- <p> <i class="fas fa-phone-volume fas-c"></i> +628522123123123</p> -->
 							<div class="row">
 								<div class="col-1">
 									<i class="fa fa-phone "></i>
@@ -509,7 +528,7 @@
 									<p> </i> hello @kunjung.in</p>
 								</div>
 							</div>
-							
+
 						</li>
 						<li>
 							<div class="row">
@@ -520,14 +539,112 @@
 									<p> Jl. Makassar, Makassar, 90112, Sulawesi Selatan</p>
 								</div>
 							</div>
-							
 						</li>
 					</ul>
 				</div>
 			</div>
-			<!-- Grid row -->
 		</div>
-		<!-- Footer Links -->
+	</footer>
+	<!-- Footer -->
+	<!-- Footer -->
+	<footer id="footer-mobile" class="page-footer font-small pt-4 section-judul">
+		<div class="row">
+			<div class="col-6">
+				<img class="mb-1" src="assets/media/logo/logo.svg" width="80%" alt="">
+				<p class="copyright clr-yellow">&copy; Kunjungin 2020</p>
+				<img class="" width="70%" src="assets/media/icon/logo_sulsel.svg" alt="">
+			</div>
+			<div class="col-12 mt-4"> 
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle btn-footer full-width" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Link
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="cerita.html">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-link fas-c"></i>
+								</div>
+								<div class="col-9">
+									<p>Cerita Kunjungin</p>
+								</div>
+							</div>
+
+						</a>
+						<a class="dropdown-item" href="event.html">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-link fas-c"></i>
+								</div>
+								<div class="col-9">
+									<p>Event</p>
+								</div>
+							</div>
+
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-link fas-c"></i>
+								</div>
+								<div class="col-9">
+									<p>Visit Sulsel</p>
+								</div>
+							</div>
+
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-link fas-c"></i>
+								</div>
+								<div class="col-9">
+									<p>Dinas Kebudayaan dan <br> Kepariwisataan Provinsi <br> Sulawesi Selatan</p>
+								</div>
+							</div>
+						</a>
+
+					</div>
+				</div>
+				<div class="dropdown mt-3">
+					<button class="btn btn-secondary dropdown-toggle btn-footer full-width" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Support
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<span class="dropdown-item">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-phone "></i>
+								</div>
+								<div class="col-9">
+									<p>  +628522123123123</p>
+								</div>
+							</div>
+						</span>
+						<span class="dropdown-item">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="col-9">
+									<p> </i> hello @kunjung.in</p>
+								</div>
+							</div>
+						</span>
+						<span class="dropdown-item">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-map-marked-alt"></i>
+								</div>
+								<div class="col-9">
+									<p> </i>Jl. Makassar, Makassar, <br>90112, Sulawesi Selatan</p>
+								</div>
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<!-- Footer -->
 	
@@ -537,6 +654,32 @@
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.min.js"></script>
+	<script>
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("navbar_mobile");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+
+				navbar.classList.add("sticky");
+			} else {
+
+				navbar.classList.remove("sticky");
+			}
+		}
+
+		var screenWidth = window.screen.width;
+		var colDestinasi = document.getElementByClassName("tanggal-wrap");
+		console.log(screenWidth);
+		if (screenWidth > 579 ) {
+			colDestinasi.classList[1].remove("col-8");
+			colDestinasi.classList[1].add("col-sm-12");
+		}
+		else{
+			colDestinasi.classList.add("col-8");
+			colDestinasi.classList.remove("col-sm-12");
+		}
+	</script>
 	<script>
 		$(document).ready(function(){
 			$('.owl-carousel').owlCarousel({
@@ -548,30 +691,21 @@
 				autoplayTimeout:1750,
 				autoplayHoverPause:true,
 				responsive:{
+					0:{
+						items:1,
+						nav:false
+					},
 					600:{
-						items:4
+						items:3,
+						nav:false
+					},
+					1000:{
+						items:5,
+						nav:false,
+						loop:true
 					}
 				}
 			});
-		});
-	</script>
-	<script>
-		$(document).ready(function(){
-			var maxLength = 175;
-			$(".card-text").each(function(){
-				var myStr = $(this).text();
-				if($.trim(myStr).length > maxLength){
-					var newStr = myStr.substring(0, maxLength);
-					var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
-					$(this).empty().html(newStr);
-					$(this).append(' <a href="destinasi_detail.html" class="read-more">Selengkapnya..</a>');
-
-				}
-			});
-			// $(".read-more").click(function(){
-			// 	$(this).siblings(".more-text").contents().unwrap();
-			// 	$(this).remove();
-			// });
 		});
 	</script>
 </body>

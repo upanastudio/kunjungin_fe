@@ -258,12 +258,12 @@ nav{
 
 
 #event .card{
-	min-height: 455px;
-	margin-bottom: 40px
+	min-height: 410px;
+	margin-bottom: 10px
 }
 .event-card-title{
 	font-weight: 700;
-	min-height: 50px;
+	min-height: 55px;
 	color: #032A4C;
 }
 .destinasi-card-title{
@@ -282,7 +282,7 @@ nav{
 	margin-bottom: 8px;
 }
 .lh-c{
-	line-height:0px;
+	line-height:20px;
 }
 .btn-lihat-detail{
 	margin-left: ;
@@ -962,25 +962,32 @@ select .selectpicker {
 #menu-floating{
 	display: none;
 }
-#event-page .btn-lihat-detail{
-	display: inline;
-	margin-top: -20px;
-	margin-left: 2vw;
-}
+
 #event-page .card{
 	min-height: 420px;
 }
 div .inline {float:left;}
 #event .tgl-event{
-	font-size: .9rem;
-}
-#event-page .btn-lihat-detail {
-	font-weight: 600;
 	font-size: .8rem;
-	background-color: white;
-	border: 1px solid rgba(221, 233, 244, 1);
-	margin-left: 20%;
 }
+.hidden-sm-wrap{
+	display: block;
+	margin-top: -10px;
+}
+#event-detail #deskripsi-event .event-card-title {
+	margin-bottom: 5px;
+}
+#event-detail .judul-section {
+	font-weight: 700;
+}
+.event-card-title a{
+	color: #032A4C;
+}
+.padding-detail-m{
+	padding-top: 5px;
+	padding-right: 0px;
+}
+
 
 
 
@@ -1057,9 +1064,7 @@ div .inline {float:left;}
 	.btn-saveplan{
 		width: 80%;
 	}
-	#event-page .btn-lihat-detail{
-		display: none;
-	}
+	
 
 
 }
@@ -1069,7 +1074,7 @@ div .inline {float:left;}
 		padding: 20px 1.5rem
 	}
 	.nav-mobile-padding {
-		padding: 10px 1.5rem !important;
+		padding: 20px 1.5rem !important;
 	}
 	#peta iframe{
 		width: 100%;
@@ -1104,7 +1109,7 @@ div .inline {float:left;}
 	}
 
 	.judul-section{
-		font-size: 2.2rem;
+		font-size: 2rem;
 	}
 	.section-judul {
 		padding: 0px 2.5rem;
@@ -1195,7 +1200,7 @@ div .inline {float:left;}
 		height: 230px;
 	}
 	.logo-nav {
-		margin-top: 4px;
+		margin-top: 2px;
 	}
 	.logo-nav img{
 		width: 90px;
@@ -1322,9 +1327,59 @@ div .inline {float:left;}
 	#event-page .card-title{
 		font-size: .9rem;
 	}
-	
+	#event-page .padding-detail-m{
+		display: none;
+	}
+	#event-page #event .card {
+		min-height: 0px;
+		height: 290px;
+	}
 
 
+
+	#event-detail .section-judul-event {
+		margin-top: 6rem !important;
+	}
+	#event-detail .content-wrap {
+		margin-top: 1.25rem !important;
+	}
+	#event-detail .card-title{
+		font-size: .85rem;
+		font-weight: 700;
+
+	}
+	#event-detail #deskripsi-event .tgl-event {
+		margin-bottom: 10px;
+	}
+	#event-detail #deskripsi-event .card-title{
+		font-size: 1.4rem;
+	}
+	#event-detail #btn_tambahKalender{
+		margin-top: 0px !important;
+	}
+	#event-detail .judul-section {
+		font-weight: 700;
+	}
+	#event-detail #event {
+		margin-top: 3rem !important;
+	}
+	#event-detail .padding-detail-m{
+		display: none;
+	}
+	#event-detail #event .card{
+		min-height: 0px;
+		height: 290px;
+	}
+	#event-detail #area-wisata-lain{
+		margin-top: 1rem !important;
+	}
+	#event-detail #deskripsi-event .event-card-title {
+		margin-bottom: -2px;
+	}
+	.hidden-sm-wrap{
+		padding-top: 5px;
+		margin-top: 0px;
+	}
 
 }
 
@@ -1418,9 +1473,24 @@ div .inline {float:left;}
 	#destinasi-detail .card-title{
 		font-size: 1.6rem;
 	}
-
 	
+	#event-page #event .card {
+		min-height: 0px;
+		height: 320px;
+	}
+	#event-page #event .event-card-title {
+		min-height: 75px;
+	}
 
+
+
+	#event-detail #event .card {
+		min-height: 0px;
+		height: 320px;
+	}
+	#event-detail #event .event-card-title{
+		min-height: 75px;
+	}
 
 }
 
@@ -1934,23 +2004,9 @@ div .inline {float:left;}
 	#event-page .nav-mobile-padding{
 		padding: 10px 1.5rem !important;
 	}
-	#event-page .btn-lihat-detail{
-		font-weight: 600;
-		font-size: .8rem;
-		background-color: white;
-		border: 1px solid rgba(221, 233, 244, 1);
-		margin-left: calc(100% - 23%);
-		margin-top: -10px;
-	}
 	#event-page #event .card {
 		min-height: 0px;
 		height: 275px;
-	}
-	#event-page .btn-lihat-detail:hover{
-		color: #63a4dd;
-	}
-	#event-page .card-body{
-		padding: .9rem;
 	}
 	#event-page #footer-mobile{
 		margin-top: -2rem;
@@ -1967,10 +2023,13 @@ div .inline {float:left;}
 		height: 150px;
 		border-radius: 7px 7px 0px 0px;
 	}
-	#event-page .btn-lihat-detail{
+	#event-page .padding-detail-m{
+		padding-top: 5px;
 		display: block;
 	}
-
+	#event-page #event .event-card-title {
+		min-height: 35px;
+	}
 	
 	#event-detail .nav-mobile-padding {
 		padding: 10px 1.5rem !important;
@@ -1984,12 +2043,7 @@ div .inline {float:left;}
 	#event-detail .event-card-title{
 		min-height: 20px;
 	}
-	#event-detail .tgl-event{
-		margin-bottom: 10px;
-	}
-	#event-detail .hidden-sm-wrap{
-		display: none;
-	}
+	
 	#event-detail #event{
 		margin-top: 3rem !important;
 	}
@@ -1998,6 +2052,7 @@ div .inline {float:left;}
 	}
 	#event-detail .padding-detail-m{
 		padding-top: 5px;
+		display: block;
 	}
 
 	#event-detail #event .tgl-event{
@@ -2011,6 +2066,50 @@ div .inline {float:left;}
 	}
 	#event-detail #event .tgl-event {
 		font-size: .7rem;
+	}
+	#event-detail .menu-floating-container{
+		padding: 15px 20px;
+	}
+	#event-detail #event .event-card-title {
+		min-height: 55px;
+	}
+	#event-detail #event .card-title {
+		font-size: 1.05rem;
+	}
+	#event-detail #deskripsi-event .card-title {
+		font-size: 1.25rem;
+		margin-bottom: 15px;
+	}
+	#event-detail #deskripsi-event .tgl-event {
+		font-size: .85rem;
+	}
+	#event-detail #event .card {
+		min-height: 0px;
+		height: 355px;
+	}
+	.hidden-sm-wrap{
+		display: none
+	}
+
+
+	#cerita-page {
+		margin-top: 80px;
+	}
+	#cerita-page .nav-mobile-padding {
+		padding: 10px 1.5rem !important;
+	}
+	#cerita-page .text-right {
+		text-align: left !important;
+	}
+	#cerita-page .info-section p {
+		font-size: 1rem;
+		line-height: 1.75rem;
+	}
+	#cerita-page #area-wisata-lain {
+		margin-top: 0rem !important;
+	}
+	#cerita-page #footer-mobile {
+		margin-top: -2rem !important;
 	}
 
 	/*akhir bagian content*/
