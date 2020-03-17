@@ -13,43 +13,50 @@
 	<link rel="shortcut icon" href="assets/media/icon/favicon2.ico" />
 	
 </head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-profile">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<a class="nav-link logo-nav" href="index.html">
-					<img src="assets/media/logo/logo_biru_1.svg" width="120px" alt="">
-				</a>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<!-- <button class="btn btn-outline-info my-2 my-sm-0 no-border" type="button">
-					<img class="rounded-circle  mr-2" width="30px" src="assets/media/user/profile_user.png">
-					<span class="name-user" name="nama_user">SHANE EDWARD</span>
-				</button> -->
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item dropdown">
-						<a class="dropdown-toggle btn btn-outline-info my-2 my-sm-0 no-border" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<img id="photoIcon" class="rounded-circle  mr-2" width="30px" height="30px" src="assets/media/user/profile_user.png">
-							<span class="name-user" name="nama_user">SHANE EDWARD</span>
-						</a>
-						<div class="dropdown-menu ml-2" aria-labelledby="dropdown03">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
+<body id="profile-page">
+	<div id="navbar_mobile" class="navbar-mobile bg-light nav-mobile-padding">
+		<div class="row">
+			<div class="col-6">
+				<div class="dropdown">
+					<button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-bars fas-c"></i> PROFILE
+					</button>
+					<div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item " href="index.html">BERANDA</a>
+						<a class="dropdown-item " href="destinasi.html">DESTINASI</a>
+						<a class="dropdown-item " href="event.html">EVENTS</a>
+						<a class="dropdown-item active-menu" href="cerita.html">CERITA</a>
+						<a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
+						<div class="btn-logout-wrapper text-center mt-3">
+							<a href="" class="btn btn-secondary btn-login-dropdown">
+								<i class="fas fa-sign-out-alt  fas-c"></i> KELUAR AKUN
+							</a>
 						</div>
-					</li>
+					</div>
+				</div>
+				<ul id="menu-full" class="list-group list-group-horizontal">
+					<a class="nav-link logo-nav" href="index.html">
+						<img src="assets/media/logo/logo_biru_1.svg" alt="">
+					</a>
 				</ul>
-			</form>
+			</div>
+			<div class="col-6 nav-button-mobile-wrap text-right">
+				<a class="dropdown-toggle btn btn-outline-info my-2 my-sm-0 no-border" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img id="photoIcon" class="rounded-circle  mr-2" width="30px" height="30px" src="assets/media/user/profile_user.png">
+					<span class="name-user" name="nama_user"></span>
+				</a>
+				<div class="dropdown-menu ml-2" aria-labelledby="dropdown03">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</div>
 		</div>
-	</nav>
+	</div>
 
 	<main id="main-profile" class="section-judul">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 menu-card-wrap">
 				<div class="card menu-card">
 					<ul class="list-group list-group-fl ush">
 						<li class="list-group-item">
@@ -80,22 +87,22 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-md-8">
+			<div class="col-md">
 				<h4>Profile</h4>
 				<div class="card">
 					<div class="card-body">
 						<div class="row">
-							<div class="col-sm-3">
+							<div class="col-sm-4 text-center">
 								<img id="photoUsers" width="100%" class="rounded-sm mb-3" src="assets/media/user/profile_user.png">	
-								<div class="btn btn-secondary fileinput-button mb-2 full-width">
+								<div class="btn btn-secondary fileinput-button mb-2 full-width flat-button">
 									<span>Ganti Foto</span>
 									<input onchange="readURL(this);" type="file" class="custom-file-input" id="fotoItem"></input>
 								</div>
-								<button class="btn btn-secondary full-width">
+								<button class="btn btn-secondary full-width flat-button">
 									Ganti Password
 								</button>
 							</div>
-							<div class="offset-sm-1 col-sm-7">
+							<div class="col-sm-8">
 								<form>
 									<div class="form-group">
 										<label for="nama">Nama Lengkap</label>

@@ -259,7 +259,7 @@ nav{
 
 #event .card{
 	min-height: 410px;
-	margin-bottom: 10px
+	margin-bottom: 30px
 }
 .event-card-title{
 	font-weight: 700;
@@ -654,6 +654,7 @@ select .selectpicker {
 #login .input-login{
 	padding: 2.5rem;
 }
+
 #login .img-login-wrapper{
 	width: 100%;
 	height: 100vh;
@@ -710,6 +711,31 @@ select .selectpicker {
 	font-size: .95rem;
 	margin-bottom: 0px
 }
+#login .container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 0px;
+	margin-left: 0px;
+	max-width: 100vw;
+}
+#login #img-top{
+	display: none;
+}
+#login #img-samping{
+	display: block;
+	background-color: tomato;
+	padding: 0px;
+}
+#login .col-sm{
+	padding: 2.5rem;
+	padding-top: 1.75rem;
+	padding-bottom: 0rem;
+}
+#login .logo-nav img{
+	width: 128px;
+}
+
 
 #modal-plan-detail-choose .card-body{
 	padding-top: .8rem;
@@ -836,7 +862,7 @@ select .selectpicker {
 	display: block;
 }
 .margin-top-button{
-	margin-top: 1rem;
+	margin-top: 3rem;
 }
 #btn_beranda{
 	background: none;
@@ -931,7 +957,7 @@ select .selectpicker {
 }
 .logo-nav{
 	padding-bottom: 0px;
-	margin-top: 2px;
+	margin-top: 0px;
 	margin-right: 1.25rem;
 }
 .logo-nav img{
@@ -959,6 +985,10 @@ select .selectpicker {
 #destinasi-detail .ceritanya h6{
 	line-height: 1.4rem;
 }
+#destinasi-detail .padding-row-button{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 #menu-floating{
 	display: none;
 }
@@ -966,6 +996,11 @@ select .selectpicker {
 #event-page .card{
 	min-height: 420px;
 }
+
+#event-page #modal-plan-detail .card{
+	min-height: 0px
+}
+
 div .inline {float:left;}
 #event .tgl-event{
 	font-size: .8rem;
@@ -987,6 +1022,80 @@ div .inline {float:left;}
 	padding-top: 5px;
 	padding-right: 0px;
 }
+
+
+#cerita-page .cerita-body .col-9{
+	padding-left: 5px;
+	padding-right: 0px;
+}
+#cerita-page .wrap-card-cerita{
+	margin-bottom: 2.5rem!important;
+}
+#cerita-page .last-cerita{
+	display: none;
+}
+
+
+#cerita-detail .section-judul-event {
+	margin-top: 1rem !important;
+}
+#cerita-detail #deskripsi-event .event-card-title {
+	margin-bottom: -2px;
+}
+#cerita-detail #deskripsi-event .card-title {
+	font-size: 1.4rem;
+}
+#cerita-detail .content-wrap {
+	margin-top: 1.25rem !important;
+}
+#cerita-detail #cerita {
+	margin-top: 3rem !important;
+}
+#cerita-detail .judul-section {
+	font-weight: 700;
+}
+
+
+#login h4,
+#login label{
+	font-weight: 600;
+}
+
+
+#kota-detail .main-content iframe {
+	width: 100%;
+	height: 450px;
+}
+
+
+#profile-page{
+	margin-top: 3rem;
+}
+#profile-page .logo-nav{
+	margin-top: 5px;
+}
+#profile-page .list-group{
+	flex-direction: column;
+}
+#profile-page .section-judul{
+	margin-top: 0rem !important;
+	padding: 40px 100px;
+}
+#profile-page .menu-card-wrap{
+	display: block;
+}
+
+
+
+.flat-button{
+	background-color:transparent;
+	border: 1px solid #cccccc;
+}
+
+
+
+
+
 
 
 
@@ -1140,7 +1249,7 @@ div .inline {float:left;}
 	}
 	.info-section p {
 		line-height: 40px;
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 
 	}
 	.wrap-card-cerita{
@@ -1151,7 +1260,7 @@ div .inline {float:left;}
 	}
 	.pemberi-cerita{
 		font-weight: 600;
-		font-size: 1rem;
+		font-size: .9rem;
 	}
 	.card-image-cerita{
 		height: 320px;
@@ -1200,7 +1309,7 @@ div .inline {float:left;}
 		height: 230px;
 	}
 	.logo-nav {
-		margin-top: 2px;
+		margin-top: 4px;
 	}
 	.logo-nav img{
 		width: 90px;
@@ -1234,6 +1343,19 @@ div .inline {float:left;}
 	#body-destinasi footer{
 		margin-top: -2rem;
 	}
+	.padding-detail-m {
+		display: none;
+	}
+	#event .card {
+		min-height: 0px;
+		height: 290px;
+	}
+
+
+
+
+
+
 	#destinasi-detail .img-bg-wrapper,
 	#destinasi-detail .layer,
 	#destinasi-detail .carousel-destinasi{
@@ -1317,8 +1439,8 @@ div .inline {float:left;}
 		padding: 20px 1.5rem !important;
 	}
 	#event-page .info-section p {
-		font-size: 1rem;
-		line-height: 1.9rem;
+		font-size: 1.25rem;
+		line-height: 35px;
 	}
 	#event-page #event .card{
 		min-height: 0px;
@@ -1381,6 +1503,138 @@ div .inline {float:left;}
 		margin-top: 0px;
 	}
 
+
+	#cerita-page #cerita{
+		margin-top: 6.25rem !important;
+	}
+	#cerita-page .text-right {
+		text-align: left !important;
+	}
+	#cerita-page .cerita-body .col-3{
+		padding-left: 15px;
+		padding-right: 0px
+	}
+	#cerita-page .cerita-body .col-9{
+		padding-top: 0px!important;
+		padding-left: 5px;
+	}
+	#cerita-page .info-section p{
+		font-size: 1.25rem;
+		line-height: 35px;
+	}
+	#cerita-page .last-cerita{
+		display: block;
+	}
+
+
+	#cerita-detail .section-judul-event {
+		margin-top: 6rem !important;
+	}
+	
+	
+	#login .container {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1440px;
+	}
+	#login #img-top{
+		display: block;
+	}
+	#login #img-samping{
+		display: none;
+	}
+	#login .container {
+		margin: auto;
+		z-index: 99;
+		position: relative;
+		background-color: white;
+		border-radius: 15px 15px 15px 15px;
+	}
+	#login .img-bg{
+		height: 100vh;
+	}
+	#login #img-top{
+		object-fit: cover;
+	}
+	#login .img-bg-wrapper{
+		position: relative;
+	}
+	#login .continer-wrap{
+		padding: 5rem;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100vh;
+	}
+
+
+	#kota-detail .jdl-jumbotron{
+		font-size: 2.25rem;
+	}
+	#kota-detail .main-content iframe {
+
+		width: 100%;
+		height: 340px;
+
+	}
+	#kota-detail #main-content {
+		margin-top: 3rem;
+	}
+
+
+	#profile-page .menu-card-wrap{
+		display: none;
+	}
+	#profile-page .section-judul {
+		margin-top: 4rem !important;
+		padding: 40px 3rem;
+
+	}
+	#profile-page .flat-button{
+		font-size: .8rem;
+		width: 100%;
+
+	}
+	#profile-page #photoUsers{
+		width: 100%;
+		height: 140px;
+	}
+	#profile-page #menu-full{
+		display: none;
+	}
+	#profile-page #btn_beranda{
+		display: block;
+	}
+	#profile-page #btn_beranda {
+
+		color: #22629b;
+
+	}
+	#Profile-page #navbar_mobile .dropdown-beranda {
+		border: none;
+		border-radius: 5px;
+		padding: 20px 10px;
+		width: 50vw;
+		z-index: 999;
+
+	}
+	#profile-page .dropdown-menu a {
+
+		font-size: .9rem;
+		color: rgba(106, 136, 163, 1);
+		font-weight: 600;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		border-bottom: 1px solid rgba(221, 233, 244, 1);
+
+	}
+
+
+
+
 }
 
 
@@ -1402,7 +1656,7 @@ div .inline {float:left;}
 	}
 	#navbar_mobile .dropdown-menu-mobile{
 		top: 15% !important;
-		left: calc(100% - 75px) !important;
+		left: calc(100% - 45px) !important;
 		border: none;
 		min-width: 19rem;
 		border-radius: 10px;
@@ -1421,13 +1675,13 @@ div .inline {float:left;}
 		font-size: .7rem;
 	}
 	#event .card-title{
-		font-size: .95rem;
+		font-size: .8rem;
 	}
 	.cerita-body img {
 		width: 85%;
 	}
 	#area-wisata-lain .judul-section {
-		margin-top: 12rem;
+		margin-top: 10rem;
 	}
 
 	#kontak{
@@ -1461,6 +1715,9 @@ div .inline {float:left;}
 	#destinasi-detail .jum-hari{
 		font-size: .5rem;
 	}
+	#destinasi-detail .jum-ulasan{
+		font-size: .65rem;
+	}
 	#destinasi-detail #btn_load_more{
 		font-size: .8rem;
 	}
@@ -1473,25 +1730,49 @@ div .inline {float:left;}
 	#destinasi-detail .card-title{
 		font-size: 1.6rem;
 	}
+	#destinasi-detail .card-image-cerita,
+	#destinasi-detail .ceritak-card{
+		height: 266px;	
+	}
+	#destinasi-detail .nav-mobile-padding {
+		padding: 10px 1.5rem !important;
+	}
+	
 	
 	#event-page #event .card {
 		min-height: 0px;
-		height: 320px;
+		height: 300px;
 	}
 	#event-page #event .event-card-title {
-		min-height: 75px;
+		min-height: 65px;
 	}
 
 
 
 	#event-detail #event .card {
 		min-height: 0px;
-		height: 320px;
+		height: 305px;
 	}
 	#event-detail #event .event-card-title{
 		min-height: 75px;
 	}
+	
+	#cerita-page .cerita-body .col-3{
+		padding-left: 15px;
+		padding-right: 10px
+	}
+	#cerita-page .cerita-body .col-9{
+		padding-top: 2px!important;
+	}
+	#cerita-page .last-cerita{
+		display: none;
+	}
 
+
+	#cerita-detail #deskripsi-event .card-title {
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+	}
 }
 
 @media(max-width: 598px){
@@ -1615,6 +1896,7 @@ div .inline {float:left;}
 	}
 	.info-section p{
 		font-size: .85rem;
+		line-height: 30px;
 	}
 	.margin-top-row{
 		margin-top: .5rem;
@@ -1890,6 +2172,9 @@ div .inline {float:left;}
 		padding: 1rem;
 	}
 
+	#landing-page #event .card{
+		min-height: 350px;
+	}
 
 	#destinasi-detail .img-bg-wrapper,
 	#destinasi-detail .layer,
@@ -1968,14 +2253,20 @@ div .inline {float:left;}
 	#destinasi-detail .jum-hari {
 		font-size: .8rem;
 	}
+	#destinasi-detail .reviewer-name{
+		font-size: .9rem;
+	}
+	#destinasi-detail #area-wisata-lain{
+		margin-top: -1.25rem !important;
+	}
 	
 	#menu-floating{
 		display: block;
 	}
 	.menu-floating-container{
-		box-shadow: 0px -1px 17px -5px rgba(0,0,0,0.78);
+		box-shadow: 0px -1px 17px -5px rgba(0,0,0,0.58);
 		width: 100vw;
-		padding: 15px .5rem;
+		padding: 15px 15px;
 		background-color: white;
 		z-index: 999;
 		position: fixed;
@@ -2030,7 +2321,12 @@ div .inline {float:left;}
 	#event-page #event .event-card-title {
 		min-height: 35px;
 	}
-	
+
+
+
+	#event-detail{
+		margin-bottom: 4rem;
+	}
 	#event-detail .nav-mobile-padding {
 		padding: 10px 1.5rem !important;
 	}
@@ -2062,7 +2358,7 @@ div .inline {float:left;}
 		margin-top: -4rem;
 	}
 	#event-detail #area-wisata-lain{
-		margin-top: -1.5rem !important;
+		margin-top: -1.25rem !important;
 	}
 	#event-detail #event .tgl-event {
 		font-size: .7rem;
@@ -2111,6 +2407,137 @@ div .inline {float:left;}
 	#cerita-page #footer-mobile {
 		margin-top: -2rem !important;
 	}
+	#cerita-page .cerita-body .col-3{
+		padding-left: 20px;
+		padding-right: 15px;
+	}
+	#cerita-page .cerita-body .col-9 {
+		padding-top: 2px !important;
+	}
+	#cerita-page #cerita {
+		margin-top: 80px !important;
+	}
+
+	
+	#cerita-detail{
+		margin-bottom: 4rem;
+	}
+	#cerita-detail .nav-mobile-padding {
+		padding: 10px 1.5rem !important;
+	}
+	#cerita-detail #deskripsi-event{
+		margin-top: 4.5rem!important;
+	}
+	#cerita-detail #deskripsi-event .content-wrap{
+		margin-top: 1.25rem !important;
+	}
+	#cerita-detail .penerbit{
+		font-size: .8rem;
+	}
+	#cerita-detail #cerita{
+		margin-top: 3rem!important;
+	}
+	#cerita-detail #cerita .judul-section{
+		font-weight: 700;
+	}
+	#cerita-detail #footer-mobile{
+		margin-top: -2rem;
+	}
+	#cerita-detail #area-wisata-lain{
+		margin-top: -1.25rem !important;
+	}
+	#cerita-detail #deskripsi-event .card-title {
+		font-size: 1.25rem;
+		margin-bottom: 15px;
+	}
+	#cerita-detail #deskripsi-event .tgl-event{
+		font-size: .8rem;
+	}
+	#cerita-detail #photo-penulis{
+		width: 24px;
+	}
+
+
+	#kota-detail iframe {
+		width: 100%;
+		height: 230px;
+	}
+
+	#kota-detail .judul-section{
+		font-size: 1.2rem;
+		margin-top: 2rem;
+	}
+	#kota-detail #main-content .justify-content-center{
+		margin-top: 1rem !important;
+	}
+	#kota-detail #area-wisata-lain{
+		margin-top: -1.25rem !important;
+	}
+	#kota-detail #footer-mobile{
+		margin-top: -2rem;
+	}
+	#kota-detail .jdl-jumbotron{
+		font-size: 1.8rem;
+	}
+
+	
+	#login{
+		position: relative;
+	}
+	#login .wrap-logo{
+		text-align: center !important;
+	}
+	#login .logo-nav img{
+		width: 35%;
+	}
+	#login h4{
+		font-size: 1.25rem;
+	}
+	#login p{
+		font-size: .9rem;
+	}
+	#login .background-login{
+		display: none;
+	}
+	#login .bg-mobile-wrapper{
+		width: auto;
+		height: 20vh;
+	}
+	#login .input-login{
+		padding-top: .55rem;
+		background-color: white;
+		margin-top: -1rem;
+	}
+	#login h4{
+		margin-top: 1.25rem !important;
+	}
+	#login .container{
+		margin-top: -20px;
+		z-index:99;
+		position: relative;
+		background-color:white;
+		border-radius: 10px 10px 0px 0px;
+	}
+	#login .img-bg{
+		object-fit: cover;
+		height: 180px
+	}
+	#login .col-sm {
+		padding-top: 1.5rem;
+	}
+
+	#profile-page .section-judul {
+		margin-top: 1rem !important;
+		padding: 40px 1rem;
+	}
+
+	#profile-page #navbar_mobile{
+		padding: 10px .7rem !important;
+	}
+	#profile-page #btn_beranda{
+		color: #22629b
+	}
+
 
 	/*akhir bagian content*/
 }

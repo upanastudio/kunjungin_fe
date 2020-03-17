@@ -16,98 +16,109 @@
 	<title>Kota | Kunjungin</title>
 	<link rel="shortcut icon" href="assets/media/icon/favicon2.ico" />
 </head>
-<body>
-	<nav id="navbarx" class="navbar sticky-top navbar-expand-lg navbar-light bg-light transparant mt-4">
-		
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse padding-nav" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item  mr-4">
-					<a class="nav-link logo-nav" href="index.html">
-						<img src="assets/media/logo/logo.svg" width="100px" alt="">
-					</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link " href="destinasi.html">DESTINASI</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="event.html">EVENT</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="cerita.html">CERITA</a>
-				</li>
-				<li class="nav-item mr-4">
-					<a class="nav-link"  href="kontak.html">KONTAK</a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<button  class="btn btn-costume btn-icon btn-secondary mr-4 btn-gray">
-					<i class="fas fa-search"></i>
-				</button>
-				<!-- <button  class="btn btn-costume btn-icon btn-secondary btn-gray ml-4">
-					<i class="fas fa-suitcase-rolling"></i>
-				</button> -->
+<body id="kota-detail">
+	<div id="navbar_mobile" class="navbar-mobile">
+		<div class="row">
+			<div class="col-6">
 				<div class="dropdown">
-					<button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-suitcase-rolling"></i>
+					<button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-bars fas-c"></i> DESTINASI
 					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<h6 class="text-center mb-2" style="font-weight: 500">Your Travel Plan</h6>
-						<hr>
-						<div class="list-travel-plan">
-							<div class="travel-plan">
-								<div class="row">
-									<div class="col-9">
-										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-											<span class="nama-lokasi" name="nama-lokasi">Pantai Losari</span><br>
-											<span class="lokasi" name="lokasi">Makassar</span>
-										</div>
-									</div>
-									<div class="col-3">
-										<button class="btn btn-outline-danger">
-											<i class="fas fa-trash-alt"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="travel-plan">
-								<div class="row">
-									<div class="col-9">
-										<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-											<span class="nama-lokasi" name="nama-lokasi">Pulau Koidingare Keke</span><br>
-											<span class="lokasi" name="lokasi">Makassar</span>
-										</div>
-									</div>
-									<div class="col-3">
-										<button class="btn btn-outline-danger">
-											<i class="fas fa-trash-alt"></i>
-										</button>
-									</div>
-								</div>
-							</div>
+					<div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item " href="index.html">BERANDA</a>
+						<a class="dropdown-item active-menu" href="destinasi.html">DESTINASI</a>
+						<a class="dropdown-item" href="event.html">EVENTS</a>
+						<a class="dropdown-item" href="cerita.html">CERITA</a>
+						<a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
+						<div class="btn-logout-wrapper text-center mt-4">
+							<a href="login.html" class="btn btn-secondary btn-login-dropdown">
+								MASUK ATAU DAFTAR
+							</a>
 						</div>
-						<button class="btn btn-warning btn-warning-c full-width">
-							<i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
-						</button>
 					</div>
 				</div>
-				<a href="login.html" class="btn btn-costume btn-secondary btn-gray ml-4">MASUK ATAU DAFTAR</a>
-			</form>
+				<ul id="menu-full" class="list-group list-group-horizontal">
+					<li class="list-group-item ">
+						<a class="link-item"  href="index.html">BERANDA</a>
+					</li>
+					<li class="list-group-item link-active">
+						<a class="link-item"  href="destinasi.html">DESTINASI</a>
+					</li>
+					<li class="list-group-item">
+						<a class="link-item"  href="event.html">EVENT</a>
+					</li>
+					<li class="list-group-item">
+						<a class="link-item"  href="cerita.html">CERITA</a>
+					</li>
+					<li class="list-group-item">
+						<a class="link-item"  href="kontak.html">KONTAK</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-6 nav-button-mobile-wrap">
+				<div class="form-inline ">
+					<button  class="btn btn-sm btn-costume btn-icon btn-secondary btn-gray ml-auto">
+						<i class="fas fa-search"></i>
+					</button>
+					<div class="dropdown btn-menu-nav ">
+						<button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-suitcase-rolling"></i>
+						</button>
+						<div class="dropdown-menu dropdown-menu-mobile card-shadow" aria-labelledby="dropdownMenuButton">
+							<h6 class="text-center mb-2" style="font-weight: 700">Your Travel Plan</h6>
+							<hr>
+							<div class="list-travel-plan">
+								<div class="travel-plan">
+									<div class="row">
+										<div class="col-9">
+											<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
+												<span class="nama-lokasi" name="nama-lokasi">Pantai Losari</span><br>
+												<span class="lokasi" name="lokasi">Makassar</span>
+											</div>
+										</div>
+										<div class="col-3">
+											<button class="btn btn-outline-danger">
+												<i class="fas fa-trash-alt"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="travel-plan">
+									<div class="row">
+										<div class="col-9">
+											<div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
+												<span class="nama-lokasi" name="nama-lokasi">Pulau Koidingare Keke</span><br>
+												<span class="lokasi" name="lokasi">Makassar</span>
+											</div>
+										</div>
+										<div class="col-3">
+											<button class="btn btn-outline-danger">
+												<i class="fas fa-trash-alt"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="btn btn-warning btn-warning-c full-width">
+								<i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
+							</button>
+						</div>
+					</div>
+					<a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-full">MASUK ATAU DAFTAR</a>
+					<a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-half">MASUK / DAFTAR</a>
+				</div>	
+			</div>
 		</div>
-	</nav>
+	</div>
 	
 	<!-- Awal Carousel -->
 	<section id="carousel-web" class="carousel-web">
 		<div id="carouselDestinasi" class="carousel slide carousel-destinasi" data-ride="carousel">
-			<div class="img-bg-wrapper" style="height: 55vh">
+			<div class="img-bg-wrapper">
 				<img class="img-bg" src="assets/media/bg/pantai-losari.jpg" alt="" style="">
 				<div class="layer">
-					<div class="row text-center">
-						<div class="col">
-							<h1 class="clr-white jdl-jumbotron pd-jumbotron text-shadow">MAKASSAR</h1>
-						</div>
+					<div class="text-center">
+						<h1 class="clr-white jdl-jumbotron pd-jumbotron text-shadow">MAKASSAR</h1>
 					</div>
 				</div>
 			</div>
@@ -116,13 +127,11 @@
 	<!-- Akhir Carousel -->
 
 	<main id="main-content" class="section-judul main-content">
-		<div id="" class="row">
-			<div class="row mt-4">
-				<div class="col">
-					<div class="card card-shadow peta-card">
-						<div class="card-body peta-card" style="padding: 0px">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8126106199684!2d119.4031027143706!3d-5.133857753368861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02b011ce37ef%3A0x28ed3928c1b6cf23!2sBenteng%20Rotterdam%20Makassar!5e0!3m2!1sid!2sid!4v1583051220918!5m2!1sid!2sid" width="1100" height="450" frameborder="0" style="border:0;border-radius: 10px" allowfullscreen=""></iframe>
-						</div>
+		<div class="row mt-4">
+			<div class="col">
+				<div class="card card-shadow peta-card">
+					<div class="card-body peta-card " style="padding: 0px">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.8126106199684!2d119.4031027143706!3d-5.133857753368861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf02b011ce37ef%3A0x28ed3928c1b6cf23!2sBenteng%20Rotterdam%20Makassar!5e0!3m2!1sid!2sid!4v1583051220918!5m2!1sid!2sid"  frameborder="0" style="border:0;border-radius: 10px" allowfullscreen=""></iframe>
 					</div>
 				</div>
 			</div>
@@ -136,16 +145,16 @@
 			</div>
 		</div>
 		<div class="row mt-5 justify-content-center">
-			<div class="col-5 batas-bawah">
+			<div class="col-sm-6 batas-bawah">
 				<div class="card card-shadow no-border">
-					<img src="assets/media/card-bg/pantai-losari.jpg" class="card-img-destinasi card-img-c" height="300" alt="...">
+					<img src="assets/media/card-bg/pantai-losari.jpg" class="card-img-destinasi card-img-c" alt="..." height="300">
 					<div class="card-body">
 						<h5 class="card-title destinasi-card-title">Pantai Losari</h5>
-						<p class="card-text">Pantai Losari adalah ikon pariwisata utama dari Kota Makassar. Saking terkenalnya, setiap kali diminta untuk menyebutkan nama tempat wisata yang wajib dikunjungi kalau ke lorem ipsum dolor sit amet</p>
+						<p class="card-text">Pantai Losari adalah ikon pariwisata utama dari Kota Makassar. Saking terkenalnya, setiap kali diminta untuk menyebutkan nama tempat wisata yang wajib dikunjungi kalau ke lore <a href="destinasi_detail.html" class="read-more">Selengkapnya..</a></p>
 						<div class="row">
 							<div class="col">
-								<button class="full-width btn btn-secondary btn-secondary-c" data-toggle="modal" data-target="#modal-petunjuk">
-									<i class="fas fa-map fas-c"></i> How to get there
+								<button class="full-width btn btn-secondary btn-secondary-c btn-how-to" data-toggle="modal" data-target="#modal-petunjuk">
+									<i class="fas fa-route fas-c"></i> How to get there
 								</button>
 							</div>
 							<div class="col">
@@ -157,16 +166,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-5 batas-bawah">
+			<div class="col-sm-6 batas-bawah">
 				<div class="card card-shadow no-border">
-					<img src="assets/media/card-bg/pantai-akkarena.jpg" class="card-img-destinasi card-img-c" height="300" alt="...">
+					<img src="assets/media/card-bg/pantai-losari.jpg" class="card-img-destinasi card-img-c" alt="..." height="300">
 					<div class="card-body">
-						<h5 class="card-title destinasi-card-title">Pantai Akkarena</h5>
-						<p class="card-text">Pantai Losari adalah ikon pariwisata utama dari Kota Makassar. Saking terkenalnya, setiap kali diminta untuk menyebutkan nama tempat wisata yang wajib dikunjungi kalau ke lorem ipsum dolor sit amet</p>
+						<h5 class="card-title destinasi-card-title">Pantai Losari</h5>
+						<p class="card-text">Pantai Losari adalah ikon pariwisata utama dari Kota Makassar. Saking terkenalnya, setiap kali diminta untuk menyebutkan nama tempat wisata yang wajib dikunjungi kalau ke lore <a href="destinasi_detail.html" class="read-more">Selengkapnya..</a></p>
 						<div class="row">
 							<div class="col">
-								<button class="full-width btn btn-secondary btn-secondary-c" data-toggle="modal" data-target="#modal-petunjuk">
-									<i class="fas fa-map fas-c"></i> How to get there
+								<button class="full-width btn btn-secondary btn-secondary-c btn-how-to" data-toggle="modal" data-target="#modal-petunjuk">
+									<i class="fas fa-route fas-c"></i> How to get there
 								</button>
 							</div>
 							<div class="col">
@@ -178,16 +187,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-5 batas-bawah">
+			<div class="col-sm-6 batas-bawah">
 				<div class="card card-shadow no-border">
-					<img src="assets/media/card-bg/pantai-akkarena.jpg" class="card-img-destinasi card-img-c" height="300" alt="...">
+					<img src="assets/media/card-bg/pantai-losari.jpg" class="card-img-destinasi card-img-c" alt="..." height="300">
 					<div class="card-body">
-						<h5 class="card-title destinasi-card-title">Pantai Akkarena</h5>
-						<p class="card-text">Pantai Losari adalah ikon pariwisata utama dari Kota Makassar. Saking terkenalnya, setiap kali diminta untuk menyebutkan nama tempat wisata yang wajib dikunjungi kalau ke lorem ipsum dolor sit amet</p>
+						<h5 class="card-title destinasi-card-title">Pantai Losari</h5>
+						<p class="card-text">Pantai Losari adalah ikon pariwisata utama dari Kota Makassar. Saking terkenalnya, setiap kali diminta untuk menyebutkan nama tempat wisata yang wajib dikunjungi kalau ke lore <a href="destinasi_detail.html" class="read-more">Selengkapnya..</a></p>
 						<div class="row">
 							<div class="col">
-								<button class="full-width btn btn-secondary btn-secondary-c" data-toggle="modal" data-target="#modal-petunjuk">
-									<i class="fas fa-map fas-c"></i> How to get there
+								<button class="full-width btn btn-secondary btn-secondary-c btn-how-to" data-toggle="modal" data-target="#modal-petunjuk">
+									<i class="fas fa-route fas-c"></i> How to get there
 								</button>
 							</div>
 							<div class="col">
@@ -199,16 +208,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-5 batas-bawah">
+			<div class="col-sm-6 batas-bawah">
 				<div class="card card-shadow no-border">
-					<img src="assets/media/card-bg/pantai-akkarena.jpg" class="card-img-destinasi card-img-c" height="300" alt="...">
+					<img src="assets/media/card-bg/pantai-losari.jpg" class="card-img-destinasi card-img-c" alt="..." height="300">
 					<div class="card-body">
-						<h5 class="card-title destinasi-card-title">Pantai Akkarena</h5>
-						<p class="card-text">Pantai Losari adalah ikon pariwisata utama dari Kota Makassar. Saking terkenalnya, setiap kali diminta untuk menyebutkan nama tempat wisata yang wajib dikunjungi kalau ke lorem ipsum dolor sit amet</p>
+						<h5 class="card-title destinasi-card-title">Pantai Losari</h5>
+						<p class="card-text">Pantai Losari adalah ikon pariwisata utama dari Kota Makassar. Saking terkenalnya, setiap kali diminta untuk menyebutkan nama tempat wisata yang wajib dikunjungi kalau ke lore <a href="destinasi_detail.html" class="read-more">Selengkapnya..</a></p>
 						<div class="row">
 							<div class="col">
-								<button class="full-width btn btn-secondary btn-secondary-c" data-toggle="modal" data-target="#modal-petunjuk">
-									<i class="fas fa-map fas-c"></i> How to get there
+								<button class="full-width btn btn-secondary btn-secondary-c btn-how-to" data-toggle="modal" data-target="#modal-petunjuk">
+									<i class="fas fa-route fas-c"></i> How to get there
 								</button>
 							</div>
 							<div class="col">
@@ -306,7 +315,7 @@
 					</h6>
 
 					<div class="row" style="margin-top:40px">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<div class="card step-card">
 								<div class="card-body card-body-pd">
 									<div class="row">
@@ -356,7 +365,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<div class="card card-shadow peta-card">
 								<div class="card-body peta-card" style="padding: 0px">
 									<iframe name="alamat-lokasi" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.751343368179!2d119.40546796476396!3d-5.143680746267252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbf1d52ea30d089%3A0x6101a2ac09b61090!2sPantai%20Losari!5e0!3m2!1sid!2sid!4v1583290070545!5m2!1sid!2sid" width="100%" height="300" frameborder="0" style="border:0;border-radius: 10px" allowfullscreen=""></iframe>
@@ -386,10 +395,10 @@
 					</h6>
 					
 					<div class="row" style="margin-top:20px">
-						<div class="col-12">
+						<div class="col-sm-12">
 							<p>Daftar Kunjungan</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<div class="card step-card">
 								<div class="card-body">
 									Transportasi Bus Pariwisata
@@ -411,7 +420,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<div class="card step-card">
 								<div class="card-body">
 									Jalan - jalan di benteng Rotterdam
@@ -453,10 +462,10 @@
 					</h6>
 					
 					<div class="row" style="margin-top:20px">
-						<div class="col-12">
+						<div class="col-sm-12">
 							<p>Pilih Daftar Kunjungan</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<div class="card step-card">
 								<div class="card-body">
 									<div class="custom-control custom-checkbox">
@@ -490,7 +499,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<div class="card step-card">
 								<div class="card-body">
 									<div class="custom-control custom-checkbox">
@@ -538,10 +547,8 @@
 	<!-- Akhir Modal -->
 
 	<!-- Footer -->
-	<footer class="page-footer font-small pt-2">
-		<!-- Footer Links -->
-		<div class="" style="padding: 60px 90px">
-			<!-- Grid row -->
+	<footer id="footer-desktop" class="page-footer font-small pt-2">
+		<div class="footer-padding" style="">
 			<div class="row">
 				<div class="col-3 clr-white">
 					<img class="mb-4" src="assets/media/logo/logo.svg" width="70%" alt="">
@@ -569,7 +576,6 @@
 					<h4 class="footer-judul clr-yellow">Support</h4>
 					<ul style="list-style-type:none;">
 						<li>
-							<!-- <p> <i class="fas fa-phone-volume fas-c"></i> +628522123123123</p> -->
 							<div class="row">
 								<div class="col-1">
 									<i class="fa fa-phone "></i>
@@ -599,14 +605,118 @@
 									<p> Jl. Makassar, Makassar, 90112, Sulawesi Selatan</p>
 								</div>
 							</div>
-							
 						</li>
 					</ul>
 				</div>
 			</div>
-			<!-- Grid row -->
 		</div>
-		<!-- Footer Links -->
+	</footer>
+	<!-- Footer -->
+	<!-- Footer -->
+	<footer id="footer-mobile" class="page-footer font-small pt-4 section-judul">
+		<div class="row">
+			<div class="col-6">
+				<img class="mb-1" src="assets/media/logo/logo.svg" width="80%" alt="">
+				<p class="copyright clr-yellow">&copy; Kunjungin 2020</p>
+				<img class="" width="70%" src="assets/media/icon/logo_sulsel.svg" alt="">
+			</div>
+			<div class="col-12 mt-4"> 
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle btn-footer full-width" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Link
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="cerita.html">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-link fas-c"></i>
+								</div>
+								<div class="col-9">
+									<p>Cerita Kunjungin</p>
+								</div>
+							</div>
+
+						</a>
+						<a class="dropdown-item" href="event.html">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-link fas-c"></i>
+								</div>
+								<div class="col-9">
+									<p>Event</p>
+								</div>
+							</div>
+							
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-link fas-c"></i>
+								</div>
+								<div class="col-9">
+									<p>Visit Sulsel</p>
+								</div>
+							</div>
+
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-link fas-c"></i>
+								</div>
+								<div class="col-9">
+									<p>Dinas Kebudayaan dan <br> Kepariwisataan Provinsi <br> Sulawesi Selatan</p>
+								</div>
+							</div>
+						</a>
+						
+					</div>
+				</div>
+				<div class="dropdown mt-3">
+					<button class="btn btn-secondary dropdown-toggle btn-footer full-width" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Support
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<span class="dropdown-item">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-phone "></i>
+								</div>
+								<div class="col-9">
+									<p>  +628522123123123</p>
+								</div>
+							</div>
+						</span>
+						<span class="dropdown-item">
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="col-9">
+									<p> </i> hello @kunjung.in</p>
+								</div>
+							</div>
+						</span>
+						<span class="dropdown-item">
+							<!-- <div class="col-1">
+								<i class="fa fa-map-marked-alt"></i>
+							</div>
+							<div class="col-9">
+								<p> Jl. Makassar, Makassar, 90112, Sulawesi Selatan</p>
+							</div> -->
+							<div class="row">
+								<div class="col-1">
+									<i class="fa fa-map-marked-alt"></i>
+								</div>
+								<div class="col-9">
+									<p> </i>Jl. Makassar, Makassar, <br>90112, Sulawesi Selatan</p>
+								</div>
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<!-- Footer -->
 	
@@ -617,10 +727,17 @@
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/owlcarousel/owl.carousel.min.js"></script>
 	<script>
-		window.onscroll = () => {
-			const navx = document.querySelector('#navbarx');
-			if(this.scrollY <= 40) navx.className = 'navbar sticky-top navbar-expand-lg navbar-light bg-light transparant mt-4'; else navx.className = 'navbar sticky-top navbar-expand-lg navbar-light bg-light blue-transparant';
-		};
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("navbar_mobile");
+		var sticky = navbar.offsetTop;
+		// sticky = stick + 40;
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				navbar.classList.add("sticky","nav-mobile-padding","blue-transparant");
+			} else {
+				navbar.classList.remove("sticky","nav-mobile-padding","blue-transparant");
+			}
+		}
 	</script>
 	<script>
 		$(document).ready(function(){
@@ -633,11 +750,40 @@
 				autoplayTimeout:1750,
 				autoplayHoverPause:true,
 				responsive:{
+					0:{
+						items:1,
+						nav:false
+					},
 					600:{
-						items:4
+						items:3,
+						nav:false
+					},
+					1000:{
+						items:5,
+						nav:false,
+						loop:true
 					}
 				}
 			});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+			var maxLength = 175;
+			$(".card-text").each(function(){
+				var myStr = $(this).text();
+				if($.trim(myStr).length > maxLength){
+					var newStr = myStr.substring(0, maxLength);
+					var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+					$(this).empty().html(newStr);
+					$(this).append(' <a href="destinasi_detail.html" class="read-more">Selengkapnya..</a>');
+
+				}
+			});
+		    // $(".read-more").click(function(){
+			// 	$(this).siblings(".more-text").contents().unwrap();
+			// 	$(this).remove();
+			// });
 		});
 	</script>
 </body>
