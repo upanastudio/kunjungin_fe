@@ -1579,6 +1579,10 @@ div .inline {float:left;}
 	}
 	#login .img-bg{
 		height: 100vh;
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:-1;
 	}
 	#login #img-top{
 		object-fit: cover;
@@ -1593,6 +1597,7 @@ div .inline {float:left;}
 		top: 0;
 		height: 100vh;
 	}
+	
 
 
 	#kota-detail .jdl-jumbotron{
@@ -2578,7 +2583,8 @@ div .inline {float:left;}
 	}
 	#login .img-bg{
 		object-fit: cover;
-		height: 180px
+		height: 180px;
+		position: relative;
 	}
 	#login .col-sm {
 		padding-top: 1.5rem;
