@@ -514,6 +514,30 @@ nav{
 	font-size: .9rem
 }
 
+#bg-password{
+	width: 35%;
+}
+#logo-password{
+	width: 120px;
+}
+.penjelasan-password{
+	padding-left: 30rem !important;
+	padding-right: 30rem !important;
+}
+.penjelasan-password h4{
+	font-weight: 700;
+	color: rgba(3, 42, 77, 1);
+	font-size: 1.25rem;
+}
+.penjelasan-password p{
+	color: rgba(106, 136, 163, 1);
+	font-size: .95rem;
+}
+#reset-password .wrap-img{
+	margin-bottom: 1rem !important;
+}
+
+
 
 
 .review{
@@ -1634,6 +1658,31 @@ div .inline {float:left;}
 
 
 
+	#bg-password{
+		width: 75%;
+	}
+	#logo-password{
+		width: 120px;
+	}
+	.penjelasan-password{
+		padding-left: 9rem !important;
+		padding-right: 9rem !important;
+	}
+	.penjelasan-password h4{
+		font-weight: 700;
+		color: rgba(3, 42, 77, 1);
+		font-size: 1.25rem;
+	}
+	.penjelasan-password p{
+		color: rgba(106, 136, 163, 1);
+		font-size: .95rem;
+	}
+	#reset-password .wrap-img{
+		margin-bottom: 3rem !important;
+	}
+
+
+
 
 }
 
@@ -2571,7 +2620,30 @@ div .inline {float:left;}
 	#profile-page .rounded-sm{
 		border-radius: 50% !important;
 	}
+	
 
+	#bg-password{
+		width: 95%;
+	}
+	#logo-password{
+		width: 120px;
+	}
+	.penjelasan-password{
+		padding-left: 4rem !important;
+		padding-right: 4rem !important;
+	}
+	.penjelasan-password h4{
+		font-weight: 700;
+		color: rgba(3, 42, 77, 1);
+		font-size: 1.25rem;
+	}
+	.penjelasan-password p{
+		color: rgba(106, 136, 163, 1);
+		font-size: .95rem;
+	}
+	#reset-password .wrap-img{
+		margin-bottom: 3rem !important;
+	}
 
 
 	/*akhir bagian content*/
