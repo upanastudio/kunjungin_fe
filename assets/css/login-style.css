@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap');
 body{
-	font-family: 'Roboto', sans-serif !important;
+	font-family: 'Nunito Sans', sans-serif !important;
 	background-color: #F9FCFF;
 }
 .bg-light {
@@ -78,4 +78,27 @@ body{
 #photoIcon{
 	object-fit: cover;
 	object-position: 50% 10%;
+}
+
+#headerCerita{
+   width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: 50% 10%;
+}
+
+.judul-profile{
+   font-weight: 700;
+   font-size: 1.3rem;
+   color: rgba(3, 42, 77, 1);
+}
+
+.sub-judul-profile{
+   font-weight: 700;
+   font-size: 1.3rem;
+   color: rgba(3, 42, 77, 1);
+}
+
+.note-editor .btn{
+   font-weight: 400 !Important;
 }

@@ -1,0 +1,199 @@
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <base href="">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/login-style.css">
+   <link rel="stylesheet" href="assets/css/summernote-bs4.min.css">
+   <title>Cerita | Kunjungin</title>
+   <link rel="shortcut icon" href="assets/media/icon/favicon2.ico" />
+
+</head>
+
+<body id="profile-page">
+   <div id="navbar_mobile" class="navbar-mobile bg-light nav-mobile-padding">
+      <div class="row">
+         <div class="col-6">
+            <div class="dropdown">
+               <button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button"
+                  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-bars fas-c"></i> PROFILE
+               </button>
+               <div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item " href="index.html">BERANDA</a>
+                  <a class="dropdown-item " href="destinasi.html">DESTINASI</a>
+                  <a class="dropdown-item " href="event.html">EVENTS</a>
+                  <a class="dropdown-item active-menu" href="cerita.html">CERITA</a>
+                  <a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
+                  <div class="btn-logout-wrapper text-center mt-3">
+                     <a href="" class="btn btn-secondary btn-login-dropdown">
+                        <i class="fas fa-sign-out-alt  fas-c"></i> KELUAR AKUN
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <ul id="menu-full" class="list-group list-group-horizontal">
+               <a class="nav-link logo-nav" href="index.html">
+                  <img src="assets/media/logo/logo_biru_1.svg" alt="">
+               </a>
+            </ul>
+         </div>
+         <div class="col-6 nav-button-mobile-wrap text-right">
+            <a id="dropdownPhoto" class="dropdown-toggle btn btn-outline-info my-2 my-sm-0 no-border"
+               href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true"
+               aria-expanded="false">
+               <img id="photoIcon" class="rounded-circle  mr-2" width="30px" height="30px"
+                  src="assets/media/user/profile_user.png">
+               <span class="name-user" name="nama_user"></span>
+            </a>
+            <div class="dropdown-menu ml-2" aria-labelledby="dropdown03">
+               <a class="dropdown-item" href="#">Action</a>
+               <a class="dropdown-item" href="#">Another action</a>
+               <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <main id="main-profile" class="section-judul">
+      <div class="row">
+         <div class="col-md-4 menu-card-wrap">
+            <div class="card menu-card">
+               <ul class="list-group list-group-fl ush">
+                  <li class="list-group-item">
+                     <a class="btn btn-menu no-border full-width text-left" href="#">
+                        <i class="fa fa-cube fas-c"></i> DASHBOARD
+                     </a>
+                  </li>
+                  <li class="list-group-item">
+                     <a class="btn btn-menu no-border full-width text-left" href="#">
+                        <i class="fa fa-user-circle fas-c"></i> PROFILE
+                     </a>
+                  </li>
+                  <li class="list-group-item">
+                     <a class="btn btn-menu no-border full-width text-left" href="#">
+                        <i class="fas fa-suitcase-rolling fas-c"></i> TRIP PLAN
+                     </a>
+                  </li>
+                  <li class="list-group-item">
+                     <a class="btn btn-menu no-border full-width text-left active-btn" href="#">
+                        <i class="fa fa-book fas-c"></i> CERITA
+                     </a>
+                  </li>
+                  <li class="list-group-item">
+                     <a class="btn btn-menu no-border full-width text-left" href="#">
+                        <i class="fas fa-comment-dots fas-c"></i> BANTUAN
+                     </a>
+                  </li>
+                  <li class="list-group-item">
+                     <a class="btn btn-menu no-border full-width text-left" href="#">
+                        <i class="fas fa-sign-out-alt  fas-c"></i> KELUAR AKUN
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-md">
+            <h4 class="judul-profile">Cerita</h4>
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="sub-judul-profile">Tambah Cerita</h5>
+                  <input type="text" class="form-control form-control-lg" name="content_title_article"
+                     placeholder="Masukkan judul ceritamu">
+                  <hr>
+                  <div class="mt-5" id="summernote">
+                     <p>Hello Summernote</p>
+                  </div>
+                  <div id="uploadFoto" class="mt-5">
+                     <h5 class="sub-judul-profile mb-3">Tambah Gambar Cover</h5>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <img id="headerCerita" width="100%" class="rounded-sm mb-3"
+                              src="assets/media/card-bg/pantai-akkarena.jpg">
+                           <div class="btn btn-secondary fileinput-button mb-2 full-width flat-button">
+                              <span>Pilih Gambar</span>
+                              <input onchange="readURL(this);" type="file" class="custom-file-input"
+                                 id="fotoItem"></input>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+
+                        </div>
+                     </div>
+
+
+                  </div>
+                  <hr>
+                  <div class="buttoWrap text-right" >
+                     <button class="btn btn-secondary">
+                        Batal
+                     </button>
+                     <button class="btn btn-warning">
+                        Simpan Draft
+                     </button>
+                     <button class="btn btn-info">
+                        Publish Ceritamu
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="assets/js/summernote-bs4.min.js"></script>
+   <script>
+      function readURL(input) {
+         if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+               $('#photoUsers')
+                  .attr('src', e.target.result);
+               $('#photoIcon')
+                  .attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+         }
+      }
+   </script>
+   <!-- include summernote css/js -->
+
+
+   <script>
+      $(document).ready(function () {
+         $('#summernote').summernote({
+            height: 300
+         });
+
+      });
+   </script>
+   <script>
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+
+				reader.onload = function (e) {
+					$('#headerCerita')
+					.attr('src', e.target.result);
+				};
+
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+	</script>
+</body>
+
+</html>
