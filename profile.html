@@ -13,145 +13,147 @@
 	<link rel="shortcut icon" href="assets/media/icon/favicon2.ico" />
 	
 </head>
-<body id="profile-page">
-	<div id="navbar_mobile" class="navbar-mobile bg-light nav-mobile-padding">
-		<div class="row">
-			<div class="col-6">
-				<div class="dropdown">
-					<button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fa fa-bars fas-c"></i> PROFILE
-					</button>
-					<div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item " href="index.html">BERANDA</a>
-						<a class="dropdown-item " href="destinasi.html">DESTINASI</a>
-						<a class="dropdown-item " href="event.html">EVENTS</a>
-						<a class="dropdown-item active-menu" href="cerita.html">CERITA</a>
-						<a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
-						<div class="btn-logout-wrapper text-center mt-3">
-							<a href="" class="btn btn-secondary btn-login-dropdown">
-								<i class="fas fa-sign-out-alt  fas-c"></i> KELUAR AKUN
-							</a>
-						</div>
-					</div>
-				</div>
-				<ul id="menu-full" class="list-group list-group-horizontal">
-					<a class="nav-link logo-nav" href="index.html">
-						<img src="assets/media/logo/logo_biru_1.svg" alt="">
-					</a>
-				</ul>
-			</div>
-			<div class="col-6 nav-button-mobile-wrap text-right">
-				<a id="dropdownPhoto" class="dropdown-toggle btn btn-outline-info my-2 my-sm-0 no-border" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<img id="photoIcon" class="rounded-circle  mr-2" width="30px" height="30px" src="assets/media/user/profile_user.png">
-					<span class="name-user" name="nama_user"></span>
-				</a>
-				<div class="dropdown-menu ml-2" aria-labelledby="dropdown03">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<a class="dropdown-item" href="#">Something else here</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<main id="main-profile" class="section-judul">
-		<div class="row">
-			<div class="col-md-4 menu-card-wrap">
-				<div class="card menu-card">
-					<ul class="list-group list-group-fl ush">
-						<li class="list-group-item">
-							<a class="btn btn-menu no-border full-width text-left" href="#">
-								<i class="fa fa-cube fas-c"></i> DASHBOARD
-							</a>
-						</li>
-						<li class="list-group-item">
-							<a class="btn btn-menu no-border full-width text-left active-btn" href="#">
-								<i class="fa fa-user-circle fas-c"></i> PROFILE
-							</a>
-						</li>
-						<li class="list-group-item">
-							<a class="btn btn-menu no-border full-width text-left" href="#">
-								<i class="fas fa-suitcase-rolling fas-c"></i> TRIP PLAN
-							</a>
-						</li>
-						<li class="list-group-item">
-							<a class="btn btn-menu no-border full-width text-left" href="#">
-								<i class="fas fa-comment-dots fas-c"></i> BANTUAN
-							</a>
-						</li>
-						<li class="list-group-item">
-							<a class="btn btn-menu no-border full-width text-left" href="#">
-								<i class="fas fa-sign-out-alt  fas-c"></i> KELUAR AKUN
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-md">
-				<h4>Profile</h4>
-				<div class="card">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-sm-4 text-center">
-								<img id="photoUsers" width="100%" class="rounded-sm mb-3" src="assets/media/user/profile_user.png">	
-								<div class="btn btn-secondary fileinput-button mb-2 full-width flat-button">
-									<span>Ganti Foto</span>
-									<input onchange="readURL(this);" type="file" class="custom-file-input" id="fotoItem"></input>
-								</div>
-								<button class="btn btn-secondary full-width flat-button">
-									Ganti Password
-								</button>
-							</div>
-							<div class="col-sm-8">
-								<form>
-									<div class="form-group">
-										<label for="nama">Nama Lengkap</label>
-										<input type="text" class="form-control bg-input" id="nama" name="nama" value="Shane Edward" disabled="">
-									</div>
-									<div class="form-group">
-										<label for="email">Email</label>
-										<input type="email" class="form-control bg-input" id="email" name="email" value="shaneedwards@gmail.com" disabled="">
-									</div>
-									<div class="form-group">
-										<label for="noTelpon">No. Telpon</label>
-										<input type="text" class="form-control bg-input" id="noTelpon" name="noTelpon" value="+6285123567890" disabled="">
-									</div>
-									<div class="form-group">
-										<label for="alamat">Alamat</label>
-										<input type="text" class="form-control bg-input" id="alamat" name="alamat" value="Jl. Makassar Blok G10 No 10" disabled="">
-									</div>
-									<div class="form-group">
-										<label for="provinsi">Provinsi</label>
-										<input type="text" class="form-control bg-input" id="provinsi" name="provinsi" value="Sulawesi Selatan" disabled="">
-									</div>
-									<div class="form-group">
-										<label for="kota">Kota</label>
-										<input type="text" class="form-control bg-input" id="kota" name="kota" value="Makassar" disabled="">
-									</div>
-									<div class="form-group">
-										<label for="kecamatan">Kecamatan</label>
-										<input type="text" class="form-control bg-input" id="kecamatan" name="kecamatan" value="Panakukang" disabled="">
-									</div>
-									<div class="form-group">
-										<label for="kelurahan">Kelurahan</label>
-										<input type="text" class="form-control bg-input" id="kelurahan" name="kelurahan" value="Tamalate" disabled="">
-									</div>
-									<div class="form-group">
-										<label for="kodePos">Kode Pos</label>
-										<input type="text" class="form-control bg-input" id="kodePos" name="kodePos" value="9011"disabled="">
-									</div>
-									<button class="btn btn-warning btn-warning-c full-width">
-										UBAH DATA
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-
+<body>
+   <div id="profile-page">
+      <div id="navbar_mobile" class="navbar-mobile bg-light nav-mobile-padding">
+         <div class="row">
+            <div class="col-6">
+               <div class="dropdown">
+                  <button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-bars fas-c"></i> PROFILE
+                  </button>
+                  <div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
+                     <a class="dropdown-item " href="index.html">BERANDA</a>
+                     <a class="dropdown-item " href="destinasi.html">DESTINASI</a>
+                     <a class="dropdown-item " href="event.html">EVENTS</a>
+                     <a class="dropdown-item active-menu" href="cerita.html">CERITA</a>
+                     <a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
+                     <div class="btn-logout-wrapper text-center mt-3">
+                        <a href="" class="btn btn-secondary btn-login-dropdown">
+                           <i class="fas fa-sign-out-alt  fas-c"></i> KELUAR AKUN
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <ul id="menu-full" class="list-group list-group-horizontal">
+                  <a class="nav-link logo-nav" href="index.html">
+                     <img src="assets/media/logo/logo_biru_1.svg" alt="">
+                  </a>
+               </ul>
+            </div>
+            <div class="col-6 nav-button-mobile-wrap text-right">
+               <a id="dropdownPhoto" class="dropdown-toggle btn btn-outline-info my-2 my-sm-0 no-border" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img id="photoIcon" class="rounded-circle  mr-2" width="30px" height="30px" src="assets/media/user/profile_user.png">
+                  <span class="name-user" name="nama_user"></span>
+               </a>
+               <div class="dropdown-menu ml-2" aria-labelledby="dropdown03">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   
+      <main id="main-profile" class="section-judul">
+         <div class="row">
+            <div class="col-md-4 menu-card-wrap">
+               <div class="card menu-card">
+                  <ul class="list-group list-group-fl ush">
+                     <li class="list-group-item">
+                        <a class="btn btn-menu no-border full-width text-left" href="#">
+                           <i class="fa fa-cube fas-c"></i> DASHBOARD
+                        </a>
+                     </li>
+                     <li class="list-group-item">
+                        <a class="btn btn-menu no-border full-width text-left active-btn" href="#">
+                           <i class="fa fa-user-circle fas-c"></i> PROFILE
+                        </a>
+                     </li>
+                     <li class="list-group-item">
+                        <a class="btn btn-menu no-border full-width text-left" href="#">
+                           <i class="fas fa-suitcase-rolling fas-c"></i> TRIP PLAN
+                        </a>
+                     </li>
+                     <li class="list-group-item">
+                        <a class="btn btn-menu no-border full-width text-left" href="#">
+                           <i class="fas fa-comment-dots fas-c"></i> BANTUAN
+                        </a>
+                     </li>
+                     <li class="list-group-item">
+                        <a class="btn btn-menu no-border full-width text-left" href="#">
+                           <i class="fas fa-sign-out-alt  fas-c"></i> KELUAR AKUN
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md">
+               <h4>Profile</h4>
+               <div class="card">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-sm-4 text-center">
+                           <img id="photoUsers" width="100%" class="rounded-sm mb-3" src="assets/media/user/profile_user.png">	
+                           <div class="btn btn-secondary fileinput-button mb-2 full-width flat-button">
+                              <span>Ganti Foto</span>
+                              <input onchange="readURL(this);" type="file" class="custom-file-input" id="fotoItem"></input>
+                           </div>
+                           <button class="btn btn-secondary full-width flat-button">
+                              Ganti Password
+                           </button>
+                        </div>
+                        <div class="col-sm-8">
+                           <form>
+                              <div class="form-group">
+                                 <label for="nama">Nama Lengkap</label>
+                                 <input type="text" class="form-control bg-input" id="nama" name="nama" value="Shane Edward" disabled="">
+                              </div>
+                              <div class="form-group">
+                                 <label for="email">Email</label>
+                                 <input type="email" class="form-control bg-input" id="email" name="email" value="shaneedwards@gmail.com" disabled="">
+                              </div>
+                              <div class="form-group">
+                                 <label for="noTelpon">No. Telpon</label>
+                                 <input type="text" class="form-control bg-input" id="noTelpon" name="noTelpon" value="+6285123567890" disabled="">
+                              </div>
+                              <div class="form-group">
+                                 <label for="alamat">Alamat</label>
+                                 <input type="text" class="form-control bg-input" id="alamat" name="alamat" value="Jl. Makassar Blok G10 No 10" disabled="">
+                              </div>
+                              <div class="form-group">
+                                 <label for="provinsi">Provinsi</label>
+                                 <input type="text" class="form-control bg-input" id="provinsi" name="provinsi" value="Sulawesi Selatan" disabled="">
+                              </div>
+                              <div class="form-group">
+                                 <label for="kota">Kota</label>
+                                 <input type="text" class="form-control bg-input" id="kota" name="kota" value="Makassar" disabled="">
+                              </div>
+                              <div class="form-group">
+                                 <label for="kecamatan">Kecamatan</label>
+                                 <input type="text" class="form-control bg-input" id="kecamatan" name="kecamatan" value="Panakukang" disabled="">
+                              </div>
+                              <div class="form-group">
+                                 <label for="kelurahan">Kelurahan</label>
+                                 <input type="text" class="form-control bg-input" id="kelurahan" name="kelurahan" value="Tamalate" disabled="">
+                              </div>
+                              <div class="form-group">
+                                 <label for="kodePos">Kode Pos</label>
+                                 <input type="text" class="form-control bg-input" id="kodePos" name="kodePos" value="9011"disabled="">
+                              </div>
+                              <button class="btn btn-warning btn-warning-c full-width">
+                                 UBAH DATA
+                              </button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+   </div>
+	
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="assets/js/jquery-3.2.1.slim.min.js"></script>

@@ -2644,7 +2644,13 @@ div .inline {float:left;}
 	}
 	#reset-password .wrap-img{
 		margin-bottom: 3rem !important;
-	}
+   }
+   #profile-page .rounded-sm {
+      border-radius: 5% !important;
+  }
+  .buttonWrap .btn{
+     font-size: .7rem;
+  }
 
 
 	/*akhir bagian content*/
