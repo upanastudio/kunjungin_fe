@@ -893,48 +893,8 @@
 	<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/owlcarousel/owl.carousel.min.js"></script>
-	<script>
-		window.onscroll = function () { myFunction() };
-		var navbar = document.getElementById("navbar_mobile");
-		var sticky = navbar.offsetTop;
-		// sticky = stick + 40;
-		function myFunction() {
-			if (window.pageYOffset > sticky) {
-				navbar.classList.add("sticky", "nav-mobile-padding", "blue-transparant");
-			} else {
-				navbar.classList.remove("sticky", "nav-mobile-padding", "blue-transparant");
-			}
-		}
-	</script>
-	<script>
-		$(document).ready(function () {
-			$('.owl-carousel').owlCarousel({
-				center: true,
-				items: 4,
-				loop: true,
-				margin: 10,
-				autoplay: true,
-				autoplayTimeout: 1750,
-				autoplayHoverPause: true,
-				responsive: {
-					0: {
-						items: 1,
-						nav: false
-					},
-					600: {
-						items: 3,
-						nav: false
-					},
-					1000: {
-						items: 5,
-						nav: false,
-						loop: true
-					}
-				}
-			});
-		});
-	</script>
+   <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+   <script src="assets/js/default-jtron.js"></script>
 </body>
 
 </html>
