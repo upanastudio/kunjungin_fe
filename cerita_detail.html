@@ -19,105 +19,106 @@
 </head>
 
 <body>
-   <div id="cerita-detail">
-      <div id="navbar_mobile" class="navbar-mobile blue-solid nav-mobile-padding">
-         <div class="row">
-            <div class="col-6">
-               <div class="dropdown">
-                  <button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button"
-                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     <i class="fa fa-bars fas-c"></i> CERITA
-                  </button>
-                  <div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
-                     <a class="dropdown-item " href="index.html">BERANDA</a>
-                     <a class="dropdown-item " href="destinasi.html">DESTINASI</a>
-                     <a class="dropdown-item " href="event.html">EVENTS</a>
-                     <a class="dropdown-item active-menu" href="cerita.html">CERITA</a>
-                     <a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
-                     <div class="btn-logout-wrapper text-center mt-3">
-                        <a href="login.htm" class="btn btn-secondary btn-login-dropdown">
-                           MASUK ATAU DAFTAR
-                        </a>
-                     </div>
+   <!-- Awal Navbar -->
+   <div id="navbar_mobile" class="navbar-mobile blue-solid nav-mobile-padding">
+      <div class="row">
+         <div class="col-6">
+            <div class="dropdown">
+               <button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button"
+                  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-bars fas-c"></i> CERITA
+               </button>
+               <div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item " href="index.html">BERANDA</a>
+                  <a class="dropdown-item " href="destinasi.html">DESTINASI</a>
+                  <a class="dropdown-item " href="event.html">EVENTS</a>
+                  <a class="dropdown-item active-menu" href="cerita.html">CERITA</a>
+                  <a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
+                  <div class="btn-logout-wrapper text-center mt-3">
+                     <a href="login.htm" class="btn btn-secondary btn-login-dropdown">
+                        MASUK ATAU DAFTAR
+                     </a>
                   </div>
                </div>
-               <ul id="menu-full" class="list-group list-group-horizontal">
-                  <a class="nav-link logo-nav" href="index.html">
-                     <img src="assets/media/logo/logo.svg" alt="">
-                  </a>
-                  <li class="list-group-item ">
-                     <a class="link-item" href="destinasi.html">DESTINASI</a>
-                  </li>
-                  <li class="list-group-item ">
-                     <a class="link-item" href="event.html">EVENT</a>
-                  </li>
-                  <li class="list-group-item link-active">
-                     <a class="link-item" href="cerita.html">CERITA</a>
-                  </li>
-                  <li class="list-group-item">
-                     <a class="link-item" href="kontak.html">KONTAK</a>
-                  </li>
-               </ul>
             </div>
-            <div class="col-6 nav-button-mobile-wrap">
-               <div class="form-inline ">
-                  <button class="btn btn-sm btn-costume btn-icon btn-secondary btn-gray ml-auto">
-                     <i class="fas fa-search"></i>
+            <ul id="menu-full" class="list-group list-group-horizontal">
+               <a class="nav-link logo-nav" href="index.html">
+                  <img src="assets/media/logo/logo.svg" alt="">
+               </a>
+               <li class="list-group-item ">
+                  <a class="link-item" href="destinasi.html">DESTINASI</a>
+               </li>
+               <li class="list-group-item ">
+                  <a class="link-item" href="event.html">EVENT</a>
+               </li>
+               <li class="list-group-item link-active">
+                  <a class="link-item" href="cerita.html">CERITA</a>
+               </li>
+               <li class="list-group-item">
+                  <a class="link-item" href="kontak.html">KONTAK</a>
+               </li>
+            </ul>
+         </div>
+         <div class="col-6 nav-button-mobile-wrap">
+            <div class="form-inline ">
+               <button class="btn btn-sm btn-costume btn-icon btn-secondary btn-gray ml-auto">
+                  <i class="fas fa-search"></i>
+               </button>
+               <div class="dropdown btn-menu-nav ">
+                  <button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button"
+                     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fas fa-suitcase-rolling"></i>
                   </button>
-                  <div class="dropdown btn-menu-nav ">
-                     <button class="btn btn-costume btn-icon btn-secondary btn-gray  dropdown-toggle" type="button"
-                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-suitcase-rolling"></i>
-                     </button>
-                     <div class="dropdown-menu dropdown-menu-mobile card-shadow" aria-labelledby="dropdownMenuButton">
-                        <h6 class="text-center mb-2" style="font-weight: 700">Your Travel Plan</h6>
-                        <hr>
-                        <div class="list-travel-plan">
-                           <div class="travel-plan">
-                              <div class="row">
-                                 <div class="col-9">
-                                    <div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-                                       <span class="nama-lokasi" name="nama-lokasi">Pantai Losari</span><br>
-                                       <span class="lokasi" name="lokasi">Makassar</span>
-                                    </div>
-                                 </div>
-                                 <div class="col-3">
-                                    <button class="btn btn-outline-danger">
-                                       <i class="fas fa-trash-alt"></i>
-                                    </button>
+                  <div class="dropdown-menu dropdown-menu-mobile card-shadow" aria-labelledby="dropdownMenuButton">
+                     <h6 class="text-center mb-2" style="font-weight: 700">Your Travel Plan</h6>
+                     <hr>
+                     <div class="list-travel-plan">
+                        <div class="travel-plan">
+                           <div class="row">
+                              <div class="col-9">
+                                 <div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
+                                    <span class="nama-lokasi" name="nama-lokasi">Pantai Losari</span><br>
+                                    <span class="lokasi" name="lokasi">Makassar</span>
                                  </div>
                               </div>
-                           </div>
-                           <div class="travel-plan">
-                              <div class="row">
-                                 <div class="col-9">
-                                    <div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
-                                       <span class="nama-lokasi" name="nama-lokasi">Pulau Koidingare Keke</span><br>
-                                       <span class="lokasi" name="lokasi">Makassar</span>
-                                    </div>
-                                 </div>
-                                 <div class="col-3">
-                                    <button class="btn btn-outline-danger">
-                                       <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                 </div>
+                              <div class="col-3">
+                                 <button class="btn btn-outline-danger">
+                                    <i class="fas fa-trash-alt"></i>
+                                 </button>
                               </div>
                            </div>
                         </div>
-                        <button class="btn btn-warning btn-warning-c full-width">
-                           <i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
-                        </button>
+                        <div class="travel-plan">
+                           <div class="row">
+                              <div class="col-9">
+                                 <div class="btn-planning" data-toggle="modal" data-target="#modal-plan-detail">
+                                    <span class="nama-lokasi" name="nama-lokasi">Pulau Koidingare Keke</span><br>
+                                    <span class="lokasi" name="lokasi">Makassar</span>
+                                 </div>
+                              </div>
+                              <div class="col-3">
+                                 <button class="btn btn-outline-danger">
+                                    <i class="fas fa-trash-alt"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
                      </div>
+                     <button class="btn btn-warning btn-warning-c full-width">
+                        <i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
+                     </button>
                   </div>
-                  <a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-full">MASUK
-                     ATAU DAFTAR</a>
-                  <a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-half">MASUK
-                     / DAFTAR</a>
                </div>
+               <a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-full">MASUK
+                  ATAU DAFTAR</a>
+               <a href="login.html" class="btn btn-costume btn-secondary btn-gray btn-menu-nav btn-masuk-half">MASUK
+                  / DAFTAR</a>
             </div>
          </div>
       </div>
-
+   </div>
+   <!-- Akhir Navbar -->
+   <div id="cerita-detail">
       <section id="deskripsi-event" class="section-judul section-judul-event mt-1">
          <img name="img-header" src="assets/media/card-bg/sejarah.jpg" style="width: 100%;height: auto" alt="...">
          <div class="content-wrap mt-5">
