@@ -88,6 +88,10 @@ nav{
 	padding: 20px 80px;
 	z-index: 99;
 }
+
+#navbar_mobile .list-group-item:last-child{
+	border-radius: 0px !important;
+}
 .navbar-mobile .btn-costume{
 	font-size: .75rem;
 }
@@ -1154,6 +1158,14 @@ div .inline {float:left;}
 #hasilPencarian .list-pencarian{
 	margin-bottom: 4rem;
 }
+
+
+.btn-secondary:hover,
+.btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+	background-color : #5a9fd2;
+	border-color: #5a9fd2;
+}
+
 
 
 /*Responsive section*/
