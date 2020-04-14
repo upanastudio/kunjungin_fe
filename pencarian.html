@@ -13,8 +13,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
-	<title>Cerita | Kunjungin</title>
+	<title>Pencarian | Kunjungin</title>
 	<link rel="shortcut icon" href="assets/media/icon/favicon2.ico" />
+
 </head>
 <body>
    <!-- Awal Navbar -->
@@ -23,13 +24,13 @@
          <div class="col-6">
             <div class="dropdown">
                <button id="btn_beranda" class="btn btn-transparant dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-bars fas-c"></i> CERITA
+                  <i class="fa fa-bars fas-c"></i> PENCARIAN
                </button>
                <div class="dropdown-menu dropdown-beranda card-shadow" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item " href="index.html">BERANDA</a>
                   <a class="dropdown-item " href="destinasi.html">DESTINASI</a>
-                  <a class="dropdown-item " href="event.html">EVENTS</a>
-                  <a class="dropdown-item active-menu" href="cerita.html">CERITA</a>
+                  <a class="dropdown-item" href="event.html">EVENTS</a>
+                  <a class="dropdown-item" href="cerita.html">CERITA</a>
                   <a class="dropdown-item" href="kontak.html">TENTANG KAMI</a>
                   <div class="btn-logout-wrapper text-center mt-3">
                      <a href="login.htm" class="btn btn-secondary btn-login-dropdown">
@@ -45,10 +46,10 @@
                <li class="list-group-item ">
                   <a class="link-item"  href="destinasi.html">DESTINASI</a>
                </li>
-               <li class="list-group-item ">
+               <li class="list-group-item">
                   <a class="link-item"  href="event.html">EVENT</a>
                </li>
-               <li class="list-group-item link-active">
+               <li class="list-group-item">
                   <a class="link-item"  href="cerita.html">CERITA</a>
                </li>
                <li class="list-group-item">
@@ -113,276 +114,92 @@
    </div>
    <!-- Akhir Navbar -->
 
-   <div id="cerita-page">
-      <!-- Awal cerita kunjungin -->
-      <section id="cerita" class="section-judul mt-5">
-         <div class="row">
-            <div class="col">
-               <h1 class="judul-section">Cerita Kunjungin</h1>
+   <div id="pencarian-page">
+
+
+      <!-- Awal Pencarian -->
+      <section id="inpSearch" class="section-judul mt-4">
+         <div class="input-group md-form form-sm form-2 pl-0 mb-2">
+            <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search"aria-label="Search">
+            <div class="input-group-append">
+               <span class="input-group-text red lighten-3" id="basic-text1">
+                  <i class="fas fa-search text-grey" aria-hidden="true">
+
+                  </i>
+               </span>
             </div>
          </div>
-         <div class="row mt-4">
-            <div class="col-lg-6 info-section">
-               <p>Temukan rekomendasi daerah wisata dengan penggambaran yang lengkap melalui cerita dari tim kunjungin di sini.</p>
+         
+         <span class="ketPencarian">Hasil pencarian dengan kata kunci <b>"<span id="keyPencarian" name="keyPencarian">Makassar<span>"</b></span>
+
+         <div id="hasilPencarian" class="mt-5">
+            <div class="row list-pencarian justify-content-center justify-content-center">
+               <div class="col-3 col-xl-2 photo-place">
+                  <img class="img-search" src="assets/media/card-bg/sejarah.jpg" alt="">
+               </div>
+               <div class="col-9 col-xl-7 info-place">
+                  <span class="judul-artikel">Pantai Losari</span>
+                  <p class=" text-artikel">Pantai Losari adalah sebuah pantai yang terletak di sebelah barat kota Makassar, provinsi Sulawesi Selatan, Indonesia. Pantai ini menjadi tempat bagi warga Makassar untuk menghabiskan waktu pada pagi, sore dan malam hari menikmati pemandangan matahari tenggelam yang sangat indah.[1] Jarak pantai Losari dari Bandar Udara Internasional Sultan Hasanuddin kurang lebih 20 KM dan akan memakan waktu sekitar 30 menit jika melalui Jalan Tol Insinyur Sutami.</p>
+               </div>
             </div>
-            <div class="col-lg-6 text-right">
-               <button class="btn btn-warning btn-warning-c">
-                  <i class="fas fa-plus-circle fas-c"></i> UPLOAD CERITAMU
-               </button>
+
+            <div class="row list-pencarian justify-content-center">
+               <div class="col-3 col-xl-2 photo-place">
+                  <img class="img-search" src="assets/media/card-bg/sejarah.jpg" alt="">
+               </div>
+               <div class="col-9 col-xl-7 info-place">
+                  <span class="judul-artikel">Pantai Losari</span>
+                  <p class=" text-artikel">Pantai Losari adalah sebuah pantai yang terletak di sebelah barat kota Makassar, provinsi Sulawesi Selatan, Indonesia. Pantai ini menjadi tempat bagi warga Makassar untuk menghabiskan waktu pada pagi, sore dan malam hari menikmati pemandangan matahari tenggelam yang sangat indah.[1] Jarak pantai Losari dari Bandar Udara Internasional Sultan Hasanuddin kurang lebih 20 KM dan akan memakan waktu sekitar 30 menit jika melalui Jalan Tol Insinyur Sutami.</p>
+               </div>
             </div>
-         </div>
-         <div class="row mt-4">
-            <div class="col-sm-6 col-md-4 col-lg-3 destinasi-padding">
-               <a href="cerita_detail.html">
-                  <div class="wrap-card-cerita">
-                     <div class="card card-shadow ceritak-card">
-                        <img class="card-image-cerita" src="assets/media/card-bg/beach.jpg" alt="" style=""> 
-                        <div class="card-body cerita-body">
-                           <div class="row">
-                              <div class="col-3">
-                                 <img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-                              </div>
-                              <div class="col-9 pt-1">
-                                 <span class="pemberi-cerita">Beth Steward</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="ceritanya">
-                        <h6>
-                           <span id="isi-cerita" name="isi-cerita">
-                              Keindahan  Wisata Bahari Sulawesi Selatan
-                           </span>
-                        </h6>
-                     </div>
-                  </div>
-               </a>
+
+            <div class="row list-pencarian justify-content-center">
+               <div class="col-3 col-xl-2 photo-place">
+                  <img class="img-search" src="assets/media/card-bg/sejarah.jpg" alt="">
+               </div>
+               <div class="col-9 col-xl-7 info-place">
+                  <span class="judul-artikel">Pantai Losari</span>
+                  <p class=" text-artikel">Pantai Losari adalah sebuah pantai yang terletak di sebelah barat kota Makassar, provinsi Sulawesi Selatan, Indonesia. Pantai ini menjadi tempat bagi warga Makassar untuk menghabiskan waktu pada pagi, sore dan malam hari menikmati pemandangan matahari tenggelam yang sangat indah.[1] Jarak pantai Losari dari Bandar Udara Internasional Sultan Hasanuddin kurang lebih 20 KM dan akan memakan waktu sekitar 30 menit jika melalui Jalan Tol Insinyur Sutami.</p>
+               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 destinasi-padding">
-               <a href="cerita_detail.html">
-                  <div class="wrap-card-cerita">
-                     <div class="card card-shadow ceritak-card">
-                        <img class="card-image-cerita" src="assets/media/card-bg/sejarah.jpg" alt="" style="">  
-                        <div class="card-body cerita-body">
-                           <div class="row">
-                              <div class="col-3">
-                                 <img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-                              </div>
-                              <div class="col-9 pt-1">
-                                 <span class="pemberi-cerita">Beth Steward</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="ceritanya">
-                        <h6>
-                           <span id="isi-cerita" name="isi-cerita">
-                              Wisata Budaya yang Akan Membawamu ke Masa Lampau
-                           </span>
-                        </h6>
-                     </div>
-                  </div>
-               </a>
+
+            <div class="row list-pencarian justify-content-center">
+               <div class="col-3 col-xl-2 photo-place">
+                  <img class="img-search" src="assets/media/card-bg/sejarah.jpg" alt="">
+               </div>
+               <div class="col-9 col-xl-7 info-place">
+                  <span class="judul-artikel">Pantai Losari</span>
+                  <p class=" text-artikel">Pantai Losari adalah sebuah pantai yang terletak di sebelah barat kota Makassar, provinsi Sulawesi Selatan, Indonesia. Pantai ini menjadi tempat bagi warga Makassar untuk menghabiskan waktu pada pagi, sore dan malam hari menikmati pemandangan matahari tenggelam yang sangat indah.[1] Jarak pantai Losari dari Bandar Udara Internasional Sultan Hasanuddin kurang lebih 20 KM dan akan memakan waktu sekitar 30 menit jika melalui Jalan Tol Insinyur Sutami.</p>
+               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 destinasi-padding">
-               <a href="cerita_detail.html">
-                  <div class="wrap-card-cerita">
-                     <div class="card card-shadow ceritak-card"> 
-                        <img class="card-image-cerita" src="assets/media/card-bg/adventure.jpg" alt="" style=""> 
-                        <div class="card-body cerita-body">
-                           <div class="row">
-                              <div class="col-3">
-                                 <img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-                              </div>
-                              <div class="col-9 pt-1">
-                                 <span class="pemberi-cerita">Beth Steward</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="ceritanya">
-                        <h6>
-                           <span id="isi-cerita" name="isi-cerita">
-                              5 Pulau wajib Kamu Kunjungi di Indonesia
-                           </span>
-                        </h6>
-                     </div>
-                  </div>
-               </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 destinasi-padding">
-               <a href="cerita_detail.html">
-                  <div class="wrap-card-cerita">
-                     <div class="card card-shadow ceritak-card">
-                        <img class="card-image-cerita" src="assets/media/card-bg/kota.jpg" alt="" style=""> 
-                        <div class="card-body cerita-body">
-                           <div class="row">
-                              <div class="col-3">
-                                 <img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-                              </div>
-                              <div class="col-9 pt-1">
-                                 <span class="pemberi-cerita">Beth Steward</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="ceritanya">
-                        <h6>
-                           <span id="isi-cerita" name="isi-cerita">
-                              3 Wisata Budaya Warisan Masa Penjajahan
-                           </span>
-                        </h6>
-                     </div>
-                  </div>
-               </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 destinasi-padding">
-               <a href="cerita_detail.html">
-                  <div class="wrap-card-cerita">
-                     <div class="card card-shadow ceritak-card">
-                        <img class="card-image-cerita" src="assets/media/card-bg/beach.jpg" alt="" style=""> 
-                        <div class="card-body cerita-body">
-                           <div class="row">
-                              <div class="col-3">
-                                 <img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-                              </div>
-                              <div class="col-9 pt-1">
-                                 <span class="pemberi-cerita">Beth Steward</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="ceritanya">
-                        <h6>
-                           <span id="isi-cerita" name="isi-cerita">
-                              Keindahan  Wisata Bahari Sulawesi Selatan
-                           </span>
-                        </h6>
-                     </div>
-                  </div>
-               </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 destinasi-padding">
-               <a href="cerita_detail.html">
-                  <div class="wrap-card-cerita">
-                     <div class="card card-shadow ceritak-card">
-                        <img class="card-image-cerita" src="assets/media/card-bg/sejarah.jpg" alt="" style="">  
-                        <div class="card-body cerita-body">
-                           <div class="row">
-                              <div class="col-3">
-                                 <img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-                              </div>
-                              <div class="col-9 pt-1">
-                                 <span class="pemberi-cerita">Beth Steward</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="ceritanya">
-                        <h6>
-                           <span id="isi-cerita" name="isi-cerita">
-                              Wisata Budaya yang Akan Membawamu ke Masa Lampau
-                           </span>
-                        </h6>
-                     </div>
-                  </div>
-               </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 destinasi-padding">
-               <a href="cerita_detail.html">
-                  <div class="wrap-card-cerita">
-                     <div class="card card-shadow ceritak-card"> 
-                        <img class="card-image-cerita" src="assets/media/card-bg/adventure.jpg" alt="" style=""> 
-                        <div class="card-body cerita-body">
-                           <div class="row">
-                              <div class="col-3">
-                                 <img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-                              </div>
-                              <div class="col-9 pt-1">
-                                 <span class="pemberi-cerita">Beth Steward</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="ceritanya">
-                        <h6>
-                           <span id="isi-cerita" name="isi-cerita">
-                              5 Pulau wajib Kamu Kunjungi di Indonesia
-                           </span>
-                        </h6>
-                     </div>
-                  </div>
-               </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 destinasi-padding">
-               <a href="cerita_detail.html">
-                  <div class="wrap-card-cerita">
-                     <div class="card card-shadow ceritak-card">
-                        <img class="card-image-cerita" src="assets/media/card-bg/kota.jpg" alt="" style=""> 
-                        <div class="card-body cerita-body">
-                           <div class="row">
-                              <div class="col-3">
-                                 <img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-                              </div>
-                              <div class="col-9 pt-1">
-                                 <span class="pemberi-cerita">Beth Steward</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="ceritanya">
-                        <h6>
-                           <span id="isi-cerita" name="isi-cerita">
-                              3 Wisata Budaya Warisan Masa Penjajahan
-                           </span>
-                        </h6>
-                     </div>
-                  </div>
-               </a>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 destinasi-padding last-cerita">
-               <a href="cerita_detail.html">
-                  <div class="wrap-card-cerita">
-                     <div class="card card-shadow ceritak-card">
-                        <img class="card-image-cerita" src="assets/media/card-bg/kota.jpg" alt="" style=""> 
-                        <div class="card-body cerita-body">
-                           <div class="row">
-                              <div class="col-3">
-                                 <img class="rounded-circle" width="100%" src="assets/media/user/profile_user.png">
-                              </div>
-                              <div class="col-9 pt-1">
-                                 <span class="pemberi-cerita">Beth Steward</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="ceritanya">
-                        <h6>
-                           <span id="isi-cerita" name="isi-cerita">
-                              3 Wisata Budaya Warisan Masa Penjajahan
-                           </span>
-                        </h6>
-                     </div>
-                  </div>
-               </a>
-            </div>
-   
-            <div class="col-12 destinasi-padding mt-2 text-center">
-               <nav id="destinasi-pagination" aria-label="Page navigation example">
-                  <ul class="pagination justify-content-center">
-                     <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                     <li class="page-item "><a class="page-link" href="#">2</a></li>
-                     <li class="page-item"><a class="page-link" href="#">3</a></li>
-                     <li class="page-item">
-                        <a class="page-link" href="#">Last Page</a>
-                     </li>
-                  </ul>
-               </nav>
+
+            <div class="row list-pencarian justify-content-center">
+               <div class="col-3 col-xl-2 photo-place">
+                  <img class="img-search" src="assets/media/card-bg/sejarah.jpg" alt="">
+               </div>
+               <div class="col-9 col-xl-7 info-place">
+                  <span class="judul-artikel">Pantai Losari</span>
+                  <p class=" text-artikel">Pantai Losari adalah sebuah pantai yang terletak di sebelah barat kota Makassar, provinsi Sulawesi Selatan, Indonesia. Pantai ini menjadi tempat bagi warga Makassar untuk menghabiskan waktu pada pagi, sore dan malam hari menikmati pemandangan matahari tenggelam yang sangat indah.[1] Jarak pantai Losari dari Bandar Udara Internasional Sultan Hasanuddin kurang lebih 20 KM dan akan memakan waktu sekitar 30 menit jika melalui Jalan Tol Insinyur Sutami.</p>
+               </div>
             </div>
          </div>
+         <div class="col-12 destinasi-padding margin-top-row text-center">
+            <nav id="destinasi-pagination" aria-label="Page navigation example">
+               <ul class="pagination justify-content-center">
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item "><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                     <a class="page-link" href="#">Last Page</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+
       </section>
-      <!-- Akhir cerita kunjungin -->
-   
+
+
+
       <!-- Awal Area lain -->
       <section id="area-wisata-lain" class="section-judul judul-area-wisata-lain mt-5">
          <div class="row">
@@ -438,7 +255,7 @@
          </div>
       </section>
       <!-- Akhir Area Lain -->
-      
+
       <!-- Modal -->
       <div class="modal fade" id="modal-plan-detail" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="position: relative;">
@@ -452,7 +269,7 @@
                   <h6 class="lokasi_destinasi" >
                      <i class="fas fa-map-marker-alt fas-c"></i>  <span name="lokasi-destinasi">Kota Makassar, Sulawesi Selatan</span>
                   </h6>
-                  
+
                   <div class="row" style="margin-top:20px">
                      <div class="col-12">
                         <p>Daftar Kunjungan</p>
@@ -507,7 +324,7 @@
          </div>
       </div>
       <!-- Akhir Modal -->
-   
+
       <!-- Footer -->
       <footer id="footer-desktop" class="page-footer font-small pt-2">
          <div class="footer-padding" style="">
@@ -556,7 +373,7 @@
                               <p> </i> hello @kunjung.in</p>
                            </div>
                         </div>
-   
+
                      </li>
                      <li>
                         <div class="row">
@@ -574,6 +391,7 @@
          </div>
       </footer>
       <!-- Footer -->
+
       <!-- Footer -->
       <footer id="footer-mobile" class="page-footer font-small pt-4 section-judul">
          <div class="row">
@@ -597,7 +415,7 @@
                               <p>Cerita Kunjungin</p>
                            </div>
                         </div>
-   
+
                      </a>
                      <a class="dropdown-item" href="event.html">
                         <div class="row">
@@ -608,7 +426,7 @@
                               <p>Event</p>
                            </div>
                         </div>
-   
+
                      </a>
                      <a class="dropdown-item" href="#">
                         <div class="row">
@@ -619,7 +437,7 @@
                               <p>Visit Sulsel</p>
                            </div>
                         </div>
-   
+
                      </a>
                      <a class="dropdown-item" href="#">
                         <div class="row">
@@ -631,7 +449,7 @@
                            </div>
                         </div>
                      </a>
-   
+
                   </div>
                </div>
                <div class="dropdown mt-3">
@@ -676,13 +494,15 @@
       </footer>
       <!-- Footer -->
    </div>
-		
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
-	<script src="assets/js/popper.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/owlcarousel/owl.carousel.min.js"></script>
-	<script src="assets/js/default.js"></script>
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+   <script src="assets/js/default.js"></script>
+   <script src="assets/js/text-max.js"></script>
 </body>
 </html>

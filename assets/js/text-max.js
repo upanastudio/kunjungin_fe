@@ -10,8 +10,20 @@ $(document).ready(function () {
 
       }
    });
-   ''	// $(".read-more").click(function(){
+   	// $(".read-more").click(function(){
    // 	$(this).siblings(".more-text").contents().unwrap();
    // 	$(this).remove();
    // });
+   // 
+    var maxPanjang = 200;
+   $(".text-artikel").each(function () {
+      var myTxt = $(this).text();
+      if ($.trim(myTxt).length > maxPanjang) {
+         var newTxt = myTxt.substring(0, maxPanjang);
+         var removedStr = myTxt.substring(maxPanjang, $.trim(myTxt).length);
+         $(this).empty().html(newTxt);
+         $(this).append(' <a href="destinasi_detail.html" class="read-more">Selengkapnya..</a>');
+
+      }
+   });
 });
