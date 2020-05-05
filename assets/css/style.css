@@ -1167,6 +1167,23 @@ div .inline {float:left;}
 }
 
 
+.menu-notif{
+	position: relative;
+}
+
+.circle-notif{
+	width: 20px;
+	height: 20px; 
+	background-color: tomato; 
+	position: absolute; 
+	top: -7; 
+	right: -10; 
+	border-radius: 20%;
+	color: white;
+	font-size: .8rem
+}
+
+
 
 /*Responsive section*/
 
@@ -1685,6 +1702,15 @@ div .inline {float:left;}
 
 		color: #22629b;
 
+	}
+	/*#btn_beranda {
+
+		color: #22629b;
+
+	}*/
+	#dropdownPhoto {
+		margin-bottom: 0px !important;
+		margin-top: -6px !important;
 	}
 	#Profile-page #navbar_mobile .dropdown-beranda {
 		border: none;
@@ -2740,6 +2766,11 @@ div .inline {float:left;}
 	}
 	#hasilPencarian .list-pencarian{
 		margin-bottom: 2rem;
+	}
+
+	#Profile-page #navbar_mobile .dropdown-beranda {
+		width: 94vw;
+
 	}
 	/*akhir bagian content*/
 }

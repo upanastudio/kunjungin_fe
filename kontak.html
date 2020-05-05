@@ -101,7 +101,7 @@
                            </div>
                         </div>
                      </div>
-                     <button class="btn btn-warning btn-warning-c full-width">
+                     <button class="btn btn-warning btn-warning-c full-width btn-travel-plan">
                         <i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
                      </button>
                   </div>
@@ -115,14 +115,14 @@
    <!-- Akhir Navbar -->
 
    <div id="kontak-page">
-      
-      
+
+
       <!-- Awal Kontak -->
       <section id="kontak" class="section-judul mt-4">
          <div class="row">
             <div class="col-sm-6">
                <h1 class="judul-section">Kontak</h1>
-   
+
             </div>
          </div>
          <div class="row mt-4">
@@ -139,19 +139,19 @@
                         <div class="form-group">
                            <label for="nama">Nama Kamu</label>
                            <input type="text" class="form-control bg-input" id="nama" name="nama"
-                              placeholder="Masukkan Nama Kamu">
+                           placeholder="Masukkan Nama Kamu">
                         </div>
                         <div class="form-group">
                            <label for="email_telpon">Email/No Telpon</label>
                            <input type="text" class="form-control bg-input" id="email_telpon" name="email_telpon"
-                              placeholder="Masukkan email atau no. telepon">
+                           placeholder="Masukkan email atau no. telepon">
                         </div>
                         <div class="form-group">
                            <label for="pertanyaan_kritik_saran">Pertanyaan,Kritik, dan Saran</label>
                            <textarea style="resize: none" class="form-control bg-input"
-                              id="pertanyaan_kritik_saran" rows="4"></textarea>
+                           id="pertanyaan_kritik_saran" rows="4"></textarea>
                         </div>
-                        <button style="width: 100%" class="btn btn-warning btn-warning-c">
+                        <button type="button" class="btn btn-warning btn-warning-c btn-block btn-kirimPesan">
                            Kirim Pesanmu
                         </button>
                      </form>
@@ -163,7 +163,7 @@
                   <div class="card-body body-follow-ig text-center rounded-lg" style="">
                      <p>Gambar Traveling yang kece ada juga loh disini, yuk follow</p>
                      <object type="image/svg+xml" data="assets/media/icon/instagram.svg" class="mb-2"
-                        width="55px"></object>
+                     width="55px"></object>
                      <a target="_blank" href="https://www.instagram.com/">
                         <p>@Kunjungin</p>
                      </a>
@@ -173,7 +173,7 @@
          </div>
       </section>
       <!-- Akhir Kontak -->
-   
+
       <!-- Awal Area lain -->
       <section id="area-wisata-lain" class="section-judul judul-area-wisata-lain mt-5">
          <div class="row">
@@ -229,7 +229,7 @@
          </div>
       </section>
       <!-- Akhir Area Lain -->
-   
+
       <!-- Modal -->
       <div class="modal fade" id="modal-plan-detail" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="position: relative;">
@@ -298,7 +298,7 @@
          </div>
       </div>
       <!-- Akhir Modal -->
-   
+
       <!-- Footer -->
       <footer id="footer-desktop" class="page-footer font-small pt-2">
          <div class="footer-padding" style="">
@@ -347,7 +347,7 @@
                               <p> </i> hello @kunjung.in</p>
                            </div>
                         </div>
-   
+
                      </li>
                      <li>
                         <div class="row">
@@ -389,7 +389,7 @@
                               <p>Cerita Kunjungin</p>
                            </div>
                         </div>
-   
+
                      </a>
                      <a class="dropdown-item" href="event.html">
                         <div class="row">
@@ -400,7 +400,7 @@
                               <p>Event</p>
                            </div>
                         </div>
-   
+
                      </a>
                      <a class="dropdown-item" href="#">
                         <div class="row">
@@ -411,7 +411,7 @@
                               <p>Visit Sulsel</p>
                            </div>
                         </div>
-   
+
                      </a>
                      <a class="dropdown-item" href="#">
                         <div class="row">
@@ -423,7 +423,7 @@
                            </div>
                         </div>
                      </a>
-   
+
                   </div>
                </div>
                <div class="dropdown mt-3">
@@ -468,14 +468,22 @@
       </footer>
       <!-- Footer -->
    </div>
-	
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
-	<script src="assets/js/popper.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/owlcarousel/owl.carousel.min.js"></script>
-	<script src="assets/js/default.js"></script>
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/bootstrap.min.js"></script>
+   <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+   <script src="assets/js/default.js"></script>
+   <script src="assets/js/sweetalert2.all.min.js"></script>
+   <script src="assets/js/btnTravelPlan.js"></script>
+   <script>
+      document.querySelector('.btn-kirimPesan').addEventListener('click', function () {
+         swal('Berhasil!', 'Pesan Berhasil Terkirim', 'success')
+      })
+
+   </script>
 </body>
 </html>

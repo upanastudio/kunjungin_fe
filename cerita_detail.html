@@ -104,7 +104,7 @@
                            </div>
                         </div>
                      </div>
-                     <button class="btn btn-warning btn-warning-c full-width">
+                     <button class="btn btn-warning btn-warning-c full-width btn-travel-plan">
                         <i class="fas fa-download fas-c"></i> Download Travel Plan (PDF)
                      </button>
                   </div>
@@ -133,9 +133,10 @@
                   </button>
                </div>
                <div class="col-sm text-right hidden-sm-wrap">
-                  <a href="#" class="btn btn-warning btn-warning-c btn-lihat-detail mt-4">
+                  <button class="btn btn-warning btn-warning-c btn-lihat-detail mt-4" data-toggle="modal"
+                              data-target="#modal-upload-cerita">
                      <i class="fas fa-plus-circle fas-c"></i> UPLOAD CERITAMU
-                  </a>
+                  </button>
                </div>
             </div>
             <div class="deskripsi-wrapper mt-4">
@@ -422,6 +423,25 @@
             </div>
          </div>
       </div>
+      <div class="modal fade" id="modal-upload-cerita" data-backdrop="static" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="position: relative;">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                     style="position: absolute;right: 10px;top: 10px">
+                     <i class="fas fa-times-circle"></i>
+                  </button>
+                  <h5 class="text-center">Silahkan Login Terlebih Dahulu untuk Mengupload Ceritamu</h5>
+                  <div class="text-center mt-3">
+                     <a href="./login.html" class="btn btn-secondary">
+                        <i class="fa fa-sign-in-alt fas-c"></i> Login
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
       <!-- Akhir Modal -->
 
       <!-- floating mobile btn how to get there-->
@@ -429,9 +449,9 @@
          <div class="menu-floating-container">
             <div class="row">
                <div class="col">
-                  <a href="#" class="btn btn-warning btn-warning-c btn-lihat-detail full-width">
+                  <button class="btn btn-warning btn-warning-c btn-lihat-detail full-width" data-toggle="modal" data-target="#modal-upload-cerita">
                      <i class="fas fa-plus-circle fas-c"></i> UPLOAD CERITAMU
-                  </a>
+                  </button>
                </div>
             </div>
          </div>
@@ -616,6 +636,8 @@
    <script src="assets/js/bootstrap.min.js"></script>
    <script src="assets/owlcarousel/owl.carousel.min.js"></script>
    <script src="assets/js/default.js"></script>
+   <script src="assets/js/sweetalert2.all.min.js"></script>
+   <script src="assets/js/btnTravelPlan.js"></script>
 </body>
 
 </html>
